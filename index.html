@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
+  <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <title>Omegascans</title>
+</head>
+
+<body>
+
+  <header class="container2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="../../../index.html"><img class="logo" src="./src/img/icone.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+          <li class="nav-item active">
+            <a class="nav-link" href="./mangas-e-manhaws/index.html">Mangás <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Scans</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Contato
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item" href="#">Celular</a></li>
+              <li><a class="dropdown-item" href="#">email</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">F.A.Q</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
+        </ul>
+        <!--Barra de busca-->
+        <form class="form-inline my-2 my-lg-0">
+          <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Digite o nome do manga"
+            aria-label="Search">
+          <button onclick="searchManga()" class="btn btn-outline-success my-2 my-sm-0" type="submit"><img
+              class="icon_busca" src="./src/img/busca01.png" alt="">
+          </button>
+          <div class="content"></div>
+        </form>
+        <!--Barra de busca-->
+      </div>
+    </nav>
+  </header>
+  <!-- <br><br><br> -->
+
+  <main class="corpo">
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div href="#mainSlider" class="carousel-item active">
+            <img class="d-block w-100" src="./src/img/BOKU NO HERO.jpg" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="">Ler agora</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./src/img/SOLO LEVILING.jpg" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="">Ler agora</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./src/img/the maid and vampire.jpg" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="">Ler agora</a>
+            </div>
+          </div>
+        </div>
+        <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+          <span aria-hidden="true"></span>
+          <img src="./src/img/icons8-flecha-65.png" alt="">
+        </a>
+
+        <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+          <span aria-hidden="true"></span>
+          <img src="./src/img/icons8-flecha-64.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!--slider 02 em destaque-->
+    <section>
+      <div class="swiper mySwiper">
+        <h1 class="titulo-slider01">Principais Manhaws</h1>
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <span class="slide2_nome">Latna Saga</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid" src="./src/img/latna saga.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <span class="slide2_nome">Solo Leveling</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid" src="./src/img/Solo-Leveling.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <span class="slide2_nome">Realise That Witch</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid" src="./src/img/realise that witch.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <span class="slide2_nome">The Maid and the Vampire</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid" src="./src/img/The Maid and the Vampire.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <span class="slide2_nome">The Lady Wants to Rest</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid" src="./mangas-e-manhaws/imgs/The Lady Wants to Rest.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <span class="slide2_nome">Survive On A Deserted Island</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid"
+                    src="./mangas-e-manhaws/imgs/Survive On A Deserted Island With Beautiful Girls.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <span class="slide2_nome">Skeleton Soldier</span>
+            <div class="card-content">
+              <div class="image">
+                <a href="">
+                  <img class="img-fluid" src="./mangas-e-manhaws/imgs/Skeleton Soldier.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </section>
+  </main>
+
+
+
+
+</body>
+<script src="./Bootstrap/jquery.slim.min.js"></script>
+<script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+
+<script src="./swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4, // Quantidade de slides visíveis simultaneamente
+    spaceBetween: 5, // Espaço entre os slides
+    slidesPerGroup: 7, // Quantidade de slides a serem agrupados ao avançar/retroceder
+    loop: true, // Habilitar o loop infinito
+    loopFillGroupWithBlank: false, // Preencher o último grupo com slides em branco para manter a consistência
+    pagination: {
+      el: ".swiper-pagination", // Elemento HTML para exibir a paginação
+      clickable: true, // Permitir clicar nos botões de paginação
+    },
+    navigation: {
+      nextEl: ".swiper-button-next", // Elemento HTML para o botão de avançar
+      prevEl: ".swiper-button-prev", // Elemento HTML para o botão de retroceder
+    },
+  });
+</script>
+
+</html>
