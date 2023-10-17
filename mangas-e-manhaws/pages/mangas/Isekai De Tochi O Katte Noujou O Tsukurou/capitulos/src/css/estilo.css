@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #fff;
+    font-family: Oswald;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    gap: 60px;
+    width: 110%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+
+main .paginas-abertas img {
+    width: 70%;
+}
+
+#selecionar {
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: Oswald;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#botao-voltar,
+#botao-proximo {
+    border-radius: 5px;
+    width: 100px;
+    transition: 0.8s;
+    border: none;
+    border: 1px solid #000;
+}
+
+#botao-voltar:hover,
+#botao-proximo:hover {
+    filter: brightness(80%);
+}
+
+.ler-no-claro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+    filter: brightness(90%);
+}
+
+.ler-no-claro:hover {
+    filter: brightness(70%);
+}
+
+/* select */
+.select {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 190px;
+    height: 30px;
+    text-align: center;
+    overflow-y: hidden;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 5px;
+    transition: 0.7s;
+    background-color: #4e4e4e;
+    left: 25rem;
+    top: 15rem;
+}
+
+.select #titulo {
+    border-bottom: 2px solid #333;
+    width: 190px;
+    height: 30px;
+}
+
+.alterna-selecao {
+    height: 100px;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 190px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+    transform: translateY(-8px);
+    background-color: #4e4e4e;
+}
+
+.opcoes span {
+    width: 200px;
+    height: 25px;
+}
+
+.opcoes span:hover {
+    background-color: rgba(255, 255, 255, 0.286);
+}
+
+#preto {
+    margin-top: -2px;
+}
+
+/* MENU */
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes a {
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #000;
+    transition: 0.7s;
+}
+
+.botoes a:hover {
+    background-color: gray;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    background-color: #e5e5e5;
+    color: #000;
+    font-size: 20px;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    height: 40px;
+}
+
+#logo {
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#selecionar {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.cor-do-corpo {
+    background-color: #000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    width: 100vw;
+    padding: 5px;
+    color: #fff;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav a {
+    width: 80px;
+}
+
+nav h1 {
+    font-size: 2rem;
+}
+
+.bordar-escura {
+    border: 1px solid #fff;
+}
+
+.logo-escuro {
+    border: 4px solid #000 !important;
+}
+
+.cor-de-fundo-preto {
+    background-color: #fff;
+    color: #000;
+}
+
+.alterna-modo-leitura {
+    display: none;
+}
+
+/* MODO DE LEITURA PASSAR PAGINAS */
+#botoes-de-cima {
+    display: flex;
+    gap: 30px;
+}
+
+
+.pagina {
+    display: none;
+  }
+  .pagina.aberta {
+    display: block;
+  }
