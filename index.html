@@ -72,10 +72,26 @@
         </ol>
         <div class="carousel-inner">
           <div href="#mainSlider" class="carousel-item active">
-            <img class="d-block w-100" src="./src/img/BOKU NO HERO.jpg" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <a href="">Ler agora</a>
-            </div>
+            <img class="carousel-img" src="./mangas-e-manhaws/imgs/I Am Trying to Divorce My Villain Husband, but We Have a Child.jpg" alt="">
+
+            <img class="carousel-banner" src="./mangas-e-manhaws/imgs/I Am Trying to Divorce My Villain Husband, but We Have a Child.jpg" alt="">
+
+              <div class="carousel-caption">
+                <h1>Capitulo: 70</h1>
+                <h1>I Am Trying to Divorce My Villain Husband, but We Have a Child.</h1>
+                <h2>Elisha é casada com um homem abusivo que ela acredita ser o diabo. Ela fica grávida dele e tenta fugir, mas ele a captura e a ameaça de morte. Mas ela ainda não encontrou uma maneira de escapar.</h2>
+                <div class="generos">
+                  <a href="">Drama</a>
+                  <a href="">Fantasia</a>
+                  <a href="">Josei</a>
+                  <a href="">Romance</a>
+                </div>
+                <a class="botao-manga" href="">
+                  <span>Ler agora</span>
+                  <img src="./src/img/book.png" alt="">
+                </a>
+              </div>
+
           </div>
 
           <div class="carousel-item">
@@ -92,7 +108,8 @@
             </div>
           </div>
         </div>
-        <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+        <!--BOTÕES DE AVANÇAR E VOLTAR -->
+        <!-- <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
           <span aria-hidden="true"></span>
           <img src="./src/img/icons8-flecha-65.png" alt="">
         </a>
@@ -100,97 +117,13 @@
         <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
           <span aria-hidden="true"></span>
           <img src="./src/img/icons8-flecha-64.png" alt="">
-        </a>
+        </a> -->
+        <!---->
       </div>
     </div>
 
     <!--slider 02 em destaque-->
-    <section>
-      <div class="swiper mySwiper">
-        <h1 class="titulo-slider01">Principais Manhaws</h1>
-        <div class="swiper-wrapper content">
-          <div class="swiper-slide card">
-            <span class="slide2_nome">Latna Saga</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid" src="./src/img/latna saga.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide card">
-            <span class="slide2_nome">Solo Leveling</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid" src="./src/img/Solo-Leveling.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide card">
-            <span class="slide2_nome">Realise That Witch</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid" src="./src/img/realise that witch.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide card">
-            <span class="slide2_nome">The Maid and the Vampire</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid" src="./src/img/The Maid and the Vampire.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide card">
-            <span class="slide2_nome">The Lady Wants to Rest</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid" src="./mangas-e-manhaws/imgs/The Lady Wants to Rest.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide card">
-            <span class="slide2_nome">Survive On A Deserted Island</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid"
-                    src="./mangas-e-manhaws/imgs/Survive On A Deserted Island With Beautiful Girls.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide card">
-            <span class="slide2_nome">Skeleton Soldier</span>
-            <div class="card-content">
-              <div class="image">
-                <a href="">
-                  <img class="img-fluid" src="./mangas-e-manhaws/imgs/Skeleton Soldier.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-    </section>
+    
   </main>
 
 
@@ -199,25 +132,7 @@
 </body>
 <script src="./Bootstrap/jquery.slim.min.js"></script>
 <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./mangas-e-manhaws/js/lista.js"></script>
 <script src="./script.js"></script>
-
 <script src="./swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4, // Quantidade de slides visíveis simultaneamente
-    spaceBetween: 5, // Espaço entre os slides
-    slidesPerGroup: 7, // Quantidade de slides a serem agrupados ao avançar/retroceder
-    loop: true, // Habilitar o loop infinito
-    loopFillGroupWithBlank: false, // Preencher o último grupo com slides em branco para manter a consistência
-    pagination: {
-      el: ".swiper-pagination", // Elemento HTML para exibir a paginação
-      clickable: true, // Permitir clicar nos botões de paginação
-    },
-    navigation: {
-      nextEl: ".swiper-button-next", // Elemento HTML para o botão de avançar
-      prevEl: ".swiper-button-prev", // Elemento HTML para o botão de retroceder
-    },
-  });
-</script>
-
 </html>

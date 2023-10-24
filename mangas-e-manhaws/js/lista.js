@@ -460,7 +460,8 @@ let mangas_e_manhaws = [
     },
 
 ];
-console.log(mangas_e_manhaws[0])
+
+console.log(mangas_e_manhaws)
 mangas_e_manhaws.forEach((banner) => {
     let banner_element = `
     <div class="box letra-${banner.id}">
