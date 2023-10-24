@@ -1,98 +1,234 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <title id="titulo"></title>
-    <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
-    <link rel="stylesheet" href="./src/css/estilo.css">
+  <title class="titulo1">Leitor de Mangas</title>
+  <link rel="stylesheet" href="./src/fontes.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
 </head>
 
 <body>
-    <nav>
-        <a href="javascript:history.go(-2)">
-            <img id="logo" src="https://github.com/oclubedosdez.png" alt="">
-        </a>
-        <h1 id="titulo2"></h1>
-    </nav>
+  <nav class="titulo2">
+    <a href="../index.html">
+      <img id="logo" src="https://github.com/oclubedosdez.png" alt="">
+    </a>
+    <h1 id="nome_manga"></h1>
+    <div class="modo-claro"><span class="img-botao">Modo escuro</span></div>
+  </nav>
 
 
-    <header>
+  <div class="selecao-e-modo">
+    <div class="modo-leitura">
+    </div>
 
-        <div class="select">
-            <span id="titulo">modo de leitura</span>
-            <div class="opcoes">
-                <span id="branco" class="fechar-pagina">Passar páginas</span>
-                <span id="preto" class="abrir-paginas">Páginas abertas</span>
-            </div>
-        </div>
+    <!--botao voltar capitulo anterior-->
+    <a class="botao-capitulo-anterior" href="../capitulo - 02/index.html">
+      <button id="previous-btn">
+        << Anterior</button>
+    </a>
 
-        <button id="ler-no-claro" class="ler-no-claro">
-            <img width="20px" src="./dark_theme.png" alt="">
-        </button>
+    <!--SELECIONAR PAGINAS-->
+    <div class="selecao-de-paginas">
+      <select id="page-select"></select>
+    </div>
 
-        <select placeholder="container" id="selecionar" onchange="location.href=this.value">
-            <option id="cap_selecionado" selected="selected" value="1"></option>
-        </select>
-
-        <div id="botoes-de-cima">
-
-        </div>
-
-        </div>
-    </header>
+    <!--SELECIONAR CAPITULOS-->
+    <div class="seletor-de-capitulos">
+      <select placeholder="container" id="selecionar" onchange="location.href=this.value">
+      </select>
+    </div>
 
 
-    <main>
-        <div class="paginas-abertas" id="paginas">
-    </main><br>
-    <div class="botoes">
-    </div><br><br>
+    <!--botao proximo capitulo-->
+    <a class="botao-avancar-capitulo" href="">
+      <button id="next-btn">Próximo >></button>
+    </a>
+
+  </div>
+
+
+  <div id="page-info"></div>
+
+  <div id="manga-container">
+    <img id="manga-image" src="" alt="Manga Image">
+  </div>
+
+
+  <div class="botões-de-baixo">
+    <a class="botao-capitulo-anterior" href="">
+      <button id="previous-btn">
+        << Anterior</button>
+    </a>
+
+    <a class="botao-avancar-capitulo" href="">
+      <button id="next-btn">Proximo >></button>
+    </a>
+  </div>
+
 
 </body>
-<script src="./src/js/script.js"></script>
-<script src="./src/js/select.js"></script>
-
-
-
+<script src="./src/script.js"></script>
 <script>
-    var titulo = document.getElementById("titulo")
-    var titulo2 = document.getElementById("titulo2")
-    var botoes_de_cima = document.getElementById("botoes-de-cima")
-    var botoes_de_baixo = document.querySelector(".botoes")
-    var cap_selecionado = document.getElementById("cap_selecionado")
-    var paginas = document.getElementById("paginas")
+  var capitulo = 11;
+  var prox_capitulo = capitulo + 1;
+  var ant_capitulo = capitulo - 1;
 
-    var number = "11" ;//capitulo atual
-    var voltar = "10";//capitulo anterior
-    var proximo = "12"//proximo capitulo
+  const mangaImages = [];
+  let currentImageIndex = 0;
+
+  const figura = document.createElement('img');
 
 
-    let select_paginas = "";
-    for (let i = 1; i <= 12; i++) {
-        select_paginas += `<img src="https://oclubedosdez.github.io/Imagens/mangas/Wojia%20Laopo%20Laizi%20Yiqian%20Nian%20Qian%20%E2%80%93%20My%20Wife%20Is%20From%20a%20Thousand%20Years%20Ago/capitulo-${number}/imgs/${i.toString().padStart(2, '0')}.jpg">`;
+  var diretorio = `${caminho}${capitulo < 10 ? "0" : ""}${capitulo}/imgs/`;
+
+
+
+
+  const mangaImage = document.getElementById("manga-image");
+  const previousBtn = document.getElementById("previous-btn");
+  const nextBtn = document.getElementById("next-btn");
+  const pageSelect = document.getElementById("page-select");
+  const pageInfo = document.getElementById("page-info");
+  const botao_proximo_capitulo = document.querySelector(".botao-avancar-capitulo")
+  const botao_voltar_capitulo = document.querySelector(".botao-capitulo-anterior")
+  const botoes_de_baixo = document.querySelector(".botões-de-baixo")
+  const capitulo_selecionado = document.getElementById('cap_selecionado')
+  const botao_proximo_capitulo_baixo = document.querySelector(".botões-de-baixo .botao-avancar-capitulo")
+  const botao_voltar_capitulo_baixo = document.querySelector(".botões-de-baixo .botao-capitulo-anterior")
+
+
+
+  titulo1.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
+  nome.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
+
+  //botoes de cima
+  botao_proximo_capitulo.href = `./${prox_capitulo}.html`
+  botao_voltar_capitulo.href = `./${ant_capitulo}.html`;
+  //botoes de baixo
+  botao_proximo_capitulo_baixo.href = `./${prox_capitulo}.html`
+  botao_voltar_capitulo_baixo.href = `./${ant_capitulo}.html`
+  
+
+
+
+
+
+  var capitulo_fra = Math.trunc(capitulo)//caso o numero do capitulo seja fracionado;
+
+
+  select_element[capitulo_fra - 1] = `<option id="cap_selecionado" selected="selected" value="1">capitulo ${capitulo < 10 ? "0" : ""}${capitulo}</option>`
+
+
+  botoes_de_baixo.classList.add('none')
+
+
+
+  // Função para exibir a imagem atual
+  function showCurrentImage() {
+    mangaImage.src = mangaImages[currentImageIndex];
+    updatePageInfo();
+  }
+
+  // Função para avançar para a próxima imagem
+  function nextImage() {
+    if (currentImageIndex < mangaImages.length - 1) {
+      currentImageIndex++;
+      showCurrentImage();
     }
-    paginas.innerHTML += select_paginas;
+  }
 
-    cap_selecionado.innerHTML = number;
+  // Função para voltar para a imagem anterior
+  function previousImage() {
+    if (currentImageIndex > 0) {
+      currentImageIndex--;
+      showCurrentImage();
+    }
+  }
 
-    botoes_de_cima.innerHTML = `
-  <button class="botao_voltar" id="botao-voltar"><a href="./${voltar}.html">Voltar</a></button>
-  <button class="botao_proximo" id="botao-proximo"><a href="./${proximo}.html">Proximo</a></button>  
-`;
+  // Função para atualizar as informações da página
+  function updatePageInfo() {
+    const currentPage = currentImageIndex + 1;
+    const totalPages = mangaImages.length;
+    pageInfo.textContent = `Página ${currentPage} de ${totalPages}`;
+    updatePageSelect();
+  }
 
-    botoes_de_baixo.innerHTML = `
-  <a href="./${voltar}.html">&lt; Anterior</a>
-  <a href="./${proximo}.html">Proximo &gt;</a>
-`;
+  // Função para atualizar o seletor de página
+  function updatePageSelect() {
+    pageSelect.innerHTML = "";
+    for (let i = 0; i < mangaImages.length; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.text = `Página ${i + 1}`;
+      if (i === currentImageIndex) {
+        option.selected = true;
+      }
+      pageSelect.appendChild(option);
+    }
+  }
 
-    titulo.innerHTML = `My Wife Is From a Thousand Years Ago - Capítulo ${number}`;
-    titulo2.innerHTML = `My Wife Is From a Thousand Years Ago - Capítulo ${number}`;
+
+  // Evento de alteração no seletor de página
+  pageSelect.addEventListener("change", function () {
+    currentImageIndex = parseInt(pageSelect.value);
+    showCurrentImage();
+  });
+
+
+
+  // Exibir a imagem inicial e as informações da página
+  showCurrentImage();
+
+  const container = document.getElementById('manga-container');
+  const pageAberta = document.querySelector('.selecao-de-paginas');
+  const seletorCapitulos = document.querySelector('.seletor-de-capitulos');
+  const capSelect = document.querySelector('.seletor-de-capitulos select');
+
+
+  capSelect.innerHTML += select_element;
+
+
+
+
+  container.innerHTML = ''
+  container.classList.add('paginas-abertas')
+
+  botoes_de_baixo.classList.remove('none')
+
+
+  var imagens = [];
+
+  for (let i = 0; i < 20; i++) {
+    imagens.push(`${diretorio}${i < 10 ? "0" : ""}${i}.jpg`);
+  }
+
+
+
+  function adicionarImagem(src) {
+    var img = new Image();
+    img.src = src;
+
+    img.onload = function () {
+      container.appendChild(img);
+      carregarProximaImagem();
+    };
+
+    img.onerror = function () {
+      // A imagem não carregou com sucesso, não faz nada
+      carregarProximaImagem();
+    };
+  }
+
+  function carregarProximaImagem() {
+    if (imagens.length > 0) {
+      adicionarImagem(imagens.shift()); // Remove a primeira imagem da lista e a carrega
+    }
+  }
+
+  carregarProximaImagem();
 </script>
 
 </html>
