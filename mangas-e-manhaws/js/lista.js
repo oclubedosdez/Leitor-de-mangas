@@ -447,6 +447,17 @@ let mangas_e_manhaws = [
         "genero": "Drama Fantasia Romance Shounen Sobrenatural",
         "pasta": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago"
     },
+	{
+        "id": "I",
+        "nome": "I Am Trying to Divorce My Villain Husband, but We Have a Child",
+        "img": "I Am Trying to Divorce My Villain Husband, but We Have a Child.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Drama Fantasia Josei Romance",
+        "pasta": "I Am Trying to Divorce My Villain Husband, but We Have a Child"
+    },
 
 ];
 console.log(mangas_e_manhaws[0])
