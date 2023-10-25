@@ -76,6 +76,8 @@
   var prox_capitulo = capitulo + 1;
   var ant_capitulo = capitulo - 1;
 
+  console.log(prox_capitulo)
+
   const mangaImages = [];
   let currentImageIndex = 0;
 
@@ -83,6 +85,7 @@
 
 
   var diretorio = `${caminho}${capitulo < 10 ? "0" : ""}${capitulo}/imgs/`;
+
 
 
 
@@ -106,10 +109,10 @@
 
   //botoes de cima
   botao_proximo_capitulo.href = `./${prox_capitulo}.html`
-  botao_voltar_capitulo.href = `./${ant_capitulo}.html`;
+  botao_voltar_capitulo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`;
   //botoes de baixo
   botao_proximo_capitulo_baixo.href = `./${prox_capitulo}.html`
-  botao_voltar_capitulo_baixo.href = `./${ant_capitulo}.html`
+  botao_voltar_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`
   
 
 

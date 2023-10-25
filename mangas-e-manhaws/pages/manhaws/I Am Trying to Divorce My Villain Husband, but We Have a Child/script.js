@@ -1,11 +1,6 @@
 var box3 = document.querySelector(".box3");
 
 let capitulos = [
-    {
-        "id": "01",
-        "data": "outubro 11, 2023"
-    },
-    // ... (resto dos capítulos)
 ];
 
 // Obter a data atual
