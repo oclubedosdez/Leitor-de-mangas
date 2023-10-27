@@ -13,7 +13,7 @@ function formatData(data) {
 }
 
 // Adicionar capítulos com base na data atual
-for (let i = 1; i <= 70; i++) { // Adicionando 5 capítulos com base na data atual
+for (let i = 1; i <= 71; i++) { // Adicionando 5 capítulos com base na data atual
     dataAtual.setDate(dataAtual.getDate() + 1); // Adiciona 1 dia à data atual
     capitulos.push({
         "id": `${i < 10 ? `0${i}` : i}`,
