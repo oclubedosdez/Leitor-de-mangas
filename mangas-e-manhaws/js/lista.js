@@ -439,7 +439,7 @@ let mangas_e_manhaws = [
     {
         "id": "W",
         "nome": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
-        "img": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago.webp",
+        "img": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago.jpg",
         "tipo": "manhaw",
         "status": "",
         "capitulos": "",
@@ -457,6 +457,17 @@ let mangas_e_manhaws = [
         "estatus": "ativo",
         "genero": "Drama Fantasia Josei Romance",
         "pasta": "I Am Trying to Divorce My Villain Husband, but We Have a Child"
+    },
+	{
+        "id": "M",
+        "nome": "My Childhood Friend Became an Obsessive Male Lead",
+        "img": "My Childhood Friend Became an Obsessive Male Lead.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Fantasia Josei Romance",
+        "pasta": "My Childhood Friend Became an Obsessive Male Lead"
     },
 
 ];

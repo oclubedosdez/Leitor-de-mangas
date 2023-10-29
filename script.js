@@ -74,24 +74,24 @@ let carrocel_cabecalho = [
   },
 
   {
-    'id': 'K',
-    'cap': `Capitulo: 52`,
+    'id': 'R',
+    'cap': `Capitulo: 23`,
     'tipo': 'manhaws',
     'ativo': '',
-    'img': 'Knight of the Frozen Flower.jpg',
-    'nome': 'Knight of the Frozen Flower',
-    'pasta': 'Knight of the Frozen Flower',
+    'img': 'Release That Witch 2.jpg',
+    'nome': 'Release That Witch',
+    'pasta': 'Release That Witch',
     'generos': [
       { 'genero': '<a href="">Ação</a>' },
       { 'genero': '<a href="">Aventura</a>' },
       { 'genero': '<a href="">Drama</a>' },
       { 'genero': '<a href="">Fantasia</a>' },
-      { 'genero': '<a href="">Histórico</a>' },
-      { 'genero': '<a href="">Psicológico</a>' },
+      { 'genero': '<a href="">Harem</a>' },
       { 'genero': '<a href="">Romance</a>' },
-      { 'genero': '<a href="">Shoujo</a>' },
+      { 'genero': '<a href="">Shounen</a>' },
+      { 'genero': '<a href="">Sobrenatural</a>' },
     ],
-    'sinopse': 'Julia, que possuía grande esgrima, foi morta depois de ser usada pelo homem que amava. Seu único crime foi ter vivido uma vida com cara feia por causa de uma maldição Logo antes de sua morte, ela testemunhou sua maldição se dissipando antes de retornar ao passado.Agora, ela jurou viver sua vida por si mesma.'
+    'sinopse': 'Um engenheiro transmigra para outro mundo, tornando-se um príncipe. Este lugar lembra a Idade Média da Europa, mas parece diferente. As bruxas existem e possuem poderes mágicos. Salve-os, liberte as forças produtivas e lute contra os demônios.'
   },
 ];
 
@@ -138,3 +138,73 @@ carrocel_cabecalho.forEach((item) => {
   carrocel.innerHTML += carrocel_items;
 });
 
+
+//====CARROCEL 2 =====================================================
+const slider_mangas = document.querySelector('.slide-ler-mangas')
+
+let carousel_mangas_items = [
+  {
+    "tipo": "manga",
+    "nome": "Atsumori-kun no Oyome-san",
+    "img": "Atsumori-kun no Oyome-san.jpg",
+    "cor": "preto-branco",
+    "text-cor": "PB",
+    "pasta" : "Atsumori-kun no Oyome-san"
+  },
+
+  {
+    "tipo": "manhaw",
+    "nome": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)",
+    "img": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg",
+    "cor": "colorido",
+    "text-cor": "CL",
+    "pasta" : "Knight of the Frozen Flower",
+  },
+  {
+    "tipo": "manhaw",
+    "nome": "My Childhood Friend Became an Obsessive Male Lead",
+    "img": "My Childhood Friend Became an Obsessive Male Lead.jpg",
+    "cor": "colorido",
+    "text-cor": "CL",
+    "pasta" : "My Childhood Friend Became an Obsessive Male Lead",
+  },
+];
+
+
+carousel_mangas_items.forEach((item) => {
+  let manga_item = `
+       <div class="box">
+          <div class="tipo">
+            <h2 class="${item.tipo}">${item.tipo}</h2>
+            <span class="cor ${item.cor}">${item["text-cor"]}</span>
+          </div>
+          <a href="./mangas-e-manhaws/pages/${item.tipo}s/${item.pasta}/index.html" class="imagem-ler-mangas">
+            <div class="img-book">
+             <img class='' src="./src/img/book.png" alt=""> 
+            </div>
+            
+           <img src="./mangas-e-manhaws/imgs/${item.img}" alt=""> 
+          </a>
+          <h2 class="nome" title="${item.nome}">${item.nome}</h2>
+        </div>
+  `;
+  slider_mangas.innerHTML += manga_item
+});
+
+
+{/* <div class="box">
+
+<div class="tipo">
+  <h2 class="manhaw">Manhaw</h2>
+  <span class="cor colorido">CL</span>
+</div>
+<a href="" class="imagem-ler-mangas">
+  <div class="img-book">
+   <img class='' src="./src/img/book.png" alt=""> 
+  </div>
+  
+ <img src="./mangas-e-manhaws/imgs/Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg" alt=""> 
+</a>
+<h2 class="nome" title="Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)">Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)</h2>
+
+</div> */}
