@@ -469,6 +469,17 @@ let mangas_e_manhaws = [
         "genero": "Fantasia Josei Romance",
         "pasta": "My Childhood Friend Became an Obsessive Male Lead"
     },
+	{
+        "id": "A",
+        "nome": "A Proprietária Bebê Está se Aposentando",
+        "img": "A Proprietária Bebê Está se Aposentando.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Fantasia Romance Shoujo",
+        "pasta": "A Proprietária Bebê Está se Aposentando"
+    },
 
 ];
 

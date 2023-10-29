@@ -1,0 +1,429 @@
+@media(max-width: 1024px) {
+    /*CAIXA DE INFORMAÇÕES========================*/
+.box2 {
+    /* border: 1px solid rebeccapurple; */
+    background-color: rgba(0, 0, 0, 0.382);
+    border-radius: 5px;
+    font-size: 19px;
+    width: 1000px;
+    padding: 0.70rem;
+    box-shadow: 5px 5px 5px black;
+}
+.box2 span {
+    font-family: Oswald;
+    font-size: 22px;
+    color: white;
+    margin-right: 0.50rem;
+}
+.box2 p {
+    font-family: Oswald;
+    color: white;
+    margin-bottom: 0px;
+    height: 27px;
+    align-items: center;
+}
+
+.info {
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.info div {
+    margin-bottom: 1%;
+}
+#autor {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+#artista {
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+}
+#estatus {
+    /* border: 2px solid brown; */
+    display: flex;
+    align-items: center;
+}
+
+#sinopse {
+    /* border:2px solid rgb(255, 251, 0) !important; */
+    display: inline-block;
+    width: 100%;
+    padding: 0px !important;
+    color: white;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    max-height: 200px;
+    overflow: auto;
+    font-size: 16px;
+}
+#sinopse::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.096);
+    width: 15px;
+}
+#sinopse::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+    width: 15px;
+}
+.box {
+    /* border: 1px solid green; */
+}
+.box1 {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 28rem;
+}
+#imagen_principal {
+    width: 90%;
+}
+.titulo {
+    /* border: 3px solid hotpink; */
+    width: 90%;
+}
+.titulo h1 {
+    font-size: 28px;
+}
+/*botões de generos*/
+.generos {
+    /* border: 1px solid red !important; */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100%;
+    gap: 0.70rem;
+    align-items: center;
+}
+.generos span {
+    font-family: Oswald;
+    font-size: 22px;
+    color: white;
+}
+.genero {
+    display: flex;
+    font-size: 17px;
+    transition: all 0.5s;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10px 0px;
+    box-shadow: 2px 3px 1px rgb(255, 255, 255);
+    /* width: 6.25rem; */
+    height: 1.56rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/*==========================================*/
+}
+
+@media(max-width:768px) {
+    .box {
+        justify-content: center;
+    }
+    .box1 {
+        border: 1px solid red;
+        width: 60%;
+        height: 35rem;
+    }
+
+
+    .box3 {
+        margin-top: 70px;
+        border: 1px solid wheat;
+        text-decoration: none;
+        gap: 35px;
+    }
+    .capitulo {
+        transition: all 0.5s;
+        box-shadow: 2px 4px 2px white;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none !important;
+        color: white;
+        width: 20rem;
+        height: 100px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.735);
+        border-radius: 10px;
+        max-height: 700px;
+        overflow: auto;
+    }
+    .capitulo img {
+        width: 1rem;
+    }
+    .titulos{
+        border: 1px solid red !important;
+        /* width: 100rem !important; */
+    }
+    
+    
+    .titulo_data {
+        border: 1px solid green;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .titulo_data h3 {
+        font-size: 18px;
+    }
+}
+
+
+@media(max-width:425px) {
+    .box {
+        justify-content: center;
+    }
+    .box1 {
+        width: 60%;
+        height: 35rem;
+    }
+
+
+    .box3 {
+        display: flex;
+        margin-top: 70px;
+        text-decoration: none;
+        gap: 35px;
+        max-height: 600px;
+        overflow: auto;
+        width: 70%;
+    }
+    .box3::-webkit-scrollbar {
+        background-color: black;
+    }
+    .box3::-webkit-scrollbar-thumb {
+        background-color: rgb(46, 46, 46);
+        border-radius: 10px;
+    }
+    .capitulo {
+        transition: all 0.5s;
+        box-shadow: 2px 4px 2px white;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none !important;
+        color: white;
+        width: 14rem;
+        height: 80px;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.735);
+        border-radius: 10px;
+    }
+    .capitulo img {
+        width: 1rem;
+    }
+    .titulos{
+        /* width: 100rem !important; */
+    }
+    
+    
+    .titulo_data {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .titulo_data h3 {
+        font-size: 0.80rem;
+    }
+    .titulo_data h1 {
+        font-size: 1.50rem;
+    }
+    .info div {
+        margin-bottom: 3%;
+    }
+
+    .box1 {
+        width: 100%;
+        height: 30rem;
+    }
+    #imagen_principal {
+        width: 100%;
+        padding: 1rem;
+    }
+    .titulo {
+        background-color: rgba(0, 0, 0, 0.459);
+        border-radius: 10px;
+    }
+    .titulo h1 {
+        font-size: 25px;
+    }
+
+    /*botões de generos*/
+.generos {
+    /* border: 1px solid red !important; */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100%;
+    gap: 0.50rem;
+    align-items: center;
+}
+.generos span {
+    font-family: Oswald;
+    font-size: 22px;
+    color: white;
+}
+.genero {
+    display: flex;
+    font-size: 15px;
+    transition: all 0.5s;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10px 0px;
+    box-shadow: 2px 3px 1px rgb(255, 255, 255);
+    width: 4.99rem;
+    height: 0.50rem;
+    padding: 0.80rem 0.70rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+@media(max-width:320px) {
+    .img_logo {
+        width: 3rem;
+    }
+    .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        padding: 0px;
+    }
+    .navbar-toggler-icon {
+        width: 90px !important;
+        height: 30px;
+        /* background-color: brown; */
+    }
+    .navbar-brand {
+        color: rgb(255, 255, 255) !important;
+        font-size: 20px;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+    .box1 {
+        /* border: 1px solid red; */
+        width: 60%;
+        height: 35rem;
+    }
+
+
+    .box3 {
+        display: flex;
+        margin-top: 70px;
+        /* border: 1px solid wheat; */
+        text-decoration: none;
+        gap: 35px;
+        max-height: 600px;
+        overflow: auto;
+        width: 70%;
+    }
+    .box3::-webkit-scrollbar {
+        background-color: black;
+    }
+    .box3::-webkit-scrollbar-thumb {
+        background-color: rgb(46, 46, 46);
+        border-radius: 10px;
+    }
+    .capitulo {
+        transition: all 0.5s;
+        box-shadow: 2px 4px 2px white;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none !important;
+        color: white;
+        width: 14rem;
+        height: 80px;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.735);
+        border-radius: 10px;
+    }
+    .capitulo img {
+        display: none;
+    }
+    .titulos{
+        /* border: 1px solid red !important; */
+        /* width: 100rem !important; */
+    }
+    
+    
+    .titulo_data {
+        /* border: 1px solid green; */
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .titulo_data h3 {
+        font-size: 0.80rem;
+    }
+    .titulo_data h1 {
+        font-size: 1.40rem;
+    }
+    .info div {
+        margin-bottom: 3%;
+    }
+
+    .box1 {
+        /* border: 1px solid red; */
+        width: 40rem;
+        height: 22rem;
+    }
+    #imagen_principal {
+        width: 60rem;
+        padding: 1rem;
+    }
+    .titulo {
+        background-color: rgba(0, 0, 0, 0.459);
+        border-radius: 10px;
+    }
+    .titulo h1 {
+        font-size: 25px;
+    }
+
+    /*botões de generos*/
+.generos {
+    /* border: 1px solid red !important; */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100%;
+    gap: 0.50rem;
+    align-items: center;
+}
+.generos span {
+    font-family: Oswald;
+    font-size: 22px;
+    color: white;
+}
+.genero {
+    display: flex;
+    font-size: 15px;
+    transition: all 0.5s;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10px 0px;
+    box-shadow: 2px 3px 1px rgb(255, 255, 255);
+    width: 4.99rem;
+    height: 0.50rem;
+    padding: 0.80rem 0.70rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+}

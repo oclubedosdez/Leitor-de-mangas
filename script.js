@@ -168,6 +168,14 @@ let carousel_mangas_items = [
     "text-cor": "CL",
     "pasta" : "My Childhood Friend Became an Obsessive Male Lead",
   },
+  {
+    "tipo": "manhaw",
+    "nome": "A Proprietária Bebê Está se Aposentando",
+    "img": "A Proprietária Bebê Está se Aposentando.jpg",
+    "cor": "colorido",
+    "text-cor": "CL",
+    "pasta" : "A Proprietária Bebê Está se Aposentando",
+  },
 ];
 
 

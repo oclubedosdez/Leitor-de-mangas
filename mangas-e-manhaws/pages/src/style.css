@@ -235,13 +235,8 @@ a:link {
     display: flex;
     font-size: 17px;
     transition: all 0.5s;
-    background-color: black;
     font-weight: bold;
-    border-radius: 10px 0px;
-    box-shadow: 2px 3px 1px rgb(255, 255, 255);
-    /* width: 6.25rem; */
     height: 1.56rem;
-    padding: 1rem 1rem;
     text-align: center;
     align-items: center;
     justify-content: center;
