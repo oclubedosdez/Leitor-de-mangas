@@ -1,7 +1,7 @@
 
 let select_element = [];
 
-for(let i = 1; i < 71; i++) {
+for(let i = 1; i < 64; i++) {
     select_element.push(`'<option value="./${i < 10 ? "0" : ""}${i}.html">capitulo ${i < 10 ? "0" : ""}${i}</option>'`)
 }
 
@@ -34,5 +34,6 @@ var titulo2 = document.querySelector('.titulo2');
 var nome = document.getElementById('nome_manga');
 
 
-var nome_manga = 'I Am Trying to Divorce My Villain Husband, but We Have a Child'
-var caminho  = './src/capitulos/capitulo-'
+
+var nome_manga = 'My Childhood Friend Became an Obsessive Male Lead'
+var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/My%20Childhood%20Friend%20Became%20an%20Obsessive%20Male%20Lead/capitulo-'

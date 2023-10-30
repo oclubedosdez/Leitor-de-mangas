@@ -1,5 +1,7 @@
 :root {
     --cor-principal: rgb(63, 63, 63);
+    --background-box1-box2:  rgba(0, 0, 0, 0.664);
+    --cor-texto1: rgb(212, 212, 212);
   }
 
 
@@ -124,7 +126,7 @@ body {
     /* border: 1px solid green; */
     width: 400px;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.382);
+    background-color: var(--background-box1-box2);
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
 }
@@ -135,7 +137,7 @@ body {
 /*CAIXA DE INFORMAÇÕES========================*/
 .box2 {
     /* border: 1px solid rebeccapurple; */
-    background-color: rgba(0, 0, 0, 0.382);
+    background-color: var(--background-box1-box2);
     border-radius: 5px;
     font-size: 19px;
     width: 1000px;
@@ -150,7 +152,7 @@ body {
 }
 .box2 p {
     font-family: Oswald;
-    color: white;
+    color: var(--cor-texto1);
     margin-bottom: 0px;
     height: 27px;
     align-items: center;
@@ -190,7 +192,7 @@ body {
     justify-content: start;
     align-items: start;
     text-align: start;
-    max-height: 300px;
+    max-height: 200px;
     overflow: auto;
 }
 #sinopse strong {
@@ -202,6 +204,19 @@ body {
 #sinopse::-webkit-scrollbar-thumb {
     background-color: rgb(85, 85, 85);
     border-radius: 10px;
+}
+#Alternativa {
+    /* border: 1px solid red; */
+}
+#Alternativa .nome_alt {
+    /* border: 1px solid green; */
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--cor-texto1);
+}
+#Alternativa .nome_alt::after {
+    content: ",";
+    font-weight: bold;
 }
 /*==========================================*/
 
@@ -290,33 +305,42 @@ a:link {
     width: 100%;
     gap: 0.70rem;
     align-items: center;
+    align-items: center;
 }
 .generos span {
+    /* border: 1px solid green; */
     font-family: Oswald;
-    font-size: 26px;
+    font-size: 24px;
     color: white;
+    text-align: center;
+    padding-bottom: 0.15rem;
+    filter: brightness(900%);
 }
+
 .genero {
+    /* border: 1px solid red; */
     display: flex;
-    font-size: 17px;
+    font-size: 20px;
     transition: all 0.5s;
-    background-color: black;
     font-weight: bold;
-    border-radius: 10px 0px;
-    box-shadow: 2px 3px 1px rgb(255, 255, 255);
-    /* width: 6.25rem; */
-    height: 1.56rem;
-    padding: 1rem 1rem;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
+.genero:link {
+    color: var(--cor-texto1);
+}
+
+.genero::after {
+    content: ",";
+    color: var(--cor-texto1);
+}
+
 .genero:hover {
     text-decoration: none;
-    background-color: white;
-    text-decoration: none;
-    box-shadow: 5px 4px 1px rgb(0, 0, 0);
-    border-radius: 5px 0px;
+   color: rgb(255, 110, 110);
+   font-weight: bold;
 }
 
 
