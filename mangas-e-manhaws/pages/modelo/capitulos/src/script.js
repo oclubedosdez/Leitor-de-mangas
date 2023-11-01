@@ -35,4 +35,7 @@ var nome = document.getElementById('nome_manga');
 
 
 var nome_manga = 'I Am Trying to Divorce My Villain Husband, but We Have a Child'
-var caminho  = './src/capitulos/capitulo-'
+var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/Knight%20of%20the%20Frozen%20Flower/capitulo-'
+
+
+var num_imgs = 80;

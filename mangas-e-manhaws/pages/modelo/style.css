@@ -262,14 +262,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 70px;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     text-decoration: none;
     gap: 0px;
-    width: 95%;
+    width: 89%;
     max-height: 600px;
     overflow: auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.836);
     padding: 0px 10px;
+    border-radius: 10px;
 }
 
 .box3::-webkit-scrollbar {
@@ -457,32 +458,32 @@ a h1 {
 }
 
 /*estrelas de avaliação*/
-.estrelas {
-    /* border: 1px solid green; */
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
+.caixa-estrelas {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
 }
-
-.estrela {
+.counter {
+    /* border: 1px solid white; */
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 3.90px;
+}
+#rateYo1 {
+    /* border: 1px solid red; */
+    margin: 0px;
+}
+#rateYo1 svg{
+    /* border: 1px solid red; */
+}
+.nome_avaliacao {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    border: 1px solid red;
-    cursor: pointer;
-    padding: 0;
-    height: 50px;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
 }
-
-
-
-/* .estrela::before {
-    content: "\2606";
-    font-family: FontAwesome;
-    font-size: 40px;
-  } */
-

@@ -104,13 +104,13 @@
   titulo1.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
   nome.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
 
-   //botoes de cima
-   botao_proximo_capitulo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
+  //botoes de cima
+  botao_proximo_capitulo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
   botao_voltar_capitulo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`;
   //botoes de baixo
   botao_proximo_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
   botao_voltar_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`
-  
+
 
 
 
@@ -201,7 +201,7 @@
 
   var imagens = [];
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < num_imgs; i++) {
     imagens.push(`${diretorio}${i < 10 ? "0" : ""}${i}.jpg`);
   }
 

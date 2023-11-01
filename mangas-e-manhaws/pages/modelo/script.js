@@ -54,6 +54,7 @@ const alternativo = document.getElementById('Alternativa')
 
 
 var nome = 'A 99° Noiva do Duque'; //nome do manga/manhaw
+var rating = 2.6;//nota da obra
 
 var nome_alternativo = `
 <span class='nome_alt'>The 99th Bride of the Duke</span>
