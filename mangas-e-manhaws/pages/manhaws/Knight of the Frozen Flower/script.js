@@ -25,11 +25,11 @@ for (let i = 1; i <= 52; i++) { // Adicionando 5 capítulos com base na data atu
 // Criar elementos HTML e atualizar a caixa box3
 const bannerElements = capitulos.map((banner) => `
     <a class="capitulo" href="./capitulos/${banner.id}.html">
-        <img class="img-fluid w-25" src="https://github.com/oclubedosdez.png" alt="">
         <div class="titulo_data">
-            <h1>Capitulo ${banner.id}</h1>
+            <h1>Capitulo ${banner.id}</h1> -
             <h3>${banner.data}</h3> 
         </div>
+        <img class="capitulo-img" src="./imgs/book.png" alt="">
     </a>
 `);
 
@@ -44,21 +44,31 @@ const titulo2 = document.querySelector('.titulo2')
 const tipo_de_quadrinho = document.getElementById('tipo_de_quadrinho')
 const img_fluid = document.getElementById('imagen_principal')
 const banner = document.getElementById('imagen_banner')
+//////////////////////////////////////////////////////////////
 const generos = document.querySelector('.generos')
 const autor = document.getElementById('autor')
 const artista = document.getElementById('artista')
 const estatus = document.getElementById('estatus')
 const sinopse = document.getElementById('sinopse')
+const alternativo = document.getElementById('Alternativa')
 
 
 var nome = 'Knight of the Frozen Flower'; //nome do manga/manhaw
+var rating = 4.6;//nota da obra
+
+var nome_alternativo = `
+<span class='nome_alt'>Ice Blossom Knight</span>
+<span class='nome_alt'>Ice Flower Knight</span>
+<span class='nome_alt'>얼음꽃 기사</span>
+`
+
 var tipo = 'manhaw' // é manga ou manhaw
 var caminho = '../../../imgs/Knight of the Frozen Flower.jpg'; //caminho da imagem
-var autor_da_obra = 'Jin Juha Towawa';
-var artista_da_obra = 'Towawa';
-var estatus_obra = 'Ativo';
+var autor_da_obra = '<span>Autor: </span> <p>Jin Juha Towawa</p>';
+var artista_da_obra = '<span>Artista: </span> <p>Towawa</p>';
+var estatus_obra = '<span>Status: </span> <p>Ativo</p>';
 
-var sinopese_da_obra = 'Julia, que possuía grande esgrima, foi morta depois de ser usada pelo homem que amava. Seu único crime foi ter vivido uma vida com cara feia por causa de uma maldição Logo antes de sua morte, ela testemunhou sua maldição se dissipando antes de retornar ao passado.Agora, ela jurou viver sua vida por si mesma.';
+var sinopese_da_obra = "<strong>Sinopse:</strong>Julia, que possuía grande esgrima, foi morta depois de ser usada pelo homem que amava. Seu único crime foi ter vivido uma vida com cara feia por causa de uma maldição… Logo antes de sua morte, ela testemunhou sua maldição se dissipando antes de retornar ao passado. Agora, ela jurou viver sua vida por si mesma.";
 
 let generos_link = `
 <a class="genero" href="http://">Ação</a>
@@ -81,4 +91,8 @@ autor.innerHTML = autor_da_obra;
 artista.innerHTML = artista_da_obra;
 estatus.innerHTML = estatus_obra;
 sinopse.innerHTML = sinopese_da_obra;
+alternativo.innerHTML += nome_alternativo;
+
+
+
 

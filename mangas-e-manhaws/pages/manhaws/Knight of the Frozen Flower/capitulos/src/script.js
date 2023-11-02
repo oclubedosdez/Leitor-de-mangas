@@ -5,7 +5,7 @@ for(let i = 1; i < 53; i++) {
     select_element.push(`'<option value="./${i < 10 ? "0" : ""}${i}.html">capitulo ${i < 10 ? "0" : ""}${i}</option>'`)
 }
 
-// select_element.splice(5 , 0, '<option value="./05.5.html">capitulo 05.5</option>')
+
 
 
 var modo_escuro = document.querySelector('.modo-claro');
@@ -34,5 +34,8 @@ var titulo2 = document.querySelector('.titulo2');
 var nome = document.getElementById('nome_manga');
 
 
-var nome_manga = 'Knight of the Frozen Flower';
-var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/Knight%20of%20the%20Frozen%20Flower/capitulo-';
+var nome_manga = 'Knight of the Frozen Flower'
+var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/Knight%20of%20the%20Frozen%20Flower/capitulo-'
+
+
+var num_imgs = 80;

@@ -480,6 +480,28 @@ let mangas_e_manhaws = [
         "genero": "Fantasia Romance Shoujo",
         "pasta": "A Proprietária Bebê Está se Aposentando"
     },
+	{
+        "id": "M",
+        "nome": "My Three Tyrant Brothers",
+        "img": "My Three Tyrant Brothers.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Drama Histórico Magia Romance Shoujo Sobrenatural",
+        "pasta": "My Three Tyrant Brothers"
+    },
+	{
+        "id": "K",
+        "nome": "Knight of the Frozen Flower",
+        "img": "Knight of the Frozen Flower.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Ação Aventura Drama Fantasia Histórico Psicológico Romance Shoujo",
+        "pasta": "Knight of the Frozen Flower"
+    },
 
 ];
 
@@ -495,7 +517,7 @@ mangas_e_manhaws.forEach((banner) => {
              src="./imgs/${banner.img}">
        </a>
           </div>
-          <p class="nome">${banner.nome}</p>
+          <p title="${banner.nome}" class="nome">${banner.nome}</p>
         </div>
     `;
     Mangas.innerHTML += banner_element;

@@ -7,10 +7,16 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+    <script src="./src/js/images-loaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./src/js/images-loaded/imagesloaded.pkgd.js"></script>
   <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
 </head>
 
 <body>
+  <div class="loader">
+    <img src="./src/img/Loading-PNG-Photo.png" alt="Carregando...">
+  </div>
+
   <nav class="titulo2">
     <a href="../index.html">
       <img id="logo" src="https://github.com/oclubedosdez.png" alt="">
@@ -53,7 +59,6 @@
   <div id="page-info"></div>
 
   <div id="manga-container">
-    <img id="manga-image" src="" alt="Manga Image">
   </div>
 
 
@@ -201,7 +206,7 @@
 
   var imagens = [];
 
-  for (let i = 0; i < 70; i++) {
+  for (let i = 0; i < num_imgs; i++) {
     imagens.push(`${diretorio}${i < 10 ? "0" : ""}${i}.jpg`);
   }
 
@@ -229,6 +234,15 @@
   }
 
   carregarProximaImagem();
+
+
+  $(document).ready(function() {
+      // Detecta quando todas as imagens da página forem carregadas
+      $(window).imagesLoaded(function() {
+        // Oculta o loader quando todas as imagens forem carregadas
+        $(".loader").hide();
+      });
+    });
 </script>
 
 </html>
