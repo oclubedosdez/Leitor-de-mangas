@@ -502,6 +502,17 @@ let mangas_e_manhaws = [
         "genero": "Ação Aventura Drama Fantasia Histórico Psicológico Romance Shoujo",
         "pasta": "Knight of the Frozen Flower"
     },
+	{
+        "id": "D",
+        "nome": "De Tantas Coisas, Me Tornei um Corvo",
+        "img": "De Tantas Coisas, Me Tornei um Corvo.jpeg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Fantasia Romance Shoujo Sobrenatural",
+        "pasta": "De Tantas Coisas, Me Tornei um Corvo"
+    },
 
 ];
 
