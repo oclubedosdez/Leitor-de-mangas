@@ -62,12 +62,29 @@ var nome_alternativo = `
 `
 
 var tipo = 'manhaw' // é manga ou manhaw
-var caminho = '../../../imgs/De Tantas Coisas, Me Tornei um Corvo.jpeg'; //caminho da imagem
+
+//CAMINHO DA IMAGEM
+var caminho = '../../../imgs/De Tantas Coisas, Me Tornei um Corvo.jpeg'; 
+// Obtenha a referência da imagem
+const img = document.querySelector("img");
+
+// Verifique se a imagem está carregada
+if (img.complete) {
+  caminho = 'https://oclubedosdez.github.io/Leitor-de-mangas/mangas-e-manhaws/imgs/De%20Tantas%20Coisas,%20Me%20Tornei%20um%20Corvo.jpeg';
+} else {
+}
+
+
+
+
+
+
+
 var autor_da_obra = '<span>Autor: </span> <p>Sylvester</p>';
 var artista_da_obra = '<span>Artista: </span> <p>Glee</p>';
 var estatus_obra = '<span>Status: </span> <p>Iato</p>';
 
-var sinopese_da_obra = "<strong>Sinopse:</strong>Depois de morrer em um acidente, ela reencarnou em um jogo do gênero otome… Como um corvo! Não acredito que sou um corvo! Nem pra eu ser uma figurante! Quando eu estava observando a primeira pessoa que apareceu para mim… Era o príncipe herdeiro. “Como você pode ser tão amável, Reinelle?” Cawk, cawk caek (Me leve contigo e me crie!)” O príncipe herdeiro, Kameut, me deu um nome e me tratou com carinho. Eu sou um corvo, afinal. Não vai ter problema se eu tratá-lo com amor ou se meu coração se revira por ele. Não tinha problema até… “Olá, Reinelle?” “O que aconteceu de repente comigo?” ";
+var sinopese_da_obra = "<strong>Sinopse:</strong>Depois de morrer em um acidente, ela reencarnou em um jogo do gênero otome… Como um corvo! Não acredito que sou um corvo! Nem pra eu ser uma figurante! Quando eu estava observando a primeira pessoa que apareceu para mim… Era o príncipe herdeiro. “Como você pode ser tão amável, Reinelle?” Cawk, cawk caek (Me leve contigo e me crie!)” O príncipe herdeiro, Kameut, me deu um nome e me tratou com carinho. Eu sou um corvo, afinal. Não vai ter problema se eu tratá-lo com amor ou se meu coração se revira por ele. Não tinha problema até… “Olá, Reinelle?” “O que aconteceu de repente comigo?” Depois de morrer em um acidente, ela reencarnou em um jogo do gênero otome… Como um corvo! Não acredito que sou um corvo! Nem pra eu ser uma figurante! Quando eu estava observando a primeira pessoa que apareceu para mim… Era o príncipe herdeiro. “Como você pode ser tão amável, Reinelle?” Cawk, cawk caek (Me leve contigo e me crie!)” O príncipe herdeiro, Kameut, me deu um nome e me tratou com carinho. Eu sou um corvo, afinal. Não vai ter problema se eu tratá-lo com amor ou se meu coração se revira por ele. Não tinha problema até… “Olá, Reinelle?” “O que aconteceu de repente comigo?”";
 
 let generos_link = `
 <a class="genero" href="http://">Fantasia</a>

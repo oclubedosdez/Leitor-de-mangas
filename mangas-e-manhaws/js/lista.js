@@ -130,18 +130,6 @@ let mangas_e_manhaws = [
         "pasta": ""
     },
     {
-        "id": "N",
-        "nome": "Nihon e Youkoso Elf-san (Welcome to Japan, Elf-san)",
-        "img": "Nihon e Youkoso Elf-san (Welcome to Japan, Elf-san).jpg",
-        "tipo": "manga",
-        "simbolo": "",
-        "status": "",
-        "capitulos": "",
-        "estatus": "ativo",
-        "genero": "",
-        "pasta": ""
-    },
-    {
         "id": "S",
         "nome": "Sensei Wa Koi Wo Oshie Rarenai",
         "img": "Sensei Wa Koi Wo Oshie Rarenai.jpg",
@@ -512,6 +500,39 @@ let mangas_e_manhaws = [
         "estatus": "ativo",
         "genero": "Fantasia Romance Shoujo Sobrenatural",
         "pasta": "De Tantas Coisas, Me Tornei um Corvo"
+    },
+    {
+        "id": "N",
+        "nome": "Nihon e Youkoso Elf-san (Welcome to Japan, Elf-san)",
+        "img": "Nihon e Youkoso Elf-san (Welcome to Japan, Elf-san).png",
+        "tipo": "manga",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Aventura Comédia Ecchi Fantasia Romance Shounen Slice of Life",
+        "pasta": "Nihon e Youkoso Elf-san (Welcome to Japan, Elf-san)"
+    },
+	{
+        "id": "A",
+        "nome": "A 99° Noiva do Duque",
+        "img": "A 99° Noiva do Duque.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Fantasia Romance Shoujo",
+        "pasta": "A 99° Noiva do Duque"
+    },
+	{
+        "id": "B",
+        "nome": "Bon Appétit!",
+        "img": "Bon Appétit!.jpeg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Drama Romance Shoujo",
+        "pasta": "Bon Appétit!"
     },
 
 ];

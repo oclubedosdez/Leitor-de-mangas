@@ -89,12 +89,12 @@ body {
   height: 350px;
   border-radius: 10px;
   cursor: pointer;
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
 
 .imagem img:hover {
   transform: scale(1.06);
-  filter: brightness(100%);
+  filter: brightness(110%);
 }
 
 .box .nome {

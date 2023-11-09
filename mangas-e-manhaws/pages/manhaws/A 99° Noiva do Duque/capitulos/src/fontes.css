@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Oswald-normal';
+    /*Woff funciona nos nvegadores Google Chrome, Firefox, Microsoft Edge, Opera e Safari são compatíveis com o formato WOFF, mas pode ser necessário atualizar seu navegador para a versão mais recente. */
+    src: url('../src/Oswald/Oswald-VariableFont_wght.ttf'); 
+  }
+
+
+  @font-face {
+    font-family: 'Oswald-regular';
+    /*Woff funciona nos nvegadores Google Chrome, Firefox, Microsoft Edge, Opera e Safari são compatíveis com o formato WOFF, mas pode ser necessário atualizar seu navegador para a versão mais recente. */
+    src: url('../src/Oswald/static/Oswald-Regular.ttf'); 
+  }

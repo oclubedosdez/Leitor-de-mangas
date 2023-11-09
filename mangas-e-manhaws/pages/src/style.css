@@ -1,16 +1,32 @@
 :root {
     --cor-principal: rgb(63, 63, 63);
-    --background-box1-box2: rgba(0, 0, 0, 0.753);
+    /*caixa onde esta a imagem box1 e a caixa onde esta as informações da obra box2*/
+    --background-box1-box2: rgba(0, 0, 0, 0.836);
+    --box1-box2-box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    --box1-box2-border: 1px solid white;
+    --box1-box2-border-radius:10px;
     --cor-texto1: rgb(212, 212, 212);
     --genero-hover: rgb(255, 0, 0);
     /*informações do manga*/
     --texto-titulo-info: 22px;
-    --texto-info-titulo: 19px
+    --texto-info-titulo: 19px;
+    /*configurações da imagem como banner de fundo*/
+    --banner-img-width: 100%;
+    --banner-img-height: 90%;
+    --banner-img-filte-blur: blur(0px);
+    --banner-img-filte-brightness: brightness(60%);
 }
 
 
 body {
     background-color: var(--cor-principal);
+}
+body::-webkit-scrollbar {
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
 }
 
 .img_logo {
@@ -133,9 +149,10 @@ body {
     justify-content: center;
     /* border: 1px solid green; */
     background-color: var(--background-box1-box2);
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
+    border-radius: var(--box1-box2-border-radius);
+    box-shadow: var(--box1-box2-box-shadow);
     width: 400px;
+    border: var(--box1-box2-border);
 }
 
 .img-fluid {
@@ -144,17 +161,19 @@ body {
     max-width: 87%;
     /* border: 1px solid firebrick; */
     margin: 1rem;
+    filter: brightness(100%);
 }
 
 /*CAIXA DE INFORMAÇÕES========================*/
 .box2 {
     /* border: 1px solid rebeccapurple; */
     background-color: var(--background-box1-box2);
-    border-radius: 5px;
+    border-radius: var(--box1-box2-border-radius);
     font-size: var(--texto-info-titulo);
     width: 1000px;
     padding: 0.70rem;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: var(--box1-box2-box-shadow);
+    border: var(--box1-box2-border);
 }
 
 .box2 span {
@@ -442,11 +461,11 @@ a h1 {
 @media(max-width:900px) {}
 
 .banner img {
-    width: 100%;
-    height: 50%;
+    width: var(--banner-img-width);
+    height: var(--banner-img-height);
     position: absolute;
     z-index: -1;
-    filter: blur(30px) brightness(90%);
+    filter: var(--banner-img-filte-blur) var(--banner-img-filte-brightness);
 }
 
 .banner .faixa {

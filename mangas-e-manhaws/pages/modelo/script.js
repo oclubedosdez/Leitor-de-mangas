@@ -13,7 +13,7 @@ function formatData(data) {
 }
 
 // Adicionar capítulos com base na data atual
-for (let i = 1; i <= 20; i++) { // Adicionando 5 capítulos com base na data atual
+for (let i = 1; i <= 80; i++) { // Adicionando 5 capítulos com base na data atual
     dataAtual.setDate(dataAtual.getDate() + 1); // Adiciona 1 dia à data atual
     capitulos.push({
         "id": `${i < 10 ? `0${i}` : i}`,
@@ -53,27 +53,44 @@ const sinopse = document.getElementById('sinopse')
 const alternativo = document.getElementById('Alternativa')
 
 
-var nome = 'A 99° Noiva do Duque'; //nome do manga/manhaw
-var rating = 2.6;//nota da obra
+var nome = 'De Tantas Coisas, Me Tornei um Corvo'; //nome do manga/manhaw
+var rating = 4.9;//nota da obra
 
 var nome_alternativo = `
-<span class='nome_alt'>The 99th Bride of the Duke</span>
-<span class='nome_alt'>The Duke's 99th Bride</span>
-<span class='nome_alt'>공작가의 99번째 신부</span>
+<span class='nome_alt'>하필이면 까마귀가 되어버렸다</span>
+<span class='nome_alt'>Off All Things, I Became a Crow</span>
 `
 
 var tipo = 'manhaw' // é manga ou manhaw
-var caminho = 'https://flowermanga.com/wp-content/uploads/2023/05/a-99-noiva-do-duque-392-350x504.jpg'; //caminho da imagem
-var autor_da_obra = '<span>Autor: </span> <p>Choi nokki</p>';
-var artista_da_obra = '<span>Artista: </span> <p>Geumbi</p>';
-var estatus_obra = '<span>Status: </span> <p>Ativo</p>';
 
-var sinopese_da_obra = "<strong>Sinopse:</strong>Grace, que perdeu a mãe e ficou órfã, vivia na rua esperando sua morte, foi salva por Penelope Erdona e se tornou Grace Erdona.Um dia, enquanto ela e Penelope estavam juntas, Penelope falou sobre se casar.A pessoa com quem ela deve se casar não é outro senão o duque de Felton, a família mais poderosa do mundo.Corria o boato de que todas as mulheres que ali se casavam haviam desaparecido ou voltado com um estado mental muito estranho.Para proteger Penelope, Grace pretende se casar com o duque em seu lugar.'Ouvi dizer que esta não é a primeira vez que você se casa, posso saber quantas vezes é?'- Deixe-me ver ... você é o 99º.Grace Erdona, acorde!'";
+//CAMINHO DA IMAGEM
+var caminho = '../../../imgs/De Tantas Coisas, Me Tornei um Corvo.jpeg'; 
+// Obtenha a referência da imagem
+const img = document.querySelector("img");
+
+// Verifique se a imagem está carregada
+if (img.complete) {
+  caminho = 'https://oclubedosdez.github.io/Leitor-de-mangas/mangas-e-manhaws/imgs/De%20Tantas%20Coisas,%20Me%20Tornei%20um%20Corvo.jpeg';
+} else {
+}
+
+
+
+
+
+
+
+var autor_da_obra = '<span>Autor: </span> <p>Sylvester</p>';
+var artista_da_obra = '<span>Artista: </span> <p>Glee</p>';
+var estatus_obra = '<span>Status: </span> <p>Iato</p>';
+
+var sinopese_da_obra = "<strong>Sinopse:</strong>Depois de morrer em um acidente, ela reencarnou em um jogo do gênero otome… Como um corvo! Não acredito que sou um corvo! Nem pra eu ser uma figurante! Quando eu estava observando a primeira pessoa que apareceu para mim… Era o príncipe herdeiro. “Como você pode ser tão amável, Reinelle?” Cawk, cawk caek (Me leve contigo e me crie!)” O príncipe herdeiro, Kameut, me deu um nome e me tratou com carinho. Eu sou um corvo, afinal. Não vai ter problema se eu tratá-lo com amor ou se meu coração se revira por ele. Não tinha problema até… “Olá, Reinelle?” “O que aconteceu de repente comigo?” Depois de morrer em um acidente, ela reencarnou em um jogo do gênero otome… Como um corvo! Não acredito que sou um corvo! Nem pra eu ser uma figurante! Quando eu estava observando a primeira pessoa que apareceu para mim… Era o príncipe herdeiro. “Como você pode ser tão amável, Reinelle?” Cawk, cawk caek (Me leve contigo e me crie!)” O príncipe herdeiro, Kameut, me deu um nome e me tratou com carinho. Eu sou um corvo, afinal. Não vai ter problema se eu tratá-lo com amor ou se meu coração se revira por ele. Não tinha problema até… “Olá, Reinelle?” “O que aconteceu de repente comigo?”";
 
 let generos_link = `
-<a class="genero" href="http://">Drama</a>
 <a class="genero" href="http://">Fantasia</a>
 <a class="genero" href="http://">Romance</a>
+<a class="genero" href="http://">Shoujo</a>
+<a class="genero" href="http://">Sobrenatural</a>
 `
 
 titulo1.innerHTML = nome;
@@ -89,23 +106,5 @@ sinopse.innerHTML = sinopese_da_obra;
 alternativo.innerHTML += nome_alternativo;
 
 
-//estrelas de avaliação
 
-const estrelas = document.querySelectorAll(".estrela");
-
-
-
-console.log(estrelas.length)
-
-
-estrelas.forEach((estrela) => {
-    estrela.onmouseenter = function() {
-        estrela.innerHTML = '&#x2606'
-
-    }
-    estrela.onmouseout = function() {
-        estrela.innerHTML = '&#x2605'
-        
-    }
-})
 
