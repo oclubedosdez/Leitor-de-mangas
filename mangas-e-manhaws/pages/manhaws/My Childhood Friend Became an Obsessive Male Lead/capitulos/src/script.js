@@ -35,5 +35,7 @@ var nome = document.getElementById('nome_manga');
 
 
 
-var nome_manga = 'My Childhood Friend Became an Obsessive Male Lead'
-var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/My%20Childhood%20Friend%20Became%20an%20Obsessive%20Male%20Lead/capitulo-'
+var nome_manga = 'Meu Amigo de Infância Tornou-se um Protagonista Masculino Obsessivo'
+// var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/My%20Childhood%20Friend%20Became%20an%20Obsessive%20Male%20Lead/capitulo-'
+
+var caminho = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/My%20Childhood%20Friend%20Became%20an%20Obsessive%20Male%20Lead/capitulo-'

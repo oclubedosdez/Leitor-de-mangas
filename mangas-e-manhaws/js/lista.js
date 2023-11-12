@@ -534,10 +534,34 @@ let mangas_e_manhaws = [
         "genero": "Drama Romance Shoujo",
         "pasta": "Bon Appétit!"
     },
+    {
+        "id": "A",
+        "nome": "Ano Oni Kyoushi ga Boku no Ane ni Narundesuka",
+        "img": "Ano Oni Kyoushi ga Boku no Ane ni Narundesuka.jpg",
+        "tipo": "manga",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Comédia Ecchi Escolar Romance Shounen Slice-of-Life",
+        "pasta": "Ano Oni Kyoushi ga Boku no Ane ni Narundesuka"
+    },
+	{
+        "id": "K",
+        "nome": "Kekkon Yubiwa Monogatari",
+        "img": "Kekkon Yubiwa Monogatari.jpg",
+        "tipo": "manga",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Ação Ecchi Fantasia Harem Magia Romance Seinen",
+        "pasta": "Kekkon Yubiwa Monogatari"
+    },
 
 ];
 
-console.log(mangas_e_manhaws)
+console.log(mangas_e_manhaws[47].img)
+
+
 mangas_e_manhaws.forEach((banner) => {
     let banner_element = `
     <div class="box letra-${banner.id}">
