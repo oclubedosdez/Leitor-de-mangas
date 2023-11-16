@@ -556,6 +556,17 @@ let mangas_e_manhaws = [
         "genero": "Ação Ecchi Fantasia Harem Magia Romance Seinen",
         "pasta": "Kekkon Yubiwa Monogatari"
     },
+    {
+        "id": "A",
+        "nome": "Atenciosamente: Me Tornei a Empregada do Duque",
+        "img": "Atenciosamente Me Tornei a Empregada do Duque.jpg",
+        "tipo": "manhaw",
+        "status": "completo",
+        "capitulos": "",
+        "estatus": "completo",
+        "genero": "Fantasy Isekai Romance Shoujo",
+        "pasta": "Atenciosamente Me Tornei a Empregada do Duque"
+    },
 
 ];
 

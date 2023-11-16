@@ -202,7 +202,11 @@
     var imagens = [];
 
     for (let i = 0; i < num_imgs; i++) {
-        imagens.push(`${diretorio}${i}.jpg`);
+        imagens.push(`${diretorio}${i < 10 ? "0" : ""}${i}.jpg`);
+    }
+
+    for (let i = 0; i < num_imgs; i++) {
+        imagens.push(`${diretorio}${i < 10 ? "0" : ""}${i}.png`);
     }
 
 

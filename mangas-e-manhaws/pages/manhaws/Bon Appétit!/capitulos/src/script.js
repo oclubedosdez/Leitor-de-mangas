@@ -35,7 +35,7 @@ var nome = document.getElementById('nome_manga');
 
 
 var nome_manga = 'Bon Appétit!'
-var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/Bon%20App%C3%A9tit!/capitulo-'
+var caminho  = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/Bon%20App%C3%A9tit!/capitulo-'
 
 
 

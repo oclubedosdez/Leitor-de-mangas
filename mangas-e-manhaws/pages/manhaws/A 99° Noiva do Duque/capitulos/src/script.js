@@ -1,7 +1,7 @@
 
 let select_element = [];
 
-for(let i = 1; i < 80; i++) {
+for(let i = 1; i < 53; i++) {
     select_element.push(`'<option value="./${i < 10 ? "0" : ""}${i}.html">capitulo ${i < 10 ? "0" : ""}${i}</option>'`)
 }
 
@@ -34,8 +34,8 @@ var titulo2 = document.querySelector('.titulo2');
 var nome = document.getElementById('nome_manga');
 
 
-var nome_manga = 'De Tantas Coisas, Me Tornei um Corvo'
-var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/De%20Tantas%20Coisas,%20Me%20Tornei%20um%20Corvo/capitulo-'
+var nome_manga = 'A 99 Noiva do Duque'
+var caminho  = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/A%2099%20Noiva%20do%20Duque/capitulo-'
 
 
 var num_imgs = 80;
