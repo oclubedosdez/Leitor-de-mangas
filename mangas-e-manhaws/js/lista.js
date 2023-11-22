@@ -567,6 +567,17 @@ let mangas_e_manhaws = [
         "genero": "Fantasy Isekai Romance Shoujo",
         "pasta": "Atenciosamente Me Tornei a Empregada do Duque"
     },
+	{
+        "id": "B",
+        "nome": "Beware of the Brothers!",
+        "img": "Beware of the Brothers!.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Drama Fantasia Histórico Romance Shoujo",
+        "pasta": "Beware of the Brothers!"
+    },
 
 ];
 
