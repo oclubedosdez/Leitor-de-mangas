@@ -72,7 +72,7 @@
 </body>
 <script src="./src/script.js"></script>
 <script>
-  var capitulo = 1;
+  var capitulo = 2;
   var prox_capitulo = capitulo + 1;
   var ant_capitulo = capitulo - 1;
 
@@ -111,7 +111,7 @@
   //botoes de baixo
   botao_proximo_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
   botao_voltar_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`
-  
+
 
 
 
@@ -202,9 +202,19 @@
 
   var imagens = [];
 
+  var dowload = 'https://orchidcommerce.com/leitor/mangas/The%20tyrant%20husband%20has%20changed/04/'
+
+  // for (let i = 0; i < num_imgs; i++) {
+  //   imagens.push(`${dowload}${i < 10 ? "0" : ""}${i}.png`)
+  // }
+
   for (let i = 0; i < num_imgs; i++) {
-    imagens.push(`${diretorio}${i < 10 ? "0" : ""}${i}.jpg`);
+    imagens.push(`${dowload}${i}.png`)
   }
+         
+ 
+
+
 
   function adicionarImagem(src) {
     var img = new Image();

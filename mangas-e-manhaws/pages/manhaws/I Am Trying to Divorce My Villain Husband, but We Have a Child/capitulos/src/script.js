@@ -1,7 +1,7 @@
 
 let select_element = [];
 
-for(let i = 1; i < 71; i++) {
+for(let i = 1; i <= 79; i++) {
     select_element.push(`'<option value="./${i < 10 ? "0" : ""}${i}.html">capitulo ${i < 10 ? "0" : ""}${i}</option>'`)
 }
 

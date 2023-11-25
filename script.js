@@ -138,7 +138,8 @@ carrocel_cabecalho.forEach((item) => {
   carrocel.innerHTML += carrocel_items;
 });
 
-
+//
+/**/ 
 //====CARROCEL 2 =====================================================
 const slider_mangas = document.querySelector('.slide-ler-mangas')
 

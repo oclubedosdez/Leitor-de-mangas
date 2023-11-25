@@ -7,16 +7,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-    <script src="./src/js/images-loaded/imagesloaded.pkgd.min.js"></script>
-    <script src="./src/js/images-loaded/imagesloaded.pkgd.js"></script>
   <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
 </head>
 
 <body>
-  <div class="loader">
-    <img src="./src/img/Loading-PNG-Photo.png" alt="Carregando...">
-  </div>
-
   <nav class="titulo2">
     <a href="../index.html">
       <img id="logo" src="https://github.com/oclubedosdez.png" alt="">
@@ -59,6 +53,7 @@
   <div id="page-info"></div>
 
   <div id="manga-container">
+    <img id="manga-image" src="" alt="Manga Image">
   </div>
 
 
@@ -109,8 +104,8 @@
   titulo1.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
   nome.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
 
-   //botoes de cima
-   botao_proximo_capitulo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
+  //botoes de cima
+  botao_proximo_capitulo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
   botao_voltar_capitulo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`;
   //botoes de baixo
   botao_proximo_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
@@ -234,15 +229,6 @@
   }
 
   carregarProximaImagem();
-
-
-  $(document).ready(function() {
-      // Detecta quando todas as imagens da página forem carregadas
-      $(window).imagesLoaded(function() {
-        // Oculta o loader quando todas as imagens forem carregadas
-        $(".loader").hide();
-      });
-    });
 </script>
 
 </html>

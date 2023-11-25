@@ -35,7 +35,7 @@ var nome = document.getElementById('nome_manga');
 
 
 var nome_manga = 'De Tantas Coisas, Me Tornei um Corvo'
-var caminho  = 'https://oclubedosdez.github.io/Imagens/mangas/De%20Tantas%20Coisas,%20Me%20Tornei%20um%20Corvo/capitulo-'
+var caminho  = 'https://orchidcommerce.com/leitor/mangas/The%20tyrant%20husband%20has%20changed/01/'
 
 
 var num_imgs = 80;
