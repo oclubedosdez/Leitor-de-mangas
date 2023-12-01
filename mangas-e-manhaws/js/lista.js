@@ -35,16 +35,16 @@ let mangas_e_manhaws = [
         "estatus": "ativo",
         "genero": "Aventura acao Fantasia Isekai Romance Shounen"
     },
-    {
+	{
         "id": "J",
-        "nome": "Jangleuleul Bakkwobodolog Hagessseubnida - It's Time to Change the Genre",
+        "nome": "It's Time to Change the Genre",
         "img": "Jangleuleul Bakkwobodolog Hagessseubnida - It's Time to Change the Genre.jpg",
         "tipo": "manhaw",
-        "simbolo": "",
         "status": "",
         "capitulos": "",
         "estatus": "ativo",
-        "genero": "acao Drama Fantasia Isekai Manhwa Shoujo Webtoon"
+        "genero": "Fantasia, Isekai, Reencarnação, Romance, Shoujo",
+        "pasta": "It’s Time to Change the Genre"
     },
     {
         "id": "R",
@@ -577,6 +577,39 @@ let mangas_e_manhaws = [
         "estatus": "ativo",
         "genero": "Drama Fantasia Histórico Romance Shoujo",
         "pasta": "Beware of the Brothers!"
+    },
+	{
+        "id": "C",
+        "nome": "Circunstâncias da Irene",
+        "img": "Circunstâncias da Irene.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Drama Fantasia Josei Romance",
+        "pasta": "Circunstâncias da Irene"
+    },
+	{
+        "id": "K",
+        "nome": "Fuufu Ijou, Koibito Miman",
+        "img": "Fuufu Ijou, Koibito Miman.jpg",
+        "tipo": "manga",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Comédia Drama Escolar Romance Slice of Life",
+        "pasta": "Fuufu Ijou, Koibito Miman"
+    },
+	{
+        "id": "K",
+        "nome": "kikan shita yuusha no gojitsudan",
+        "img": "kikan shita yuusha no gojitsudan.jpg",
+        "tipo": "manga",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Comédia, Ecchi, Fantasia, Harem, Romance, Magia, Shounen, Isekai",
+        "pasta": "kikan shita yuusha no gojitsudan"
     },
 
 ];

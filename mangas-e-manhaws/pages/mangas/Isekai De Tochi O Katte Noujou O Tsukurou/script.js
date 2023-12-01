@@ -13,12 +13,32 @@ function formatData(data) {
 }
 
 // Adicionar capítulos com base na data atual
-for (let i = 1; i <= 22; i++) { // Adicionando 5 capítulos com base na data atual
+for (let i = 1; i <= 31; i++) { // Adicionando 5 capítulos com base na data atual
     dataAtual.setDate(dataAtual.getDate() + 1); // Adiciona 1 dia à data atual
     capitulos.push({
         "id": `${i < 10 ? `0${i}` : i}`,
         "data": formatData(dataAtual)
     });
+
+    if (i == 6) {
+        capitulos.push({"id" : "06.5", "data" : "30 de novembro de 2023"})
+    }
+
+    if (i == 12) {
+        capitulos.push({"id" : "12.5", "data" : "30 de novembro de 2023"})
+    }
+
+    if (i == 15) {
+        capitulos.push({"id" : "15.5", "data" : "30 de novembro de 2023"})
+    }
+
+    if (i == 18) {
+        capitulos.push({"id" : "18.5", "data" : "30 de novembro de 2023"})
+    }
+
+    if (i == 24) {
+        capitulos.push({"id" : "24.5", "data" : "30 de novembro de 2023"})
+    }
 }
 
 
