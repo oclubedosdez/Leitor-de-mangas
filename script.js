@@ -139,9 +139,11 @@ carrocel_cabecalho.forEach((item) => {
 });
 
 //
-/**/ 
+/**/
 //====CARROCEL 2 =====================================================
-const slider_mangas = document.querySelector('.slide-ler-mangas')
+
+const slider_mangas = document.querySelector('.slide-ler-mangas');
+
 
 let carousel_mangas_items = [
   {
@@ -149,71 +151,117 @@ let carousel_mangas_items = [
     "nome": "Atsumori-kun no Oyome-san",
     "img": "Atsumori-kun no Oyome-san.jpg",
     "cor": "preto-branco",
-    "text-cor": "PB",
-    "pasta" : "Atsumori-kun no Oyome-san"
+    "pasta": "Atsumori-kun no Oyome-san",
+    "estatus": "Finalizado",
+    "status": "completo",
+    "data": "2018",
+    "capitulos": "",
   },
 
   {
     "tipo": "manhaw",
     "nome": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)",
     "img": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg",
-    "cor": "colorido",
-    "text-cor": "CL",
-    "pasta" : "Knight of the Frozen Flower",
+    "pasta": "Knight of the Frozen Flower",
+    "estatus": "Sem capitulos",
+    "status": "ativo",
+    "data": "2021",
+    "capitulos": "",
   },
   {
     "tipo": "manhaw",
     "nome": "My Childhood Friend Became an Obsessive Male Lead",
     "img": "My Childhood Friend Became an Obsessive Male Lead.jpg",
     "cor": "colorido",
-    "text-cor": "CL",
-    "pasta" : "My Childhood Friend Became an Obsessive Male Lead",
+    "pasta": "My Childhood Friend Became an Obsessive Male Lead",
+    "estatus": "Capitulos: 46",
+    "status": "ativo",
+    "data" : "2022"
   },
   {
     "tipo": "manhaw",
     "nome": "A Proprietária Bebê Está se Aposentando",
     "img": "A Proprietária Bebê Está se Aposentando.jpg",
-    "cor": "colorido",
-    "text-cor": "CL",
-    "pasta" : "A Proprietária Bebê Está se Aposentando",
+    "pasta": "A Proprietária Bebê Está se Aposentando",
+    "estatus": "Sem capitulos",
+    "status": "ativo",
+    "data": "2022",
+  },
+  {
+    "tipo": "manga",
+    "nome": "Isekai De Tochi O Katte Noujou O Tsukurou",
+    "img": "Isekai De Tochi O Katte Noujou O Tsukurou.jpg",
+    "pasta": "Isekai De Tochi O Katte Noujou O Tsukurou",
+    "estatus": "Capitulos: 31",
+    "status": "ativo",
+    "data": "2019",
+  },
+
+  {
+    "tipo": "manga",
+    "nome": "Kekkon Yubiwa Monogatari",
+    "img": "Kekkon Yubiwa Monogatari.jpg",
+    "pasta": "Kekkon Yubiwa Monogatari",
+    "estatus": "Capitulos: 62",
+    "status": "ativo",
+    "data": "2016",
+  },
+
+  {
+    "tipo": "manhaw",
+    "nome": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
+    "img": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago.jpg",
+    "pasta": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
+    "estatus": "Capitulos: 31",
+    "status": "ativo",
+    "data": "2019",
   },
 ];
 
-
 carousel_mangas_items.forEach((item) => {
+  // Procura o manga correspondente no array manga_info
+  let mangaInfo = manga_info.find(info => info.nome === item.nome);
+
+  // Se encontrar, adiciona a informação de número de capítulos
+  if (mangaInfo) {
+    item.capitulos = mangaInfo.num_capitulo;
+    item.text_cap = mangaInfo.text_cap;
+  }
+
   let manga_item = `
-       <div class="box">
-          <div class="tipo">
-            <h2 class="${item.tipo}">${item.tipo}</h2>
-            <span class="cor ${item.cor}">${item["text-cor"]}</span>
-          </div>
-          <a href="./mangas-e-manhaws/pages/${item.tipo}s/${item.pasta}/index.html" class="imagem-ler-mangas">
-            <div class="img-book">
-             <img class='' src="./src/img/book.png" alt=""> 
-            </div>
-            
-           <img src="./mangas-e-manhaws/imgs/${item.img}" alt=""> 
-          </a>
-          <h2 class="nome" title="${item.nome}">${item.nome}</h2>
-        </div>
+    <div class="box">
+      <!-- ... (seu código existente) -->
+      <div class="capitulos"></div>
+    </div>
+
+    <div class="box">
+   <div class="tipo">
+     <h2 class="${item.tipo}">${item.tipo}</h2>
+     <span class="data">${item.data}</span>
+   </div>
+
+
+   <a href="./mangas-e-manhaws/pages/${item.tipo}s/${item.pasta}/index.html" class="imagem-ler-mangas">
+     <div class="img-book">
+      <img class="" src="./src/img/book.png" alt=""> 
+     </div>
+
+    <img src="./mangas-e-manhaws/imgs/${item.nome}.jpg" alt=""> 
+   </a>
+   <h2 class="nome" title="${item.nome}">${item.nome}</h2>
+   <div class="${item.status}">${item.text_cap}${item.capitulos}</div>
+   </div>
+    
   `;
-  slider_mangas.innerHTML += manga_item
+
+  slider_mangas.innerHTML += manga_item;
 });
 
 
-{/* <div class="box">
 
-<div class="tipo">
-  <h2 class="manhaw">Manhaw</h2>
-  <span class="cor colorido">CL</span>
-</div>
-<a href="" class="imagem-ler-mangas">
-  <div class="img-book">
-   <img class='' src="./src/img/book.png" alt=""> 
-  </div>
-  
- <img src="./mangas-e-manhaws/imgs/Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg" alt=""> 
-</a>
-<h2 class="nome" title="Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)">Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)</h2>
 
-</div> */}
+
+
+
+
+

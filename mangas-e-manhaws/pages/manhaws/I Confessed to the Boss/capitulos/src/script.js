@@ -1,7 +1,7 @@
 
 let select_element = [];
 
-for(let i = 1; i <= 14; i++) {
+for(let i = 1; i <= 57; i++) {
     select_element.push(`'<option value="./${i < 10 ? "0" : ""}${i}.html">capitulo ${i < 10 ? "0" : ""}${i}</option>'`)
 }
 
@@ -34,8 +34,8 @@ var titulo2 = document.querySelector('.titulo2');
 var nome = document.getElementById('nome_manga');
 
 
-var nome_manga = 'kikan shita yuusha no gojitsudan'
-var caminho  = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/kikan%20shita%20yuusha%20no%20gojitsudan/capitulo-'
+var nome_manga = 'I Confessed to the Boss'
+var caminho  = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/manhaws/I%20Confessed%20to%20the%20Boss/capitulo-'
 
 
 var num_imgs = 80;

@@ -1,0 +1,290 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10px;
+}
+.selecao-de-paginas {
+  display: none;
+}
+
+.modo_black {
+  background-color: black;
+}
+/*cabecalho*/
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: Oswald-normal;
+  /* border: 1px solid green; */
+}
+.modo_escuro {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+nav img {
+  width: 100%;
+}
+
+nav a {
+  width: 80px;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+#logo {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.paginas-abertas {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 16rem;
+}
+
+.paginas-abertas img {
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+#manga-image {
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #a7a7a7;
+  box-shadow: 2px 8px 2px rgb(78, 78, 78);
+}
+
+#page-info {
+  color: transparent;
+}
+
+
+
+.selecao-e-modo {
+  /* border: 1px solid rgb(119, 0, 255); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.selecao-e-modo img {
+  border-right: 1px solid rgba(0, 0, 0, 0.322);
+  /* border: 1px solid red; */
+  width: 3rem;
+  margin: 0;
+  background-color: #555;
+  filter: invert();
+}
+
+.img-rotate {
+  transform: rotate(270deg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+#page-select {
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.50rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #a7a7a7;
+  box-shadow: 2px 8px 2px rgb(78, 78, 78);
+}
+
+/*estilizar o select*/
+select {
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+select::-webkit-scrollbar {
+  width: 1px;
+  /* Largura da barra de rolagem */
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Cor do polegar da barra de rolagem */
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Cor do polegar da barra de rolagem ao passar o mouse */
+}
+
+select option {
+  background-color: #555;
+  color: #ffffff;
+  box-shadow: 2px 8px 2px rgb(78, 78, 78);
+  border-bottom: 1px solid black;
+}
+
+select option:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/*estilizar os botões*/
+#previous-btn,
+#next-btn {
+  transition: all 0.5s;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+#previous-btn:hover,
+#next-btn:hover {
+  transform: scale(1.05);
+}
+
+
+.seletor-de-capitulos select {
+  border: none;
+  display: flex;
+  cursor: pointer;
+  width: 130px;
+  height: 41px;
+  text-align: center;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.50rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #a7a7a7;
+  box-shadow: 2px 8px 2px rgb(78, 78, 78);
+}
+
+
+.seletor-de-capitulos:focus {
+  background-color: #a7a7a7;
+  box-shadow: 2px 8px 2px rgb(78, 78, 78);
+}
+
+.seletor-de-capitulos option:focus {
+  background-color: #a7a7a7;
+  box-shadow: 2px 8px 2px rgb(78, 78, 78);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.botões-de-baixo {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.none {
+  display: none;
+}
+
+.modo-claro {
+  transition: all 0.5s;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  width: 7rem;
+  height: 0.30rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: Oswald-normal;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: uppercase;
+  filter: brightness(100%);
+}
+.modo-claro:hover {
+  filter: brightness(130%);
+}
+.botao_escuro {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+

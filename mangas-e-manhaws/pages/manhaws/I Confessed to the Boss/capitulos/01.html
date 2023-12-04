@@ -72,11 +72,10 @@
 </body>
 <script src="./src/script.js"></script>
 <script>
-    var capitulo = 9;
+    var capitulo = 1;
     var prox_capitulo = capitulo + 1;
     var ant_capitulo = capitulo - 1;
 
-    console.log(prox_capitulo)
 
     const mangaImages = [];
     let currentImageIndex = 0;
@@ -86,6 +85,7 @@
 
     var diretorio = `${caminho}${capitulo < 10 ? "0" : ""}${capitulo}/imgs/`;
 
+    console.log(diretorio)
 
 
 
@@ -108,10 +108,10 @@
     nome.innerHTML = `${nome_manga} - capitulo ${capitulo < 10 ? "0" : ""}${capitulo}`
 
     //botoes de cima
-    botao_proximo_capitulo.href = `./${prox_capitulo}.html`
+    botao_proximo_capitulo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
     botao_voltar_capitulo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`;
     //botoes de baixo
-    botao_proximo_capitulo_baixo.href = `./${prox_capitulo}.html`
+    botao_proximo_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${prox_capitulo}.html`
     botao_voltar_capitulo_baixo.href = `./${capitulo < 10 ? "0" : ""}${ant_capitulo}.html`
 
 
@@ -198,6 +198,7 @@
 
     botoes_de_baixo.classList.remove('none')
 
+    
 
     var imagens = [];
 
@@ -205,6 +206,7 @@
         imagens.push(`${diretorio}${i}.jpg`);
     }
 
+   
 
     function adicionarImagem(src) {
         var img = new Image();

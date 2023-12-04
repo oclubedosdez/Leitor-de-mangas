@@ -608,10 +608,20 @@ let mangas_e_manhaws = [
         "status": "",
         "capitulos": "",
         "estatus": "ativo",
-        "genero": "Comédia, Ecchi, Fantasia, Harem, Romance, Magia, Shounen, Isekai",
+        "genero": "Comédia Ecchi Fantasia Harem Romance Magia Shounen Isekai",
         "pasta": "kikan shita yuusha no gojitsudan"
     },
-
+	{
+        "id": "I",
+        "nome": "I Confessed to the Boss",
+        "img": "I Confessed to the Boss.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Comedia Drama Josei Romance Shoujo",
+        "pasta": "I Confessed to the Boss"
+    },
 ];
 
 console.log(mangas_e_manhaws[47].img)
