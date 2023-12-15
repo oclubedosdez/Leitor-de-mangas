@@ -35,7 +35,12 @@ var nome = document.getElementById('nome_manga');
 
 
 var nome_manga = 'I Confessed to the Boss'
+
+
 var caminho  = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/manhaws/I%20Confessed%20to%20the%20Boss/capitulo-'
+
+
+//var caminho  = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/manhuas/I%E2%80%99m%20Not%20a%20Demon/capitulo-'
 
 
 var num_imgs = 80;

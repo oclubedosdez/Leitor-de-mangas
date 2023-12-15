@@ -15,6 +15,10 @@
     --banner-img-height: 90%;
     --banner-img-filte-blur: blur(0px);
     --banner-img-filte-brightness: brightness(60%);
+    /*navbar*/
+    --navbar-font_size:20px;
+    --navbar-dropdown-item-font-size:18px;
+    --icone-logo-width:4rem;
 }
 
 
@@ -31,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 
 .img_logo {
     border-radius: 50px;
-    width: 5rem;
+    width: var(--icone-logo-width);
     margin-right: 1rem;
     border: 2px solid white;
 }
@@ -64,6 +68,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
     background-color: rgb(0, 0, 0);
+    font-size: var(--navbar-font_size);
 }
 
 .navbar-toggler {
@@ -85,11 +90,21 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 1px 2px 5px black;
 }
 
-.manhaw::after {
-    content: "MANHAW";
+.manhwa::after {
+    content: "MANHWA";
     font-size: 20px;
     color: white;
     background-color: rgb(209, 0, 0);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+}
+.manhua::after {
+    content: "MANHUA";
+    font-size: 20px;
+    color: white;
+    background: rgb(0, 123, 104);
     padding: 5px;
     border-radius: 4px;
     font-weight: bold;
@@ -101,16 +116,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-item .nav-link:hover {
-    filter: brightness(80%);
+    color: red !important;
 }
 
 .navbar-brand {
     color: rgb(255, 255, 255) !important;
-    font-size: 25px;
+    font-size: var(--navbar-font_size);
 }
 
+
+
 .navbar-brand:hover {
-    filter: brightness(80%);
+    color: red !important;
 }
 
 .dropdown-menu {
@@ -120,11 +137,18 @@ body::-webkit-scrollbar-thumb {
 .dropdown-item {
     color: white !important;
     font-weight: bold;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.481);
+    font-size: var(--navbar-dropdown-item-font-size);
 }
 
 .dropdown-item:hover {
-    background-color: rgb(255, 255, 255) !important;
-    color: black !important;
+    background-color: rgb(255, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* CSS para mostrar dropdown ao passar o mouse */
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 @media (max-width: 410px) {
@@ -161,7 +185,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 87%;
     /* border: 1px solid firebrick; */
     margin: 1rem;
-    filter: brightness(100%);
+    filter: brightness(110%);
 }
 
 /*CAIXA DE INFORMAÇÕES========================*/
@@ -331,7 +355,7 @@ a:link {
 
 /* link que foi visitado */
 a:visited {
-    /* color: green; */
+    color: var(--cor-texto1);
 }
 
 /* mouse over */

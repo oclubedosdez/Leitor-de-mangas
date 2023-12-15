@@ -523,6 +523,17 @@ let mangas_e_manhaws = [
         "genero": "Fantasia Romance Shoujo",
         "pasta": "A 99° Noiva do Duque"
     },
+    {
+        "id": "I",
+        "nome": "Fairy, Wait a Moment! Please Listen to My Argument",
+        "img": "Fairy, Wait a Moment! Please Listen to My Argument.jpg",
+        "tipo": "manhua",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Acao Aventura Drama Fantasia Shounen",
+        "pasta": "Fairy, Wait a Moment! Please Listen to My Argument"
+    },
 	{
         "id": "B",
         "nome": "Bon Appétit!",
@@ -544,6 +555,17 @@ let mangas_e_manhaws = [
         "estatus": "ativo",
         "genero": "Comédia Ecchi Escolar Romance Shounen Slice-of-Life",
         "pasta": "Ano Oni Kyoushi ga Boku no Ane ni Narundesuka"
+    },
+    {
+        "id": "I",
+        "nome": "I’m Not a Demon",
+        "img": "I’m Not a Demon.jpg",
+        "tipo": "manhua",
+        "status": "",
+        "capitulos": "",
+        "estatus": "ativo",
+        "genero": "Acao Aventura Drama Fantasia Shounen",
+        "pasta": "I’m Not a Demon"
     },
 	{
         "id": "K",
@@ -597,7 +619,7 @@ let mangas_e_manhaws = [
         "status": "",
         "capitulos": "",
         "estatus": "ativo",
-        "genero": "Comédia Drama Escolar Romance Slice of Life",
+        "genero": "Comédia Drama Escolar Romance Slice-of-Life",
         "pasta": "Fuufu Ijou, Koibito Miman"
     },
 	{
@@ -621,6 +643,39 @@ let mangas_e_manhaws = [
         "estatus": "ativo",
         "genero": "Comedia Drama Josei Romance Shoujo",
         "pasta": "I Confessed to the Boss"
+    },
+    {
+        "id": "P",
+        "nome": "Pretendente Surpresa",
+        "img": "Pretendente Surpresa.jpg",
+        "tipo": "manhaw",
+        "status": "completo",
+        "capitulos": "",
+        "estatus": "completo",
+        "genero": "Comédia Drama Josei Romance Slice-of-Life",
+        "pasta": "Pretendente Surpresa"
+    },
+	{
+        "id": "Q",
+        "nome": "Quando a Filha Ilegítima do Conde se Casa",
+        "img": "Quando a Filha Ilegítima do Conde se Casa.jpg",
+        "tipo": "manhaw",
+        "status": "",
+        "capitulos": "",
+        "estatus": "",
+        "genero": "Comédia Drama Josei Romance Slice-of-Life",
+        "pasta": "Quando a Filha Ilegítima do Conde se Casa"
+    },
+    {
+        "id": "A",
+        "nome": "Adelaide",
+        "img": "Adelaide.jpg",
+        "tipo": "manhaw",
+        "status": "completo",
+        "capitulos": "",
+        "estatus": "completo",
+        "genero": "Fantasia Histórico Isekai Romance",
+        "pasta": "Adelaide"
     },
 ];
 

@@ -1,90 +1,77 @@
 var box3 = document.querySelector(".box3");
+var nome = 'Kekkon Yubiwa Monogatari'; //nome do manga/manhaw
 
-let capitulos = [
-    {id : '01', data:'12 de novembro de 2023'},
-    {id : '02', data:'12 de novembro de 2023'},
-    {id : '03', data:'12 de novembro de 2023'},
-    {id : '04', data:'12 de novembro de 2023'},
-    {id : '05', data:'12 de novembro de 2023'},
-    {id : '06', data:'12 de novembro de 2023'},
-    {id : '06.5', data:'12 de novembro de 2023'},
-    {id : '07', data:'12 de novembro de 2023'},
-    {id : '08', data:'12 de novembro de 2023'},
-    {id : '09', data:'12 de novembro de 2023'},
-    {id : '10', data:'12 de novembro de 2023'},
-    {id : '11', data:'12 de novembro de 2023'},
-    {id : '12', data:'12 de novembro de 2023'},
-    {id : '13', data:'12 de novembro de 2023'},
-    {id : '14', data:'12 de novembro de 2023'},
-    {id : '15', data:'12 de novembro de 2023'},
-    {id : '16', data:'12 de novembro de 2023'},
-    {id : '16.5', data:'12 de novembro de 2023'},
-    {id : '17', data:'12 de novembro de 2023'},
-    {id : '18', data:'12 de novembro de 2023'},
-    {id : '19', data:'12 de novembro de 2023'},
-    {id : '20', data:'12 de novembro de 2023'},
-    {id : '21', data:'12 de novembro de 2023'},
-    {id : '22', data:'12 de novembro de 2023'},
-    {id : '23', data:'12 de novembro de 2023'},
-    {id : '24', data:'12 de novembro de 2023'},
-    {id : '25', data:'12 de novembro de 2023'},
-    {id : '26', data:'12 de novembro de 2023'},
-    {id : '27', data:'12 de novembro de 2023'},
-    {id : '28', data:'12 de novembro de 2023'},
-    {id : '29', data:'12 de novembro de 2023'},
-    {id : '30', data:'12 de novembro de 2023'},
-    {id : '31', data:'12 de novembro de 2023'},
-    {id : '32', data:'12 de novembro de 2023'},
-    {id : '33', data:'12 de novembro de 2023'},
-    {id : '34', data:'12 de novembro de 2023'},
-    {id : '35', data:'12 de novembro de 2023'},
-    {id : '36', data:'12 de novembro de 2023'},
-    {id : '37', data:'12 de novembro de 2023'},
-    {id : '38', data:'12 de novembro de 2023'},
-    {id : '39', data:'12 de novembro de 2023'},
-    {id : '40', data:'12 de novembro de 2023'},
-    {id : '41', data:'12 de novembro de 2023'},
-    {id : '42', data:'12 de novembro de 2023'},
-    {id : '43', data:'12 de novembro de 2023'},
-    {id : '44', data:'12 de novembro de 2023'},
-    {id : '45', data:'12 de novembro de 2023'},
-    {id : '46', data:'12 de novembro de 2023'},
-    {id : '46.5', data:'12 de novembro de 2023'},
-    {id : '47', data:'12 de novembro de 2023'},
-    {id : '47.1', data:'12 de novembro de 2023'},
-    {id : '47.2', data:'12 de novembro de 2023'},
-    {id : '48', data:'12 de novembro de 2023'},
-    {id : '49', data:'12 de novembro de 2023'},
-    {id : '49.1', data:'12 de novembro de 2023'},
-    {id : '49.2', data:'12 de novembro de 2023'},
-    {id : '49.3', data:'12 de novembro de 2023'},
-    {id : '50', data:'12 de novembro de 2023'},
-    {id : '50.1', data:'12 de novembro de 2023'},
-    {id : '50.2', data:'12 de novembro de 2023'},
-    {id : '51', data:'12 de novembro de 2023'},
-    {id : '51.5', data:'12 de novembro de 2023'},
-    {id : '52', data:'12 de novembro de 2023'},
-    {id : '53', data:'12 de novembro de 2023'},
-    {id : '53.5', data:'12 de novembro de 2023'},
-    {id : '54', data:'12 de novembro de 2023'},
-    {id : '55', data:'12 de novembro de 2023'},
-    {id : '56', data:'12 de novembro de 2023'},
-    {id : '57', data:'12 de novembro de 2023'},
-    {id : '58', data:'12 de novembro de 2023'},
-    {id : '59', data:'12 de novembro de 2023'},
-    {id : '60', data:'12 de novembro de 2023'},
-    {id : '61', data:'12 de novembro de 2023'},
-    {id : '61.5', data:'12 de novembro de 2023'},
-    {id : '62', data:'12 de novembro de 2023'},
-];
+let capitulos = [];
+
+
+// Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
+const nomeDoMangaBuscado = `${nome}`;
+
+const mangaEncontrado = manga_info.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
+
+if (mangaEncontrado) {
+    const numCapitulos = mangaEncontrado.num_capitulo;
+    const textoCap = mangaEncontrado.text_cap;
+    console.log(`${numCapitulos}`);
+
+
+    // Obter a data atual
+    const dataAtual = new Date();
+
+    // Função para formatar a data no formato desejado
+    function formatData(data) {
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        return data.toLocaleDateString("pt-BR", options);
+    }
 
 
 
+    // Adicionar capítulos com base na data atual
+    for (let i = 1; i <= numCapitulos; i++) { // Adicionando 5 capítulos com base na data atual
+        dataAtual.setDate(dataAtual.getDate() + 1); // Adiciona 1 dia à data atual
+        capitulos.push({
+            "id": `${i < 10 ? `0${i}` : i}`,
+            "data": formatData(dataAtual)
+        });
+
+        if (i == 6) {
+            capitulos.push({"id" : "06.5", "data" : formatData(dataAtual)})
+        }
+    
+        if (i == 16) {
+            capitulos.push({"id" : "16.5", "data" : formatData(dataAtual)})
+        }
+    
+        if (i == 46) {
+            capitulos.push({"id" : "46.5", "data" : formatData(dataAtual)})
+        }
+        if (i == 47) {
+            capitulos.push({"id" : "47.1", "data" : formatData(dataAtual)})
+            capitulos.push({"id" : "47.2", "data" : formatData(dataAtual)})
+        }
+        if (i == 49) {
+            capitulos.push({"id" : "49.1", "data" : formatData(dataAtual)})
+            capitulos.push({"id" : "49.2", "data" : formatData(dataAtual)})
+            capitulos.push({"id" : "49.3", "data" : formatData(dataAtual)})
+        }
+        if (i == 50) {
+            capitulos.push({"id" : "50.1", "data" : formatData(dataAtual)})
+            capitulos.push({"id" : "50.2", "data" : formatData(dataAtual)})
+        }
+        if (i == 51) {
+            capitulos.push({"id" : "51.5", "data" : formatData(dataAtual)})
+        }
+        if (i == 53) {
+            capitulos.push({"id" : "53.5", "data" : formatData(dataAtual)})
+        }
+        if (i == 61) {
+            capitulos.push({"id" : "61.5", "data" : formatData(dataAtual)})
+        }
+    }
 
 
-
-// Criar elementos HTML e atualizar a caixa box3
-const bannerElements = capitulos.map((banner) => `
+    // Criar elementos HTML e atualizar a caixa box3
+    const bannerElements = capitulos.map((banner) => `
     <a class="capitulo" href="./capitulos/${banner.id}.html">
         <div class="titulo_data">
             <h1>Capitulo ${banner.id}</h1> -
@@ -96,7 +83,12 @@ const bannerElements = capitulos.map((banner) => `
 
 
 
-box3.innerHTML = bannerElements.join('');
+    box3.innerHTML = bannerElements.join('');
+
+
+} else {
+    console.log(`Manga não encontrado.`);
+}
 
 
 
@@ -114,7 +106,7 @@ const sinopse = document.getElementById('sinopse')
 const alternativo = document.getElementById('Alternativa')
 
 
-var nome = 'Kekkon Yubiwa Monogatari'; //nome do manga/manhaw
+
 var rating = 4.5;//nota da obra
 
 var nome_alternativo = `

@@ -1,32 +1,55 @@
 var box3 = document.querySelector(".box3");
+var nome = 'Fuufu Ijou, Koibito Miman'; //nome do manga/manhaw
 
 let capitulos = [];
 
 
+// Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
+const nomeDoMangaBuscado = `${nome}`;
 
-for (let i = 1; i <= 65; i++) {
-    capitulos.push({
-        "id" : `${i < 10 ? "0" : ""}${i}`,
-        "data" : "30 de novembro de 2023"
-    })
+const mangaEncontrado = manga_info.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
 
-    if (i == 9) {
-        capitulos.push({"id" : "09.5", "data" : "30 de novembro de 2023"})
+if (mangaEncontrado) {
+    const numCapitulos = mangaEncontrado.num_capitulo;
+    const textoCap = mangaEncontrado.text_cap;
+    console.log(`${numCapitulos}`);
+
+
+    // Obter a data atual
+    const dataAtual = new Date();
+
+    // Função para formatar a data no formato desejado
+    function formatData(data) {
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        return data.toLocaleDateString("pt-BR", options);
     }
 
-    if (i == 42) {
-        capitulos.push({"id" : "42.5", "data" : "30 de novembro de 2023"})
+
+
+    // Adicionar capítulos com base na data atual
+    for (let i = 1; i <= numCapitulos; i++) { // Adicionando 5 capítulos com base na data atual
+        dataAtual.setDate(dataAtual.getDate() + 1); // Adiciona 1 dia à data atual
+        capitulos.push({
+            "id": `${i < 10 ? `0${i}` : i}`,
+            "data": formatData(dataAtual)
+        });
+
+        if (i == 9) {
+            capitulos.push({"id" : "09.5", "data" : formatData(dataAtual)})
+        }
+    
+        if (i == 42) {
+            capitulos.push({"id" : "42.5", "data" : formatData(dataAtual)})
+        }
+    
+        if (i == 54) {
+            capitulos.push({"id" : "54.5", "data" : formatData(dataAtual)})
+        }
     }
 
-    if (i == 54) {
-        capitulos.push({"id" : "54.5", "data" : "30 de novembro de 2023"})
-    }
-}
 
-
-
-// Criar elementos HTML e atualizar a caixa box3
-const bannerElements = capitulos.map((banner) => `
+    // Criar elementos HTML e atualizar a caixa box3
+    const bannerElements = capitulos.map((banner) => `
     <a class="capitulo" href="./capitulos/${banner.id}.html">
         <div class="titulo_data">
             <h1>Capitulo ${banner.id}</h1> -
@@ -38,7 +61,12 @@ const bannerElements = capitulos.map((banner) => `
 
 
 
-box3.innerHTML = bannerElements.join('');
+    box3.innerHTML = bannerElements.join('');
+
+
+} else {
+    console.log(`Manga não encontrado.`);
+}
 
 
 

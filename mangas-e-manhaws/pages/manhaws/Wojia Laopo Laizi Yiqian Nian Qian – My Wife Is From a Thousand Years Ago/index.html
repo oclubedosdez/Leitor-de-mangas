@@ -7,16 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
     <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../src/style.css">
-    <title>My Wife Is From a Thousand Years Ago</title>
+    <link rel="stylesheet" href="./responsivo.css">
+    <link rel="stylesheet" href="./fontes.css">
+    
+    <link rel="stylesheet" href="./stars/css/jquery.rateyo.min.css" />
+    <title class="titulo1"></title>
 </head>
 
 <body>
     <header class="container2">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="../../../index.html">
-            <img class="img_logo" src="https://github.com/oclubedosdez.png" alt="">
-          </a>
+            <a href="../../../index.html">
+                <img class="img_logo" src="https://github.com/oclubedosdez.png" alt="">
+            </a>
             <a class="navbar-brand" href="../../../index.html">Omega scans</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,70 +55,61 @@
             </div>
         </nav>
     </header>
+    <div class="banner">
+        <img id="imagen_banner" src="" alt="">
+        <!-- <div class="faixa"></div> -->
+    </div>
 
     <div class="container-fluid titulo">
-        <span class="manhaw"></span><h1>My Wife Is From a Thousand Years Ago</h1>
+        <span id="tipo_de_quadrinho"></span>
+        <h1 class="titulo2"></h1>
     </div>
     <div class="container-fluid box">
         <div class="box1">
-        <img class="img-fluid" src="../../../imgs/Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago.jpg" alt="">    
+            <img id="imagen_principal" class="img-fluid" src="" alt="">
         </div>
         <div class="box2 container-fluid">
-            <table class="table table-borderless">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Gênero(s): </th>
-                    <td class="generos">
-                      <a class="genero" href="http://">Drama</a>
-                      <a class="genero" href="http://">Fantasia</a>
-                      <a class="genero" href="http://">Romance</a>
-                      <a class="genero" href="http://">Shounen</a>
-                      <a class="genero" href="http://">Sobrenatural</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Autor:</th>
-                    <td>Reading comics</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Artista:</th>
-                    <td colspan="2">Reading comics</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Status:</th>
-                    <td colspan="2">Ativo</td>
-                  </tr>
+            <div class="info">
 
-                  <tr>
-                    <th class="titulos" scope="row">titulos alternatio:</th>
-                    <td colspan="2">我家老婆来自一千年前</td>
-                  </tr>
+                <!--estrela de avaliação-->
+                <div class="caixa-estrelas">
+                    <!--estrelas-->
+                    <div id="rateYo1" ></div>
+                    <!--avaliação-->
+                    <h1 class="counter">5.5</h1>
+                </div>
+                <!-- <h1 id="total_de_votos">Total de votos: <span id="votos">10</span></h1> -->
 
-                  <tr>
-                    <th scope="row">Sinopse:</th>
-                    <td class="sinopse" colspan="2">Jiang He, uma garota da Dinastia Tang, viajou por mil anos e apareceu na frente de Xu Qing. O destino juntou esse amor que durou mil anos. Tudo o que a garota conhecia se tornou história. Parentes, amigos e inimigos foram deixados para trás 1.200 anos atrás. O menino não tem reservas e leva a menina a começar uma nova vida. Dor, confusão, aplausos e risos permanecerão neste novo mundo.</td>
-                  </tr>
+                <div class="generos"><span>Genero(s): </span></div>
 
-                 
-                </tbody>
-              </table>
+                <div id="autor"></div>
+
+                <div id="artista"></div>
+
+                <div id="Alternativa"><span>Alternativo: </span></div>
+
+                <div id="estatus"></div>
+
+                <div id="sinopse"></div>
+
+
+            </div>
+
         </div>
     </div>
 
 
     <div class="container-fluid box3 d-flex flex-wrap justify-content-center">
-        
+
     </div>
 </body><br><br><br><br><br>
+
+<script src="../../../../info-mangas.js"></script>
 <script src="./Bootstrap/jquery.slim.min.js"></script>
 <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
 <script src="./script.js"></script>
+
+<script type="text/javascript" src="./stars/js/jquery.min.js"></script>
+<script type="text/javascript" src="./stars/js/jquery.rateyo.js"></script>
+<script type="text/javascript" src="./stars/js/star.js"></script>
 </html>

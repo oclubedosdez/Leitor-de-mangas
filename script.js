@@ -164,7 +164,7 @@ let carousel_mangas_items = [
     "img": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg",
     "pasta": "Knight of the Frozen Flower",
     "estatus": "Sem capitulos",
-    "status": "ativo",
+    "status": "completo",
     "data": "2021",
     "capitulos": "",
   },
@@ -216,6 +216,22 @@ let carousel_mangas_items = [
     "status": "ativo",
     "data": "2019",
   },
+  {
+    "tipo": "manga",
+    "nome": "Fuufu Ijou, Koibito Miman",
+    "img": "Fuufu Ijou, Koibito Miman.jpg",
+    "pasta": "Fuufu Ijou, Koibito Miman",
+    "status": "ativo",
+  },
+  {
+    "tipo": "manhaw",
+    "nome": "Adelaide",
+    "img": "Adelaide.jpg",
+    "pasta": "Adelaide",
+    "estatus": "Sem capitulos",
+    "status": "completo",
+    "capitulos": "",
+  },
 ];
 
 carousel_mangas_items.forEach((item) => {
@@ -226,6 +242,8 @@ carousel_mangas_items.forEach((item) => {
   if (mangaInfo) {
     item.capitulos = mangaInfo.num_capitulo;
     item.text_cap = mangaInfo.text_cap;
+    item.estado = mangaInfo.estado;
+    item.lancamento = mangaInfo.lancamento;
   }
 
   let manga_item = `
@@ -237,7 +255,7 @@ carousel_mangas_items.forEach((item) => {
     <div class="box">
    <div class="tipo">
      <h2 class="${item.tipo}">${item.tipo}</h2>
-     <span class="data">${item.data}</span>
+     <span class="data">${item.lancamento}</span>
    </div>
 
 
@@ -249,7 +267,7 @@ carousel_mangas_items.forEach((item) => {
     <img src="./mangas-e-manhaws/imgs/${item.nome}.jpg" alt=""> 
    </a>
    <h2 class="nome" title="${item.nome}">${item.nome}</h2>
-   <div class="${item.status}">${item.text_cap}${item.capitulos}</div>
+   <div class="${item.status}">${item.estado ? `Finalizado` : `${item.text_cap}${item.capitulos}`}</div>
    </div>
     
   `;

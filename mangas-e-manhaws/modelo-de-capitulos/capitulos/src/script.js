@@ -35,7 +35,7 @@ var nome = document.getElementById('nome_manga');
 
 
 var nome_manga = 'I Am Trying to Divorce My Villain Husband, but We Have a Child'
-var caminho  = './src/capitulos/capitulo-'
+var caminho  = 'https://orchidcommerce.com/leitor/mangas/The%20tyrant%20husband%20has%20changed/13/'
 
 
 var num_imgs = 80;

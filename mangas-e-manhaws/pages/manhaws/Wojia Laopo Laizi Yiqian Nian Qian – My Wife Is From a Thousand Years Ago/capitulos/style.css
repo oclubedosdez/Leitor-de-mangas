@@ -5,6 +5,16 @@ body {
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10px;
+}
 .selecao-de-paginas {
   display: none;
 }
@@ -56,11 +66,11 @@ a {
   /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 50%;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-left: 16rem;
+  margin-left: 25rem;
 }
 
 .paginas-abertas img {
