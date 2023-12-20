@@ -69,7 +69,7 @@ var nome_alternativo = `
 <span class='nome_alt'>대놓고 사내 연애; 대놓고 사내연애</span>
 `
 
-var tipo = 'manhaw' // é manga ou manhaw
+var tipo = 'manhwa' // é manga ou manhaw
 
 //CAMINHO DA IMAGEM
 var caminho = '../../../imgs/I Confessed to the Boss.jpg';
