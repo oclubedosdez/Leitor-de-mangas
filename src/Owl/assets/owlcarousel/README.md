@@ -1,4 +1,4 @@
-# Carrossel de Coruja 2
+# Owl Carousel 2
 
 Plug-in [jQuery](https://jquery.com/) habilitado para toque que permite criar um controle deslizante de carrossel bonito e responsivo. **Para começar, confira https://owlcarousel2.github.io/OwlCarousel2/.**
 
