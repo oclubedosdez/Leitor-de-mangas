@@ -1,0 +1,265 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  overflow-x: hidden;
+  background-color: #181818;
+}
+*{
+  transition: all 0.1s ease-in;
+}
+
+.cont {
+  /* border: 1px solid springgreen; */
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content:center;
+}
+
+.box {
+  /* border: 1px solid red; */
+  width: 230px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #ffffff;
+  padding-bottom: 30px;
+  font-weight: bold;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  /* border: 1px solid red; */
+  /* transform: translateX(650px); */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination,
+.pagination * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.pagination a.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.pagination a.current {
+  background-color: rgb(255, 0, 0);
+}
+
+.pagination a:hover {
+  background-color: rgb(188, 0, 0);
+}
+
+.imagem {
+  width: 240px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imagem img {
+  width: 240px;
+  height: 350px;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: brightness(100%);
+  transition: all 0.5s;
+}
+
+.imagem img:hover {
+  transform: scale(1.06);
+  filter: brightness(110%);
+}
+
+.box .nome {
+  /* border: 1px solid gold; */
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  padding: 0.40rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all .4s ease-in;
+}
+.manhwa::after {
+  content: "MANHWA";
+  z-index: 1000;
+  position: relative;
+  background: red;
+  color: white;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0px 5px;
+  top: 1.50rem;
+  left: -5.2rem;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.manhua::after {
+  content: "MANHUA";
+  z-index: 1000;
+  position: relative;
+  background: rgb(0, 123, 104);
+  color: white;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0px 5px;
+  top: 1.50rem;
+  left: -5.2rem;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.manga::after {
+  content: "MANGA";
+  z-index: 1000;
+  position: relative;
+  background: rgb(0, 143, 2);
+  color: white;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0px 5px;
+  top: 1.50rem;
+  left: -5.5rem;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.completo::after,
+.completo2::after,
+.completo3::after {
+  content: "Completo";
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  background: rgb(0, 0, 0);
+  width: 130px;
+  height: 18px;
+  padding: 4px;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border-radius: 0px 10px 10px 5px;
+  font-weight: bold;
+  box-shadow: 2px 3px 2px red;
+  text-align: center;
+}
+
+.completo::after {
+  transform: translate(-148px, 330px);
+}
+
+.completo2::after,
+.completo3::after {
+  transform: translate(-142px, 330px);
+}
+
+.ativo {
+  content: "";
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  background: rgb(17, 147, 0);
+  width: 6rem;
+  height: 15px;
+  padding: 4px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-family: sans-serif;
+  border-radius: 0px 10px 10px 0px;
+  transform: translate(-63px, 154px);
+  font-weight: bold;
+}
+
+/* Sistema de busca de mangas */
+body {
+  /* background-color: white; */
+}
+
+:root {
+  --gray-900: #121214;
+  --gray-300: #444448;
+  --primary-200: #fcd085;
+  --primary-400: #ffbc48;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+header input {
+  margin-top: 2rem;
+  padding: 1rem 1.6rem;
+  border-radius: .8rem;
+  background-color: #444448;
+  border: 0;
+  width: 100%;
+  height: 1.3rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.input-wrapper i {
+  position: absolute;
+  right: -2rem;
+  bottom: 0.8rem;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 3.2rem;
+  max-width: 46rem;
+  margin: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+  white-space: nowrap;
+}

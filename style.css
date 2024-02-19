@@ -1,0 +1,432 @@
+ body {
+   background-color: rgb(242, 241, 241);
+   overflow-x: hidden;
+   font-family: poppins, sans-serif;
+ }
+
+
+body::-webkit-scrollbar {
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 206, 206);
+  border-radius: 5px;
+}
+
+.img_logo {
+  border-radius: 50px;
+  width: 4rem;
+  margin-right: 1rem;
+  border: 2px solid white;
+}
+
+.img_logo:hover {
+  filter: brightness(120%);
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  display: flex;
+  /* border: 1px solid red; */
+  margin-top: 100px;
+  border-radius: 5px;
+  width: 90%;
+  gap: 20px;
+  align-items: center;
+  font-weight: bold;
+  font-family: Oswald;
+}
+
+.titulo h1 {
+  text-shadow: 5px 5px 3px black;
+}
+
+.container2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+
+.navbar-toggler {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+
+.nav-item .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.nav-item .nav-link:hover {
+ color: red !important;
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
+  font-size: 25px;
+}
+
+.navbar-brand:hover {
+  color: red !important;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item {
+  color: white !important;
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(255, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* link que foi visitado */
+a:visited {
+  /* color: green; */
+}
+
+/* mouse over */
+a:hover {
+  color: #ffffff;
+}
+
+/* link selecionado */
+a:active {
+  color: rgb(255, 0, 0);
+}
+
+a h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+ /*SLIDER DO CABEÇALHO ==============================*/
+ .container-fluid {
+   padding: 0;
+   margin-bottom: 10px;
+ }
+
+ .carousel-item .carousel-banner {
+   height: 100vh;
+   width: 100%;
+   filter: blur(10px) brightness(50%);
+ }
+
+ .carousel-item .carousel-img {
+   /* border: 1px solid black; */
+   width: 34rem;
+   position: absolute;
+   z-index: 10;
+   transform: translate(160%, -7%) rotate(10deg);
+   filter: brightness(90%);
+ }
+
+ #mainSlider .carousel-inner,
+ #mainSlider .carousel-item {
+  /* border: 2px solid red; */
+   height: 70vh;
+ }
+
+ /*DIV QUE MOSTRA O NOME  OS GENEROS DO MANGA DO CARROSEL ITEM*/
+ .carousel-caption {
+   /* border: 1px solid green; */
+   display: flex;
+   flex-wrap: wrap;
+   width: 38rem;
+   margin-left: -12rem;
+   gap: 1rem;
+   transform: translateY(-30%);
+   padding: 0;
+ }
+
+ .carousel-caption h1 {
+   /* border: 2px solid green; */
+   display: flex;
+   flex-wrap: wrap;
+   text-align: start;
+   padding: 0;
+   font-size: 28px;
+   font-weight: bold;
+ }
+
+ .carousel-caption h2 {
+   /* border: 1px solid lawngreen; */
+   text-align: start;
+   font-size: 18px;
+ }
+
+ .generos {
+   /* border: 2px solid skyblue; */
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.50rem;
+   width: 100%;
+ }
+
+ .generos a {
+   transition: all 0.5s;
+   color: white;
+   border: 1px solid white;
+   border-radius: 5px;
+   padding: 0.10rem 0.50rem;
+ }
+
+ .generos a:hover {
+   text-decoration: none;
+   background-color: white;
+   color: black;
+ }
+
+ .botao-manga {
+   /* border: 1px solid blue; */
+   transition: all 0.5s;
+   border-radius: 5px;
+   background-color: rgb(255, 255, 255);
+   width: 11rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   box-shadow: 5px 5px 5px black;
+ }
+
+ .botao-manga:hover {
+   text-decoration: none;
+   transform: scale(1.1);
+ }
+
+ .botao-manga img {
+   width: 3rem;
+   height: 3rem;
+ }
+
+ .botao-manga span {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 20px;
+ }
+
+ /*botao de ir para o manga========================*/
+
+ /*===============================*/
+ .carousel-indicators li {
+   opacity: 1 !important;
+   background-color: rgb(255, 255, 255);
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+ }
+
+ .carousel-indicators .active {
+   background-color: rgb(0, 255, 255);
+ }
+
+ .sr-only {
+   background-color: black;
+   border: 1px solid red;
+ }
+
+ .carousel-control-next,
+ .carousel-control-prev {
+   transition: all 0.5s;
+   opacity: 1 !important;
+ }
+
+ .carousel-control-next:hover {
+   transform: scale(1.2);
+ }
+
+ .carousel-control-prev:hover {
+   transform: scale(1.2);
+ }
+
+ /*slider 02 principais manhaws --========================================*/
+ .carrossel-ler-mangas {
+   border: 1px solid black;
+   padding: 1rem;
+   margin-bottom: 10rem;
+ }
+
+ .slide-ler-mangas {
+   /* border: 1px solid red; */
+   padding: 1rem;
+   background-color: rgb(53, 53, 53);
+   border-radius: 5px;
+   display: flex;
+   gap: 1rem;
+   max-width: 1600px;
+   overflow: auto;
+ }
+ .slide-ler-mangas::-webkit-scrollbar {
+  transition: all 3s;
+  background-color: black;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+ }
+ .slide-ler-mangas::-webkit-scrollbar-thumb {
+  background-color: rgb(149, 149, 149);
+  border-radius: 5px;
+  scroll-behavior: smooth;
+ }
+
+ .box {
+  position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   /* border: 2px solid green; */
+   width: 260px;
+   height: 460px;
+   background-color: black;
+   color: white;
+   z-index: 1;
+ }
+
+ .box img {
+   transition: all 0.5s;
+   max-width: 250px;
+   max-height: 480px;
+   height: 380px;
+ }
+
+
+ .tipo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border: 1px solid yellowgreen; */
+   width: 100%;
+   padding: 0.30rem;
+ }
+
+ .tipo h2 {
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  text-align: center;
+  width: 75px;
+  height: 26px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+
+ .manhaw {
+   background-color: red;
+   font-weight: bold;
+   margin: 0;
+ }
+ .manga {
+   background-color: green;
+   font-weight: bold;
+   margin: 0;
+ }
+
+ .manhua {
+   background: rgb(82, 82, 82);
+   font-weight: bold;
+   margin: 0;
+ }
+
+ 
+
+ .data {
+  font-weight: bold;
+ }
+
+ .box .nome {
+   /* border: 1px solid greenyellow; */
+   font-size: 18px;
+   margin-bottom: 0;
+   padding: 0.40rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 100%;
+   text-align: center;
+   cursor: pointer;
+ }
+
+
+ .imagem-ler-mangas {
+   cursor: pointer;
+   background-position: center;
+   /* border: 1px solid green; */
+ }
+
+ .img-book {
+   transition: all 0.5s;
+   position: absolute;
+   /* border: 1px solid red; */
+   width: 250px;
+   height: 384px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.356);
+   z-index: 10000;
+   opacity: 0;
+ }
+
+ .img-book:hover {
+   opacity: 1;
+ }
+
+ .img-book img {
+   width: 6rem;
+   height: 6rem;
+   filter: invert();
+ }
+
+ .img-book-visibility {
+   display: flex;
+ }
+
+ .ativo {
+  position: relative;
+  transform: translate(-38%, -250%);
+  background-color: black;
+  padding: 0.10rem 0.80rem;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 20px;
+  box-shadow: 1px 3px 2px red;
+ }
+
+ .completo {
+  position: relative;
+  transform: translate(-58%, -250%);
+  background-color: black;
+  padding: 0.10rem 0.80rem;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 20px;
+  box-shadow: 3px 3px 1px red;
+ }
+ 
+
+
+ /*=========================================================*/
