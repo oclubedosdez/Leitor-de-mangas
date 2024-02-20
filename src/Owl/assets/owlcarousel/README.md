@@ -1,48 +1,48 @@
 # Owl Carousel 2
 
-Touch enabled [jQuery](https://jquery.com/) plugin that lets you create a beautiful, responsive carousel slider. **To get started, check out https://owlcarousel2.github.io/OwlCarousel2/.**
+Plug-in [jQuery](https://jquery.com/) habilitado para toque que permite criar um controle deslizante de carrossel bonito e responsivo. **Para começar, confira https://owlcarousel2.github.io/OwlCarousel2/.**
 
-**Notice:** The old Owl Carousel site (owlgraphic [dot] com) is no longer in use. Please delete all references to this in bookmarks and your own products' documentation as it's being used for malicious purposes.
+**Aviso:** O antigo site Owl Carousel (owlgraphic [ponto] com) não está mais em uso. Exclua todas as referências a isso nos favoritos e na documentação de seus próprios produtos, pois está sendo usado para fins maliciosos.
 
-## Quick start
+## Começo rápido
 
-### Install
+### Instalar
 
-This package can be installed with:
+Este pacote pode ser instalado com:
 
-- [npm](https://www.npmjs.com/package/owl.carousel): `npm install --save owl.carousel` or `yarn add owl.carousel jquery`
+- [npm](https://www.npmjs.com/package/owl.carousel): `npm install --save owl.carousel` ou `yarn add owl.carousel jquery`
 - [bower](http://bower.io/search/?q=owl.carousel): `bower install --save owl.carousel`
 
-Or download the [latest release](https://github.com/OwlCarousel2/OwlCarousel2/releases).
+Ou baixe a [versão mais recente](https://github.com/OwlCarousel2/OwlCarousel2/releases).
 
-### Load
+### Carregar
 
 #### Webpack
 
-Add jQuery via the "webpack.ProvidePlugin" to your webpack configuration:
+Adicione jQuery por meio de "webpack.ProvidePlugin" à configuração do seu webpack:
     
-    const webpack = require('webpack');
+     const webpack = require('webpack');
     
-    //...
-    plugins: [
-        new webpack.ProvidePlugin({
-          $: 'jquery',
-          jQuery: 'jquery',
-          'window.jQuery': 'jquery'
-        }),
-    ],
-    //...
+     //...
+     plug-ins: [
+         novo webpack.ProvidePlugin({
+           $: 'jquery',
+           jQuery: 'jquery',
+           'janela.jQuery': 'jquery'
+         }),
+     ],
+     //...
 
-Load the required stylesheet and JS:
+Carregue a folha de estilo e JS necessários:
 
 ```js
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+importar 'owl.carousel/dist/assets/owl.carousel.css';
+importar 'owl.carousel';
 ```
 
-#### Static HTML
+#### HTML estático
 
-Put the required stylesheet at the [top](https://developer.yahoo.com/performance/rules.html#css_top) of your markup:
+Coloque a folha de estilo necessária no [top](https://developer.yahoo.com/performance/rules.html#css_top) da sua marcação:
 
 ```html
 <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
@@ -52,10 +52,10 @@ Put the required stylesheet at the [top](https://developer.yahoo.com/performance
 <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
 ```
 
-**NOTE:** If you want to use the default navigation styles, you will also need to include `owl.theme.default.css`.
+**NOTA:** Se quiser usar os estilos de navegação padrão, você também precisará incluir `owl.theme.default.css`.
 
 
-Put the script at the [bottom](https://developer.yahoo.com/performance/rules.html#js_bottom) of your markup right after jQuery:
+Coloque o script na parte inferior(https://developer.yahoo.com/performance/rules.html#js_bottom) da sua marcação logo após o jQuery:
 
 ```html
 <script src="/node_modules/jquery/dist/jquery.js"></script>
@@ -67,56 +67,56 @@ Put the script at the [bottom](https://developer.yahoo.com/performance/rules.htm
 <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 ```
 
-### Usage
+### Uso
 
-Wrap your items (`div`, `a`, `img`, `span`, `li` etc.) with a container element (`div`, `ul` etc.). Only the class `owl-carousel` is mandatory to apply proper styles:
+Envolva seus itens (`div`, `a`, `img`, `span`, `li` etc.) com um elemento contêiner (`div`, `ul` etc.). Apenas a classe `owl-carousel` é obrigatória para aplicar estilos adequados:
 
 ```html
-<div class="owl-carousel owl-theme">
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
+<div class="owl-carousel coruja-tema">
+   <div> Seu conteúdo </div>
+   <div> Seu conteúdo </div>
+   <div> Seu conteúdo </div>
+   <div> Seu conteúdo </div>
+   <div> Seu conteúdo </div>
+   <div> Seu conteúdo </div>
+   <div> Seu conteúdo </div>
 </div>
 ```
-**NOTE:** The `owl-theme` class is optional, but without it, you will need to style navigation features on your own.
+**NOTA:** A classe `owl-theme` é opcional, mas sem ela, você precisará estilizar os recursos de navegação por conta própria.
 
 
-Call the [plugin](https://learn.jquery.com/plugins/) function and your carousel is ready.
+Chame a função [plugin](https://learn.jquery.com/plugins/) e seu carrossel estará pronto.
 
 ```javascript
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
+$(documento).ready(function(){
+   $('.owl-carousel').owlCarousel();
 });
 ```
 
-## Documentation
+## Documentação
 
-The documentation, included in this repo in the root directory, is built with [Assemble](http://assemble.io/) and publicly available at https://owlcarousel2.github.io/OwlCarousel2/. The documentation may also be run locally.
+A documentação, incluída neste repositório no diretório raiz, é construída com [Assemble](http://assemble.io/) e está disponível publicamente em https://owlcarousel2.github.io/OwlCarousel2/. A documentação também pode ser executada localmente.
 
-## Building
+## Prédio
 
-This package comes with [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/). The following tasks are available:
+Este pacote vem com [Grunt](http://gruntjs.com/) e [Bower](http://bower.io/). As seguintes tarefas estão disponíveis:
 
-  * `default` compiles the CSS and JS into `/dist` and builds the doc.
-  * `dist` compiles the CSS and JS into `/dist` only.
-  * `watch` watches source files and builds them automatically whenever you save.
-  * `test` runs [JSHint](http://www.jshint.com/) and [QUnit](http://qunitjs.com/) tests headlessly in [PhantomJS](http://phantomjs.org/).
+   * `default` compila o CSS e JS em `/dist` e constrói o documento.
+   * `dist` compila CSS e JS apenas em `/dist`.
+   * `watch` observa os arquivos de origem e os cria automaticamente sempre que você salva.
+   * `test` executa testes [JSHint](http://www.jshint.com/) e [QUnit](http://qunitjs.com/) sem cabeça em [PhantomJS](http://phantomjs.org/) .
 
-To define which plugins are build into the distribution just edit `/_config.json` to fit your needs.
+Para definir quais plug-ins serão incluídos na distribuição, basta editar `/_config.json` para atender às suas necessidades.
 
-## Contributing
+## Contribuindo
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md).
+Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Roadmap
+## Roteiro
 
-Please make sure to check out our [Roadmap Discussion](https://github.com/OwlCarousel2/OwlCarousel2/issues/1756).
+Não deixe de conferir nossa [discussão sobre roteiro](https://github.com/OwlCarousel2/OwlCarousel2/issues/1756).
 
 
-## License
+## Licença
 
-The code and the documentation are released under the [MIT License](LICENSE).
+O código e a documentação são liberados sob a [Licença MIT](LICENSE).
