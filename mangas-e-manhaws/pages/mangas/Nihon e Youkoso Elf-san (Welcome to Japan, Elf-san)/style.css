@@ -1,0 +1,683 @@
+:root {
+    --cor-principal: rgb(255, 255, 255);
+    /*caixa onde esta a imagem box1 e a caixa onde esta as informações da obra box2*/
+    --background-box1-box2: rgba(0, 0, 0, 0.836);
+    --box1-box2-box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    --box1-box2-border: 1px solid white;
+    --box1-box2-border-radius: 10px;
+    --cor-texto1: rgb(212, 212, 212);
+    --genero-hover: rgb(255, 0, 0);
+    /*informações do manga*/
+    --texto-titulo-info: 22px;
+    --texto-info-titulo: 19px;
+    /*configurações da imagem como banner de fundo*/
+    --banner-img-width: 100%;
+    --banner-img-height: 90%;
+    --banner-img-filte-blur: blur(0px);
+    --banner-img-filte-brightness: brightness(60%);
+    /*navbar*/
+    --navbar-font_size: 20px;
+    --navbar-dropdown-item-font-size: 18px;
+    --icone-logo-width: 4rem;
+}
+
+
+body {
+    background-color: var(--cor-principal) !important;
+}
+
+body::-webkit-scrollbar {
+    background-color: black !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 206, 206) !important;
+    border-radius: 5px !important;
+}
+
+.img_logo {
+    border-radius: 50px;
+    width: var(--icone-logo-width);
+    margin-right: 1rem;
+    border: 2px solid white;
+}
+
+.img_logo:hover {
+    filter: brightness(120%);
+}
+
+.titulo {
+    color: rgb(255, 255, 255) !important;
+    display: flex !important;
+    /* border: 1px solid red; */
+    margin-top: 100px !important;
+    border-radius: 5px !important;
+    width: 90% !important;
+    gap: 20px !important;
+    align-items: center !important;
+    font-weight: bold !important;
+    font-family: Oswald !important;
+}
+
+.titulo h1 {
+    text-shadow: 5px 5px 3px black !important;
+}
+
+.container2 {
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    font-size: var(--navbar-font_size);
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.dropdown-menu {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.manga::after {
+    content: "MANGA";
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+}
+
+.manhwa::after {
+    content: "MANHWA";
+    font-size: 20px;
+    color: white;
+    background-color: rgb(209, 0, 0);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+}
+
+.manhua::after {
+    content: "MANHUA";
+    font-size: 20px;
+    color: white;
+    background: rgb(0, 123, 104);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+}
+
+.nav-item .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-item .nav-link:hover {
+    color: red !important;
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255) !important;
+    font-size: var(--navbar-font_size);
+}
+
+
+
+.navbar-brand:hover {
+    color: red !important;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item {
+    color: white !important;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.481);
+    font-size: var(--navbar-dropdown-item-font-size);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(255, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* CSS para mostrar dropdown ao passar o mouse */
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 410px) {
+    .container .titulo {
+        font-size: 25px;
+    }
+}
+
+/*corpo*/
+.box {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 90%;
+    gap: 50px;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+    background-color: var(--background-box1-box2);
+    border-radius: var(--box1-box2-border-radius);
+    box-shadow: var(--box1-box2-box-shadow);
+    width: 400px;
+    border: var(--box1-box2-border);
+}
+
+.img-fluid {
+    border-radius: 5px;
+    width: 84%;
+    max-width: 87%;
+    /* border: 1px solid firebrick; */
+    margin: 1rem;
+    filter: brightness(110%);
+}
+
+/*CAIXA DE INFORMAÇÕES========================*/
+.box2 {
+    /* border: 1px solid rebeccapurple; */
+    background-color: var(--background-box1-box2);
+    border-radius: var(--box1-box2-border-radius);
+    font-size: var(--texto-info-titulo);
+    width: 1000px;
+    padding: 0.70rem;
+    box-shadow: var(--box1-box2-box-shadow);
+    border: var(--box1-box2-border);
+}
+
+.box2 span {
+    font-family: Oswald;
+    font-size: var(--texto-titulo-info);
+    color: white;
+    margin-right: 0.50rem;
+}
+
+.box2 p {
+    font-family: Oswald;
+    color: var(--cor-texto1);
+    margin-bottom: 0px;
+    height: 27px;
+    align-items: center;
+}
+
+.info {
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.info div {
+    margin-bottom: 1%;
+}
+
+#autor {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+#artista {
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+}
+
+#estatus {
+    /* border: 2px solid brown; */
+    display: flex;
+    align-items: center;
+}
+
+#sinopse {
+    /* border:2px solid rgb(255, 251, 0) !important; */
+    display: inline-block;
+    width: 100%;
+    padding: 0px !important;
+    color: white;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    max-height: 200px;
+    overflow: auto;
+}
+
+#sinopse strong {
+    margin-right: 0.30rem;
+    font-size: var(--texto-titulo-info);
+}
+
+#sinopse::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+#sinopse::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+}
+
+#Alternativa {
+    /* border: 1px solid red; */
+}
+
+#Alternativa .nome_alt {
+    /* border: 1px solid green; */
+    font-weight: 500;
+    font-size: var(--texto-info-titulo);
+    color: var(--cor-texto1);
+}
+
+#Alternativa .nome_alt::after {
+    content: ",";
+    font-weight: bold;
+}
+
+/*==========================================*/
+
+
+.text_sin {
+    margin-right: 1px;
+}
+
+@media (max-width: 1000px) {
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.box3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    /* border: 1px solid wheat; */
+    text-decoration: none;
+    gap: 0px;
+    width: 89%;
+    max-height: 600px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.836);
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.box3::-webkit-scrollbar {
+    background-color: black;
+}
+
+.box3::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+.capitulo {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+    /* border: 0.1px solid rgb(59, 59, 59); */
+    text-decoration: none !important;
+    align-items: center;
+    gap: 1px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    border: 0.1px solid rgba(146, 146, 146, 0.068);
+}
+
+.capitulo-img {
+    width: 3%;
+    filter: invert();
+}
+
+.capitulo:hover {
+    background-color: rgba(100, 100, 100, 0.253);
+    color: red;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+/* link que foi visitado */
+a:visited {
+    color: var(--cor-texto1);
+}
+
+/* mouse over */
+a:hover {
+    color: #ffffff;
+}
+
+/* link selecionado */
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+a h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titulos {
+    /* border: 1px solid rgb(238, 255, 0) !important; */
+    /* width: 100rem !important; */
+}
+
+
+.titulo_data {
+    display: flex;
+    gap: 1.50rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.titulo_data h3 {
+    font-size: 20px;
+    margin: 0;
+    font-size: 1.00rem;
+    color: var(--cor-texto1);
+}
+
+.titulo_data h1 {
+    margin: 0;
+    font-size: 1.30rem;
+}
+
+/*botões de generos*/
+.generos {
+    /* border: 1px solid red !important; */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100%;
+    gap: 0.70rem;
+    align-items: center;
+    align-items: center;
+}
+
+.generos span {
+    /* border: 1px solid green; */
+    font-family: Oswald;
+    font-size: var(--texto-titulo-info);
+    color: white;
+    text-align: center;
+    padding-bottom: 0.15rem;
+    filter: brightness(900%);
+}
+
+.genero {
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 20px;
+    transition: all 0.5s;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.genero:link {
+    color: var(--cor-texto1);
+}
+
+.genero::after {
+    content: ",";
+    color: var(--cor-texto1);
+}
+
+.genero:hover {
+    text-decoration: none;
+    color: var(--genero-hover);
+    font-weight: bold;
+}
+
+
+/*resposividade*/
+@media(max-width:1200px) {
+    .titulo {
+        align-items: center;
+        width: 400px;
+    }
+
+    .titulo h1 {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .manga::after {
+        content: "MANGA";
+        font-size: 15px;
+        color: white;
+        background-color: green;
+        padding: 4px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+
+    .generos {
+        /* border: 1px solid red !important; */
+        display: flex !important;
+        flex-wrap: wrap !important;
+        width: 300px;
+        gap: 0.70rem;
+    }
+}
+
+@media(max-width:900px) {}
+
+.banner img {
+    width: var(--banner-img-width);
+    height: var(--banner-img-height);
+    position: absolute;
+    z-index: -1;
+    filter: var(--banner-img-filte-blur) var(--banner-img-filte-brightness);
+}
+
+.banner .faixa {
+    position: absolute;
+    width: 100%;
+    border: 30px solid var(--cor-principal);
+    transform: translate(0rem, 27rem);
+    z-index: -1;
+}
+
+/*estrelas de avaliação*/
+.caixa-estrelas {
+    /* border: 1px solid green; */
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1rem !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+}
+
+.counter {
+    /* border: 1px solid white; */
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 3.90px;
+}
+
+#rateYo1 {
+    /* border: 1px solid red; */
+    margin: 0px;
+}
+
+#rateYo1 svg {
+    /* border: 1px solid red; */
+}
+
+.nome_avaliacao {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.ler_mangas {
+    margin-top: 6rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0000, #ff0000 50%, #0000);
+    color: white;
+    font-family: Oswald;
+    margin-bottom: 0.50rem;
+}
+
+/*CARROCEL Owl*/
+
+.carrocel_de_mangas {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0000,black, #000000 50%,black, #0000);
+    height: 400px;
+}
+
+.mangas_para_ler {
+    /* border: 2px solid green; */
+    width: 95%;
+    overflow: hidden;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.custom-nav {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: end;
+    padding-right: 2.30rem;
+}
+
+.custom-nav button {
+    background-color: transparent;
+    border: none;
+    /* filter: invert(); */
+    font-family: Oswald;
+}
+
+.custom-nav button img {
+    width: 130%;
+}
+
+.item_manga {
+    /* border: 1px solid white; */
+}
+
+.item_manga a {
+    text-decoration: none;
+}
+
+.item_manga a:hover {
+    color: white;
+}
+
+.manga_image {
+    transition: all 0.5s;
+    overflow: hidden;
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 300px;
+}
+
+.manga_image img {
+
+    transition: all 0.5s;
+    height: 100%;
+}
+
+.manga_image img:hover {
+    filter: brightness(110%) saturate(120%);
+}
+
+
+.item_manga h1 {
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+}
+
+
+.manhwa_carrocel::after {
+    content: "MANHWA";
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(209, 0, 0);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+    z-index: 10000;
+}
+.manhua_carrocel::after {
+    content: "MANHUA";
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    background: rgb(0, 123, 104);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+    z-index: 10000;
+}
+.manga_carrocel::after {
+    content: "MANGA";
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    background: rgb(0, 143, 2);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+    z-index: 10000;
+}
+
+
+.owl-carousel a .ep {
+    font: 400 14px Oswald;
+    position: absolute;
+    bottom: 40px;
+    right: 9px;
+    color: #fff;
+    background: #670000;
+    padding: 2px 10px 2px 10px;
+    border-radius: 2px;
+    border-radius: 5px;
+}
+
+
