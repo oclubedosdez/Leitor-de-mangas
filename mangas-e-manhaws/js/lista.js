@@ -226,7 +226,7 @@ let mangas_e_manhwas = [
         "capitulos": "",
         "estatus": "ativo",
         "genero": "",
-        "pasta": "",
+        "pasta": "Isekai Kenkokuki",
         "caminho-img" : "https://github.com/oclubedosdez/Imagens/blob/main/mangas/img/Isekai%20Kenkokuki.jpg?raw=true./imgs/Isekai Kenkokuki.jpg"
     },
     {
