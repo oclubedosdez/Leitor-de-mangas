@@ -97,6 +97,9 @@ body {
   filter: brightness(100%);
   transition: all 0.5s;
 }
+.of {
+  filter: brightness(70%);
+}
 
 .imagem img:hover {
   transform: scale(1.06);

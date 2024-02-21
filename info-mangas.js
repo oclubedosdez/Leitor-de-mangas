@@ -295,6 +295,15 @@ let manga_info = [
     "estado" : "",
     "lancamento" : "2017",
     "genero" : "Acao Drama Fantasia Harem Isekai Romance Slice-of-Life",
+  },
+  {
+    "tipo" : "manga",
+    "nome" : "Isekai Cheat Magician",
+    "num_capitulo" : "15",
+    "text_cap" : "Capitulos:",
+    "estado" : "",
+    "lancamento" : "2017",
+    "genero" : "Aventura Fantasia Isekai Romance Acao",
   }
 ];
 
