@@ -170,6 +170,11 @@ for (let i = 0; i <= num_imgs; i++) {
     manga_page.classList.add('page_cap');
 
     manga_page.src = `${diretorio}/imgs/${img_manga.id}.jpg`;
+
+    if(capitulo == 59 || capitulo == 58) {
+        manga_page.src = `${diretorio}/imgs/${i < 10 ? "0" : ""}${img_manga.id}.jpg`;
+    }
+
     manga_page.alt = '';
 
     manga_page.onload = function () {
