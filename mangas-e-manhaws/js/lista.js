@@ -171,7 +171,7 @@ let mangas_e_manhwas = [
         "caminho-img" : "./imgs/Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life.jpg"
     },
     {
-        "key" : "of",
+        "key" : "on",
         "id": "O",
         "nome": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
         "tipo": "manga",
@@ -179,9 +179,9 @@ let mangas_e_manhwas = [
         "status": "",
         "capitulos": "",
         "estatus": "ativo",
-        "genero": "",
-        "pasta": "",
-        "caminho-img" : "./imgs/Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken.jpg"
+        "genero": "Comedia Romance Shounen Slice-of-Life",
+        "pasta": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
+        "caminho-img" : "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/img/Otonari%20no%20Tenshi-sama%20ni%20Itsunomanika%20Dame%20Ningen%20ni%20Sareteita%20Ken.jpg"
     },
     {
         "key" : "of",
@@ -210,7 +210,7 @@ let mangas_e_manhwas = [
         "caminho-img" : "./imgs/Love Comedy Manga ni Haitteshimatta node, Oshi no Make Heroine wo Zenryoku de Shiawase ni Suru.jpg"
     },
     {
-        "key" : "of",
+        "key" : "on",
         "id": "I",
         "nome": "Isekai De Tochi O Katte Noujou O Tsukurou",
         "tipo": "manga",
@@ -220,7 +220,7 @@ let mangas_e_manhwas = [
         "estatus": "ativo",
         "genero": "",
         "pasta": "Isekai De Tochi O Katte Noujou O Tsukurou",
-        "caminho-img" : "./imgs/Isekai De Tochi O Katte Noujou O Tsukurou.jpg"
+        "caminho-img" : "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/img/Isekai%20De%20Tochi%20O%20Katte%20Noujou%20O%20Tsukurou.jpg"
     },
     {
         "key" : "of",

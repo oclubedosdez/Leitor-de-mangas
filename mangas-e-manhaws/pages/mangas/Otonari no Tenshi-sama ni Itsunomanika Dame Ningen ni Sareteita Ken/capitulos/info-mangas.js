@@ -286,33 +286,6 @@ let manga_info = [
     "estado" : "",
     "lancamento" : "2018",
     "genero" : "Comedia Drama Escolar Romance Slice-of-Life",
-  },
-  {
-    "tipo" : "manga",
-    "nome" : "Isekai Kenkokuki",
-    "num_capitulo" : "61",
-    "text_cap" : "Capitulos:",
-    "estado" : "",
-    "lancamento" : "2017",
-    "genero" : "Acao Drama Fantasia Harem Isekai Romance Slice-of-Life",
-  },
-  {
-    "tipo" : "manga",
-    "nome" : "Isekai Cheat Magician",
-    "num_capitulo" : "15",
-    "text_cap" : "Capitulos:",
-    "estado" : "",
-    "lancamento" : "2017",
-    "genero" : "Aventura Fantasia Isekai Romance Acao",
-  },
-  {
-    "tipo" : "manga",
-    "nome" : "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
-    "num_capitulo" : "14",
-    "text_cap" : "Capitulos:",
-    "estado" : "",
-    "lancamento" : "2019",
-    "genero" : "Comedia Romance Shounen Slice-of-Life",
   }
 ];
 
