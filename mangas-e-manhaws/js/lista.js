@@ -158,7 +158,7 @@ let mangas_e_manhwas = [
         "caminho-img" : "./imgs/Sensei Wa Koi Wo Oshie Rarenai.jpg"
     },
     {
-        "key" : "of",
+        "key" : "on",
         "id": "L",
         "nome": "Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life",
         "tipo": "manga",
@@ -166,9 +166,9 @@ let mangas_e_manhwas = [
         "status": "",
         "capitulos": "",
         "estatus": "ativo",
-        "genero": "",
-        "pasta": "",
-        "caminho-img" : "./imgs/Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life.jpg"
+        "genero": "Acao Aventura Comedia Fantasia Romance Shounen Slice-of-Life",
+        "pasta": "Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life",
+        "caminho-img" : "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/img/Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life.jpg"
     },
     {
         "key" : "on",
@@ -454,14 +454,14 @@ let mangas_e_manhwas = [
         "caminho-img" : "./imgs/I’m in Trouble Because My Husband Is So Cute.jpg"
     },
     {
-        "key" : "of",
+        "key" : "on",
         "id": "O",
         "nome": "Saenai Riman to Yankee Joshi Kousei",
         "tipo": "manga",
         "status": "",
         "capitulos": "",
         "estatus": "ativo",
-        "genero": "Comédia  Romance  Slice of Life",
+        "genero": "Comedia Romance Slice-of-Life",
         "pasta": "Saenai Riman to Yankee Joshi Kousei",
         "caminho-img" : "./imgs/Saenai Riman to Yankee Joshi Kousei.jpg"
     },
@@ -562,7 +562,7 @@ let mangas_e_manhwas = [
         "caminho-img" : "./imgs/Nihon e Youkoso Elf-san (Welcome to Japan, Elf-san).png"
     },
 	{
-        "key" : "of",
+        "key" : "on",
         "id": "A",
         "nome": "A 99° Noiva do Duque",
         "tipo": "manhwa",
@@ -898,6 +898,18 @@ let mangas_e_manhwas = [
         "genero": "Acao Aventura Comedia Fantasia Romance Shounen",
         "pasta": "Bannou “Murazukuri” Cheat de Otegaru Slow Life ~Mura desu ga Nani ka~",
         "caminho-img" : "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/img/Bannou%20%E2%80%9CMurazukuri%E2%80%9D%20Cheat%20de%20Otegaru%20Slow%20Life%20%7EMura%20desu%20ga%20Nani%20ka%7E.jpg"
+    },
+	{
+        "key" : "on",
+        "id": "L",
+        "nome": "Lilia’s Pregnancy Spells the World’s End",
+        "tipo": "manga",
+        "status": "",
+        "capitulos": "",
+        "estatus": "",
+        "genero": "Comedia Ecchi Fantasia Romance Shounen",
+        "pasta": "Lilia’s Pregnancy Spells the World’s End",
+        "caminho-img" : "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/img/Lilia%E2%80%99s%20Pregnancy%20Spells%20the%20World%E2%80%99s%20End.jpg"
     },
 ];
 
