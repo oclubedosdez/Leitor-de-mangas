@@ -9,10 +9,10 @@ const select_custom = document.getElementById('selectOptions');
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome_manga;
 
-const mangaEncontrado = manga_info.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
+const mangaEncontrado = mangas_e_manhwas.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
 
 if (mangaEncontrado) {
-    const numCapitulos = mangaEncontrado.num_capitulo;
+    const numCapitulos = mangaEncontrado.num_capitulos;
     const textoCap = mangaEncontrado.text_cap;
 
     for (let i = inicia; i <= numCapitulos; i++) {
@@ -24,7 +24,6 @@ if (mangaEncontrado) {
 }
 
 select_custom.innerHTML = select_element.join('');
-
 
 
 

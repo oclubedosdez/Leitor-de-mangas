@@ -8,33 +8,25 @@ let capitulos = [];
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome;
 
-const mangaEncontrado = manga_info.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
+const mangaEncontrado = mangas_e_manhwas.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
 
 if (mangaEncontrado) {
-    const numCapitulos = mangaEncontrado.num_capitulo;
+    const numCapitulos = mangaEncontrado.num_capitulos;
     const textoCap = mangaEncontrado.text_cap;
+    
+    const semanasPorCapitulo = 1; // Ajuste o valor conforme necessário
 
+    for (let i = 1; i <= numCapitulos; i++) {
+        const intervaloEmSemanas = i * semanasPorCapitulo;
+        const dataAtual = new Date(dataInicial);
+        dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
+        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * `${i < 4 ? 0.1 : 0.5}` * i); // Multiplicamos por 2 para converter semanas em dias
 
-    // Obter a data atual
-    const dataAtual = new Date();
-
-    // Função para formatar a data no formato desejado
-    function formatData(data) {
-        const options = { year: "numeric", month: "long", day: "numeric" };
-        return data.toLocaleDateString("pt-BR", options);
-    }
-
-
-
-    // Adicionar capítulos com base na data atual
-    for (let i = 1; i <= numCapitulos; i++) { // Adicionando 5 capítulos com base na data atual
-        dataAtual.setDate(dataAtual.getDate() + 1); // Adiciona 1 dia à data atual
         capitulos.push({
             "id": `${i < 10 ? `0${i}` : i}`,
-            "data": "24/02/2024",
+            "data": formatData(dataAtual),
             "valor": `${i}`,
         });
-        
     }
 
 
@@ -211,11 +203,11 @@ let carousel_mangas_items = [
 
 carousel_mangas_items.forEach((item) => {
     // Procura o manga correspondente no array manga_info
-    let mangaInfo = manga_info.find(info => info.nome === item.nome);
+    let mangaInfo = mangas_e_manhwas.find(info => info.nome === item.nome);
 
     // Se encontrar, adiciona a informação de número de capítulos
     if (mangaInfo) {
-        item.capitulos = mangaInfo.num_capitulo;
+        item.capitulos = mangaInfo.num_capitulos;
         item.text_cap = mangaInfo.text_cap;
         item.estado = mangaInfo.estado;
         item.lancamento = mangaInfo.lancamento;

@@ -195,7 +195,7 @@ body {
   transform: translate(-142px, 330px);
 }
 
-.ativo {
+.novo {
   content: "";
   display: flex;
   position: absolute;

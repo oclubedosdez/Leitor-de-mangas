@@ -9,10 +9,10 @@ const select_custom = document.getElementById('selectOptions');
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome_manga;
 
-const mangaEncontrado = manga_info.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
+const mangaEncontrado = mangas_e_manhwas.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
 
 if (mangaEncontrado) {
-    const numCapitulos = mangaEncontrado.num_capitulo;
+    const numCapitulos = mangaEncontrado.num_capitulos;
     const textoCap = mangaEncontrado.text_cap;
 
     for (let i = inicia; i <= numCapitulos; i++) {
@@ -65,7 +65,7 @@ var nome = document.getElementById('nome_manga');
 
 
 
-var caminho = 'https://github.com/oclubedosdez/Imagens/blob/main/mangas/S/Saenai%20Riman%20to%20Yankee%20Joshi%20Kousei/capitulo-'
+var caminho = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/S/Saenai%20Riman%20to%20Yankee%20Joshi%20Kousei/capitulo-'
 
 var num_imgs = 80;
 
@@ -296,7 +296,7 @@ botao_proximo_capitulo.forEach((avancar_capitulo) => {
         window.location.reload(false);
         window.scrollTo(0, 0);
     }
-    if(capitulo_fra == select_element.length - 1) {
+    if(capitulo_fra == select_element.length) {
         avancar_capitulo.style.display = 'none'
     }
 
