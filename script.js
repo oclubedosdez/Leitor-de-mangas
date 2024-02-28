@@ -235,7 +235,6 @@ carousel_mangas_items.forEach((item) => {
     // Se encontrar, adiciona a informação de número de capítulos
     if (mangaInfo) {
         item.capitulos = mangaInfo.num_capitulos;
-        item.text_cap = mangaInfo.text_cap;
         item.estado = mangaInfo.estado;
         item.lancamento = mangaInfo.lancamento;
         item.tipo = mangaInfo.tipo;
