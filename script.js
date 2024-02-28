@@ -1,3 +1,4 @@
+
 const carrocel = document.querySelector('.carousel-inner');
 
 
@@ -138,142 +139,130 @@ carrocel_cabecalho.forEach((item) => {
   carrocel.innerHTML += carrocel_items;
 });
 
-//
+
 /**/
 //====CARROCEL 2 =====================================================
 
-const slider_mangas = document.querySelector('.slide-ler-mangas');
+const slider_mangas = document.querySelector('.owl-carousel');
 
 
 let carousel_mangas_items = [
-  {
-    "tipo": "manga",
-    "nome": "Atsumori-kun no Oyome-san",
-    "img": "Atsumori-kun no Oyome-san.jpg",
-    "cor": "preto-branco",
-    "pasta": "Atsumori-kun no Oyome-san",
-    "estatus": "Finalizado",
-    "status": "completo",
-    "data": "2018",
-    "capitulos": "",
-  },
+    {
+        "nome": "Atsumori-kun no Oyome-san",
+        "img": "Atsumori-kun no Oyome-san.jpg",
+    },
 
-  {
-    "tipo": "manhaw",
-    "nome": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)",
-    "img": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg",
-    "pasta": "Knight of the Frozen Flower",
-    "estatus": "Sem capitulos",
-    "status": "completo",
-    "data": "2021",
-    "capitulos": "",
-  },
-  {
-    "tipo": "manhaw",
-    "nome": "My Childhood Friend Became an Obsessive Male Lead",
-    "img": "My Childhood Friend Became an Obsessive Male Lead.jpg",
-    "cor": "colorido",
-    "pasta": "My Childhood Friend Became an Obsessive Male Lead",
-    "estatus": "Capitulos: 46",
-    "status": "ativo",
-    "data" : "2022"
-  },
-  {
-    "tipo": "manhaw",
-    "nome": "A Proprietária Bebê Está se Aposentando",
-    "img": "A Proprietária Bebê Está se Aposentando.jpg",
-    "pasta": "A Proprietária Bebê Está se Aposentando",
-    "estatus": "Sem capitulos",
-    "status": "ativo",
-    "data": "2022",
-  },
-  {
-    "tipo": "manga",
-    "nome": "Isekai De Tochi O Katte Noujou O Tsukurou",
-    "img": "Isekai De Tochi O Katte Noujou O Tsukurou.jpg",
-    "pasta": "Isekai De Tochi O Katte Noujou O Tsukurou",
-    "estatus": "Capitulos: 31",
-    "status": "ativo",
-    "data": "2019",
-  },
+    {
+        "tipo": "manhwa",
+        "nome": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!)",
+        "img": "Father, I Don't Want this Marriage! (Father, I Don't Want to Get Married!).jpg",
+        "pasta": "Knight of the Frozen Flower",
+        "estatus": "Sem capitulos",
+        "status": "completo",
+        "data": "2021",
+        "capitulos": "",
+    },
+    {
+        "tipo": "manhwa",
+        "nome": "My Childhood Friend Became an Obsessive Male Lead",
+        "img": "My Childhood Friend Became an Obsessive Male Lead.jpg",
+        "cor": "colorido",
+        "pasta": "My Childhood Friend Became an Obsessive Male Lead",
+        "estatus": "Capitulos: 46",
+        "status": "ativo",
+        "data": "2022"
+    },
+    {
+        "tipo": "manhwa",
+        "nome": "A Proprietária Bebê Está se Aposentando",
+        "img": "A Proprietária Bebê Está se Aposentando.jpg",
+        "pasta": "A Proprietária Bebê Está se Aposentando",
+        "estatus": "Sem capitulos",
+        "status": "ativo",
+        "data": "2022",
+    },
+    {
+        "tipo": "manga",
+        "nome": "Isekai De Tochi O Katte Noujou O Tsukurou",
+        "img": "Isekai De Tochi O Katte Noujou O Tsukurou.jpg",
+        "pasta": "Isekai De Tochi O Katte Noujou O Tsukurou",
+        "estatus": "Capitulos: 31",
+        "status": "ativo",
+        "data": "2019",
+    },
 
-  {
-    "tipo": "manga",
-    "nome": "Kekkon Yubiwa Monogatari",
-    "img": "Kekkon Yubiwa Monogatari.jpg",
-    "pasta": "Kekkon Yubiwa Monogatari",
-    "estatus": "Capitulos: 62",
-    "status": "ativo",
-    "data": "2016",
-  },
+    {
+        "tipo": "manga",
+        "nome": "Kekkon Yubiwa Monogatari",
+        "img": "Kekkon Yubiwa Monogatari.jpg",
+        "pasta": "Kekkon Yubiwa Monogatari",
+        "estatus": "Capitulos: 62",
+        "status": "ativo",
+        "data": "2016",
+    },
 
-  {
-    "tipo": "manhaw",
-    "nome": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
-    "img": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago.jpg",
-    "pasta": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
-    "estatus": "Capitulos: 31",
-    "status": "ativo",
-    "data": "2019",
-  },
-  {
-    "tipo": "manga",
-    "nome": "Fuufu Ijou, Koibito Miman",
-    "img": "Fuufu Ijou, Koibito Miman.jpg",
-    "pasta": "Fuufu Ijou, Koibito Miman",
-    "status": "ativo",
-  },
-  {
-    "tipo": "manhaw",
-    "nome": "Adelaide",
-    "img": "Adelaide.jpg",
-    "pasta": "Adelaide",
-    "estatus": "Sem capitulos",
-    "status": "completo",
-    "capitulos": "",
-  },
+    {
+        "tipo": "manhwa",
+        "nome": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
+        "img": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago.jpg",
+        "pasta": "Wojia Laopo Laizi Yiqian Nian Qian – My Wife Is From a Thousand Years Ago",
+        "estatus": "Capitulos: 31",
+        "status": "ativo",
+        "data": "2019",
+    },
+    {
+        "tipo": "manga",
+        "nome": "Fuufu Ijou, Koibito Miman",
+        "img": "Fuufu Ijou, Koibito Miman.jpg",
+        "pasta": "Fuufu Ijou, Koibito Miman",
+        "status": "ativo",
+    },
+    {
+        "tipo": "manhwa",
+        "nome": "Adelaide",
+        "img": "Adelaide.jpg",
+        "pasta": "Adelaide",
+        "estatus": "Sem capitulos",
+        "status": "completo",
+        "capitulos": "",
+    },
 ];
 
 carousel_mangas_items.forEach((item) => {
-  // Procura o manga correspondente no array manga_info
-  let mangaInfo = manga_info.find(info => info.nome === item.nome);
+    // Procura o manga correspondente no array manga_info
+    let mangaInfo = mangas_e_manhwas.find(info => info.nome === item.nome);
 
-  // Se encontrar, adiciona a informação de número de capítulos
-  if (mangaInfo) {
-    item.capitulos = mangaInfo.num_capitulo;
-    item.text_cap = mangaInfo.text_cap;
-    item.estado = mangaInfo.estado;
-    item.lancamento = mangaInfo.lancamento;
-  }
+    // Se encontrar, adiciona a informação de número de capítulos
+    if (mangaInfo) {
+        item.capitulos = mangaInfo.num_capitulos;
+        item.text_cap = mangaInfo.text_cap;
+        item.estado = mangaInfo.estado;
+        item.lancamento = mangaInfo.lancamento;
+        item.tipo = mangaInfo.tipo;
+    }
 
-  let manga_item = `
-    <div class="box">
-      <!-- ... (seu código existente) -->
-      <div class="capitulos"></div>
+    let manga_item = `
+    <div class="item_manga">
+  <a href="#">
+    <div class="book_png">
+      <img style="width: 150px;" src="./src/img/book.png" alt="">
     </div>
+    <span class="${item.tipo}_carrocel"></span>
+    <div class="manga_image">
+      <img src="./mangas-e-manhaws/imgs/${item.img}" alt="">
+    </div>
+    <h1 title="${item.nome}">${item.nome}</h1>
+    <span class="ep">${item.lancamento}</span>
+    <span></span>
+  </a>
 
-    <div class="box">
-   <div class="tipo">
-     <h2 class="${item.tipo}">${item.tipo}</h2>
-     <span class="data">${item.lancamento}</span>
-   </div>
-
-
-   <a href="./mangas-e-manhaws/pages/${item.tipo}s/${item.pasta}/index.html" class="imagem-ler-mangas">
-     <div class="img-book">
-      <img class="" src="./src/img/book.png" alt=""> 
-     </div>
-
-    <img src="./mangas-e-manhaws/imgs/${item.nome}.jpg" alt=""> 
-   </a>
-   <h2 class="nome" title="${item.nome}">${item.nome}</h2>
-   <div class="${item.status}">${item.estado ? `Finalizado` : `${item.text_cap}${item.capitulos}`}</div>
-   </div>
+</div>
     
   `;
 
-  slider_mangas.innerHTML += manga_item;
+    slider_mangas.innerHTML += manga_item;
 });
+
 
 
 

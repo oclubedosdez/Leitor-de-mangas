@@ -12,7 +12,18 @@
   <link rel="stylesheet" href="responsivo.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/14fa5a8f82.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/14fa5a8f82.js" crossorigin="anonymous"></script>
+
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/vendors/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/owl.carousel.js"></script>
   <title>Omegascans</title>
 </head>
 
@@ -20,52 +31,53 @@
 
   <header class="container2">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="../../../index.html">
-            <img class="img_logo" src="https://github.com/oclubedosdez.png" alt="">
-        </a>
-        <a class="navbar-brand" href="#">
-            <i class="fas fa-home"></i> Inicio
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
-            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./mangas-e-manhaws/index.html"><i class="fas fa-book"></i> Mangás <span class="sr-only">(current)</span></a>
-                </li>
+      <a href="../../../index.html">
+        <img class="img_logo" src="https://github.com/oclubedosdez.png" alt="">
+      </a>
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-home"></i> Inicio
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+          <li class="nav-item active">
+            <a class="nav-link" href="./mangas-e-manhaws/index.html"><i class="fas fa-book"></i> Mangás <span
+                class="sr-only">(current)</span></a>
+          </li>
 
-                <li class="nav-item dropdown hover-dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fas fa-list"></i> Gêneros
-                    </a>
-                    <ul class="dropdown-menu bg-primary">
-                        <li><a class="dropdown-item" href="#">Ação</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/romance.html">Romance</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/drama.html">Drama</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/fantasia.html">Fantasia</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/isekai.html">Isekai</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/slice-of-life.html">Slice of Life</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/aventura.html">Aventura</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/comedia.html">Comedia</a></li>
-                        <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/todos.html">VER TODOS</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-fire"></i> Em alta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled"></a>
-                </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-list"></i> Gêneros
+            </a>
+            <ul class="dropdown-menu bg-primary">
+              <li><a class="dropdown-item" href="#">Ação</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/romance.html">Romance</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/drama.html">Drama</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/fantasia.html">Fantasia</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/isekai.html">Isekai</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/slice-of-life.html">Slice of Life</a>
+              </li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/aventura.html">Aventura</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/comedia.html">Comedia</a></li>
+              <li><a class="dropdown-item" href="./mangas-e-manhaws/pages/generos/todos.html">VER TODOS</a></li>
             </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-fire"></i> Em alta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
+        </ul>
+      </div>
     </nav>
-</header>
+  </header>
   <!-- <br><br><br> -->
 
-  <main class="corpo">
+  <main class="corpo" id="carousel_principal">
     <div class="container-fluid">
       <div id="mainSlider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -76,10 +88,10 @@
           <li data-target="#mainSlider" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
-          
+
 
         </div>
-        <!--BOTÕES DE AVANÇAR E VOLTAR -->
+        <!-- BOTÕES DE AVANÇAR E VOLTAR -->
         <!-- <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
           <span aria-hidden="true"></span>
           <img src="./src/img/icons8-flecha-65.png" alt="">
@@ -89,53 +101,131 @@
           <span aria-hidden="true"></span>
           <img src="./src/img/icons8-flecha-64.png" alt="">
         </a> -->
-        <!---->
       </div>
     </div>
 
-    <!--CARROCEL 2-->
-    <div class="carrossel-ler-mangas">
-      <h1>Ler Mangás</h1>
-      <div class="slide-ler-mangas">
 
-        <!-- <div class="box">
-          <div class="tipo">
-            <h2 class="manga">manga</h2>
-            <span class="data">2018</span>
-          </div>
-
-          
-          
-          <a href="./mangas-e-manhaws/pages/mangas/Atsumori-kun no Oyome-san/index.html" class="imagem-ler-mangas">
-            <div class="img-book">
-             <img class="" src="./src/img/book.png" alt=""> 
-            </div>
-            
-           <img src="./mangas-e-manhaws/imgs/Atsumori-kun no Oyome-san.jpg" alt=""> 
-          </a>
-          <h2 class="nome" title="Atsumori-kun no Oyome-san">Atsumori-kun no Oyome-san</h2>
-          <div class="ativo">Finalizado</div>
-        </div> -->
-        
-
-        
-
-      </div>
-    </div>
 
     <!--slider 02 em destaque-->
-    
+
   </main>
+
+  <div class="ler_mangas">
+    <h1>Ler Mangás</h1>
+  </div>
+
+
+  <div class="custom-nav">
+
+    <button class="custom-prev">
+      <img
+        src="https://raw.githubusercontent.com/oclubedosdez/Imagens/e794b4dbdede04fcb0d77252fcfced3f2f11c014/src/img/arrow-left-solid.svg"
+        alt="">
+    </button>
+    <button class="custom-next">
+      <img
+        src="https://raw.githubusercontent.com/oclubedosdez/Imagens/e794b4dbdede04fcb0d77252fcfced3f2f11c014/src/img/arrow-right-solid.svg"
+        alt="">
+    </button>
+
+  </div>
+
+  <div class="carrocel_de_mangas">
+
+
+    <div class="mangas_para_ler">
+
+
+      <div class="owl-carousel owl-theme owl-loaded">
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      var owl = $('.owl-carousel').owlCarousel({
+        stagePadding: 0,
+        loop: true,
+        margin: 20,
+        nav: false,
+        center: false,
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        items: 4,
+
+        responsive: {
+          280: {
+            items: 1,
+          },
+          480: {
+            items: 2,
+          },
+          768: {
+            items: 3,
+          },
+          1093: {
+            items: 3,
+          },
+          1332: {
+            items: 4,
+          },
+          1440: {
+            items: 5,
+          },
+          1560: {
+            items: 6,
+          },
+        }
+      });
+
+      // Botões de navegação personalizados
+      $(".custom-next").click(function () {
+        owl.trigger("next.owl.carousel");
+      });
+
+      $(".custom-prev").click(function () {
+        owl.trigger("prev.owl.carousel");
+      });
+    });
+  </script>
 
 
 
 
 </body>
-<script src="./info-mangas.js"></script>
-<script src="./Bootstrap/jquery.slim.min.js"></script>
-<script src="./Bootstrap/bootstrap.bundle.min.js"></script>
 <script src="./mangas-e-manhaws/js/lista.js"></script>
+
+<!--Owl carrocel-->
+<script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/vendors/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/js/app.js"></script>
+
+
+
+<!-- <script src="./Bootstrap/jquery.slim.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Bootstrap/bootstrap.bundle.min.js"></script>
+
+<!--js para estrelas de avaliação-->
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/jquery.min.js"></script>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/jquery.rateyo.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/star.js"></script>
+
+
 <script src="./script.js"></script>
-<script src="./swiper-bundle.min.js"></script>
 
 </html>
