@@ -155,7 +155,7 @@ let mangas_e_manhwas = [
         "id": "L",
         "nome": "Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life",
         "tipo": "manga",
-        "num_capitulos": "",
+        "num_capitulos": "50",
         "estado": "ativo",
         "genero": "Acao Aventura Comedia Fantasia Romance Shounen Slice-of-Life",
         "pasta": "Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life",
