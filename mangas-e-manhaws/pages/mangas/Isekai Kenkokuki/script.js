@@ -1,9 +1,16 @@
 var box3 = document.querySelector(".box3");
 
-
-var nome = 'Isekai Kenkokuki'; //nome do manga/manhwa
-
+var nome = 'Isekai Kenkokuki'; // nome do manga/manhwa
 let capitulos = [];
+
+// Substitua esta linha pelo valor da data desejada (ano, mês, dia)
+const dataInicial = new Date('2024-03-01'); // Por exemplo, 30 de outubro de 2024
+
+// Função para formatar a data no formato desejado
+function formatData(data) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return data.toLocaleDateString("pt-BR", options);
+}
 
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome;
@@ -20,37 +27,29 @@ if (mangaEncontrado) {
         const intervaloEmSemanas = i * semanasPorCapitulo;
         const dataAtual = new Date(dataInicial);
         dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
-        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * `${i < 4 ? 0.1 : 0.5}` * i); // Multiplicamos por 2 para converter semanas em dias
+        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * 0.1 * i -2); // Multiplicamos por 2 para converter semanas em dias
 
         capitulos.push({
             "id": `${i < 10 ? `0${i}` : i}`,
-            "data": formatData(dataAtual),
+            "data": i < 60 ? "26 de fevereiro de 2024" : formatData(dataAtual),
             "valor": `${i}`,
         });
     }
 
-
-    // Criar elementos HTML e atualizar a caixa box3
     const bannerElements = capitulos.map((banner) => `
-    <a class="capitulo" href="./capitulos/index.html" data-valor="${banner.valor}">
-        <div class="titulo_data">
-            <h1>Capitulo ${banner.id}</h1> -
-            <h3>${banner.data}</h3> 
-        </div>
-        <img class="capitulo-img" src="../src/imgs/book.png" alt="">
-    </a>
-`);
-
-
+        <a class="capitulo" href="./capitulos/index.html" data-valor="${banner.valor}">
+            <div class="titulo_data">
+                <h1>Capitulo ${banner.id}</h1> -
+                <h3>${banner.data}</h3> 
+            </div>
+            <img class="capitulo-img" src="https://raw.githubusercontent.com/oclubedosdez/Imagens/main/src/img/book.png" alt="">
+        </a>
+    `);
 
     box3.innerHTML = bannerElements.join('');
-
-
 } else {
     console.log(`Manga não encontrado.`);
 }
-
-console.log(capitulos)
 
 
 
@@ -256,7 +255,3 @@ mangas_capitulos.forEach((link) => {
        
     }
 });
-
-
-
-

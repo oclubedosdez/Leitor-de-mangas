@@ -332,10 +332,3 @@ botao_voltar_capitulo.forEach((capitulo_anterior) => {
   
 //   // Chama a função para parar o carregamento após 5 segundos
 //   pararCarregamento();
-  
-
-
-
-
-
-

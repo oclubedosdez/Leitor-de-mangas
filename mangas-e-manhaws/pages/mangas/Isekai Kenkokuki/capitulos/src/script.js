@@ -1,6 +1,6 @@
 let select_element = [];
 
-var inicia = 0;
+var inicia = 1;
 
 var nome_manga = 'Isekai Kenkokuki'
 
@@ -65,7 +65,7 @@ var nome = document.getElementById('nome_manga');
 
 
 
-var caminho = 'https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/I/Isekai%20Kenkokuki/capitulo-'
+var caminho = "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/I/Isekai%20Kenkokuki/capitulo-"
 
 var num_imgs = 80;
 
@@ -169,12 +169,15 @@ for (let i = 0; i <= num_imgs; i++) {
     let manga_page = document.createElement('img');
     manga_page.classList.add('page_cap');
 
-    manga_page.src = `${diretorio}/imgs/${img_manga.id}.jpg`;
+    
 
-    if(capitulo == 59 || capitulo == 58) {
-        manga_page.src = `${diretorio}/imgs/${i < 10 ? "0" : ""}${img_manga.id}.jpg`;
+    if (capitulo == 59) {
+        manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ""}${img_manga.id}.jpg`;
+    } else {
+        manga_page.src = `${diretorio}/imgs/${img_manga.id}.jpg`;
     }
 
+   
     manga_page.alt = '';
 
     manga_page.onload = function () {
@@ -301,7 +304,7 @@ botao_proximo_capitulo.forEach((avancar_capitulo) => {
         window.location.reload(false);
         window.scrollTo(0, 0);
     }
-    if(capitulo_fra == select_element.length - 1) {
+    if(capitulo_fra == select_element.length) {
         avancar_capitulo.style.display = 'none'
     }
 
@@ -320,7 +323,7 @@ botao_voltar_capitulo.forEach((capitulo_anterior) => {
         window.location.reload(false);
         window.scrollTo(0, 0);
     }
-    if(capitulo_fra === inicia) {
+    if(capitulo_fra === 1) {
         capitulo_anterior.style.display = 'none'
     }
 });

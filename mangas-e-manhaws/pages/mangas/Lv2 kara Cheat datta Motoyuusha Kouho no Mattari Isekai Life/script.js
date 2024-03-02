@@ -6,7 +6,7 @@ var nome = 'Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life'; //no
 let capitulos = [];
 
 // Substitua esta linha pelo valor da data desejada (ano, mês, dia)
-const dataInicial = new Date('2024-02-25'); // Por exemplo, 30 de outubro de 2024
+const dataInicial = new Date('2024-02-26'); // Por exemplo, 30 de outubro de 2024
 
 // Função para formatar a data no formato desejado
 function formatData(data) {
@@ -30,11 +30,11 @@ if (mangaEncontrado) {
         const intervaloEmSemanas = i * semanasPorCapitulo;
         const dataAtual = new Date(dataInicial);
         dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
-        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * `${i < 4 ? 0.1 : 0.5}` * i); // Multiplicamos por 2 para converter semanas em dias
+        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * 0.2); // Multiplicamos por 2 para converter semanas em dias
 
         capitulos.push({
             "id": `${i < 10 ? `0${i}` : i}`,
-            "data": formatData(dataAtual),
+            "data": i < 49 ? '25 de fevereiro de 2024' : formatData(dataAtual),
             "valor": `${i}`,
         });
     }

@@ -5,6 +5,15 @@ var nome = 'Isekai De Tochi O Katte Noujou O Tsukurou'; //nome do manga/manhwa
 
 let capitulos = [];
 
+// Substitua esta linha pelo valor da data desejada (ano, mês, dia)
+const dataInicial = new Date('2023-04-26'); // Por exemplo, 30 de outubro de 2024
+
+// Função para formatar a data no formato desejado
+function formatData(data) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return data.toLocaleDateString("pt-BR", options);
+}
+
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome;
 
@@ -20,7 +29,7 @@ if (mangaEncontrado) {
         const intervaloEmSemanas = i * semanasPorCapitulo;
         const dataAtual = new Date(dataInicial);
         dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
-        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * `${i < 4 ? 0.1 : 0.5}` * i); // Multiplicamos por 2 para converter semanas em dias
+        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * 0.2 * i); // Multiplicamos por 2 para converter semanas em dias
 
         capitulos.push({
             "id": `${i < 10 ? `0${i}` : i}`,

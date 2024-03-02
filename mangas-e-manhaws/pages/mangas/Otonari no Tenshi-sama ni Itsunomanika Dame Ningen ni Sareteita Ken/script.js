@@ -5,6 +5,15 @@ var nome = 'Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken'
 
 let capitulos = [];
 
+// Substitua esta linha pelo valor da data desejada (ano, mês, dia)
+const dataInicial = new Date('2024-02-26'); // Por exemplo, 30 de outubro de 2024
+
+// Função para formatar a data no formato desejado
+function formatData(data) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return data.toLocaleDateString("pt-BR", options);
+}
+
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome;
 
@@ -50,7 +59,7 @@ if (mangaEncontrado) {
     console.log(`Manga não encontrado.`);
 }
 
-console.log(capitulos)
+
 
 
 

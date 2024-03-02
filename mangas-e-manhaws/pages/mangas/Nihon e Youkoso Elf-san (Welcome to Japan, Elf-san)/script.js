@@ -1,9 +1,18 @@
 var box3 = document.querySelector(".box3");
 
 
-var nome = 'Nihon e Youkoso elf-san'; //nome do manga/manhwa
+var nome = 'Nihon e Youkoso Elf-san'; //nome do manga/manhwa
 
 let capitulos = [];
+
+// Substitua esta linha pelo valor da data desejada (ano, mês, dia)
+const dataInicial = new Date('2023-02-26'); // Por exemplo, 30 de outubro de 2024
+
+// Função para formatar a data no formato desejado
+function formatData(data) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return data.toLocaleDateString("pt-BR", options);
+}
 
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = nome;
