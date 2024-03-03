@@ -1,0 +1,23 @@
+@media (max-width: 1400px) {
+    #info_manga #informacoes {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1050px) {
+    #info_manga #informacoes {
+        width: 60%;
+        height: auto;
+    }
+    #imagen_principal {
+        width: 23rem;
+        height:auto;
+    }
+}
+
+@media (max-width: 768px){
+    #info_manga #informacoes {
+        width: 100%;
+        height: auto;
+    }
+}
