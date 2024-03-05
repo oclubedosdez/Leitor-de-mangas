@@ -292,8 +292,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 #info #alternativo {
-    /* border: 1px solid red; */
-    line-height: 15px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    line-height: 10px;
+}
+#info #alternativo span {
+    padding: 0;
 }
 #info #alternativo span::after {
     content: ",";

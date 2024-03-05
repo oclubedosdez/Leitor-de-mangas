@@ -54,7 +54,7 @@ if (mangaEncontrado) {
     
     const semanasPorCapitulo = 1; // Ajuste o valor conforme necessário
 
-    for (let i = capitulo_inicia; i <= numCapitulos; i++) {
+    for (let i = capitulo_incia; i <= numCapitulos; i++) {
         const intervaloEmSemanas = i * semanasPorCapitulo;
         const dataAtual = new Date(dataInicial);
         dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro

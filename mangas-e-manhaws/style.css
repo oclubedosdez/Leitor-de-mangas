@@ -8,7 +8,7 @@ body {
   justify-content: center;
   padding: 30px;
   overflow-x: hidden;
-  background-color: #181818;
+  background-color: white;
 }
 *{
   transition: all 0.1s ease-in;
@@ -37,7 +37,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #ffffff;
   padding-bottom: 30px;
   font-weight: bold;
@@ -65,7 +65,7 @@ body {
   display: inline-block;
   padding: 0 10px;
   cursor: pointer;
-  color: white;
+  color: rgb(5, 5, 5);
 }
 
 .pagination a.disabled {
@@ -76,23 +76,27 @@ body {
 
 .pagination a.current {
   background-color: rgb(255, 0, 0);
+  color: white;
 }
 
 .pagination a:hover {
   background-color: rgb(188, 0, 0);
+  color: white;
 }
 
 .imagem {
   width: 240px;
   height: 350px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.589);
 }
 
 .imagem img {
+  /* border: 1px solid black; */
   width: 240px;
   height: 350px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   filter: brightness(100%);
   transition: all 0.5s;
@@ -107,7 +111,6 @@ body {
 }
 
 .box .nome {
-  /* border: 1px solid gold; */
   text-align: center;
   font-size: 18px;
   margin-bottom: 0;
@@ -120,6 +123,8 @@ body {
   text-align: center;
   cursor: pointer;
   transition: all .4s ease-in;
+  background-color: black;
+  border-radius: 5px;
 }
 .manhwa::after {
   content: "MANHWA";

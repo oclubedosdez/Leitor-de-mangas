@@ -1,6 +1,6 @@
 let select_element = [];
 
-var inicia = capitulo_inicia;
+var inicia = 0;
 
 var nome_manga = nome;
 
@@ -170,14 +170,6 @@ for (let i = 0; i <= num_imgs; i++) {
     manga_page.classList.add('page_cap');
 
     manga_page.src = `${diretorio}/imgs/${img_manga.id}.jpg`;
-
-    if(nome_manga == 'Isekai Kenkokuki'){
-        if(capitulo == 58 || capitulo == 59) {
-            manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
-        }
-    }
-
-
     manga_page.alt = '';
 
     manga_page.onload = function () {
@@ -304,7 +296,7 @@ botao_proximo_capitulo.forEach((avancar_capitulo) => {
         window.location.reload(false);
         window.scrollTo(0, 0);
     }
-    if(capitulo == select_element.length) {
+    if(capitulo_fra == select_element.length) {
         avancar_capitulo.style.display = 'none'
     }
 

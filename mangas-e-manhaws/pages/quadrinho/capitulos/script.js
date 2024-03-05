@@ -1,8 +1,7 @@
 let select_element = [];
 
-var inicia = capitulo_inicia;
 
-var nome_manga = nome;
+var nome_manga = localStorage.getItem('NomeDoManga');
 
 const select_custom = document.getElementById('selectOptions');
 
@@ -15,7 +14,8 @@ if (mangaEncontrado) {
     const numCapitulos = mangaEncontrado.num_capitulos;
     const textoCap = mangaEncontrado.text_cap;
 
-    for (let i = inicia; i <= numCapitulos; i++) {
+
+    for (let i = mangaEncontrado.CapituloInicia; i <= numCapitulos; i++) {
         select_element.push(`<div class='option' data-value='${i}'>capitulo ${i < 10 ? '0' : ''}${i}</div>`);
     }
 
@@ -66,6 +66,7 @@ var nome = document.getElementById('nome_manga');
 
 
 
+var caminho_pasta = mangaEncontrado.pasta;
 
 var num_imgs = 80;
 
@@ -174,6 +175,12 @@ for (let i = 0; i <= num_imgs; i++) {
     if(nome_manga == 'Isekai Kenkokuki'){
         if(capitulo == 58 || capitulo == 59) {
             manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
+        }
+    }
+
+    if (nome_manga == 'Eu tive um filho do tirano') {
+        if (capitulo == 1) {
+            var num_imgs = 141;
         }
     }
 
@@ -323,7 +330,7 @@ botao_voltar_capitulo.forEach((capitulo_anterior) => {
         window.location.reload(false);
         window.scrollTo(0, 0);
     }
-    if(capitulo_fra === inicia) {
+    if(capitulo_fra === mangaEncontrado.CapituloInicia) {
         capitulo_anterior.style.display = 'none'
     }
 });

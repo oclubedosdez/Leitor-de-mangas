@@ -7,32 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Bootstrap/bootstrap.min.css">
+
+    <!--Css custom-->
+
+    <link rel="stylesheet" href="../../src/style.css">
+
+    <link rel="stylesheet" href="../../src/resposivo.css">
+
+    <!--fontes e kit awesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/fontes.css">
 
     <script src="https://kit.fontawesome.com/14fa5a8f82.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/css/jquery.rateyo.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/css/jquery.rateyo.min.css">
 
 
     <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/assets/owl.theme.default.min.css">
 
     <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/vendors/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/owl.carousel.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/vendors/jquery.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/owlcarousel/owl.carousel.js"></script>
 
-    <title class="titulo1"></title>
+    <title id="nome_head"></title>
 </head>
 
 <body>
 
-
-
-    <header class="container2">
+    <!--CABEÇALHO-->
+    <header class="cabecalho">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a href="../../../index.html">
                 <img class="img_logo" src="https://github.com/oclubedosdez.png" alt="">
@@ -79,59 +95,71 @@
         </nav>
     </header>
 
-    <div class="banner">
-        <img id="imagen_banner" src="" alt="">
-        <!-- <div class="faixa"></div> -->
-    </div>
-
-    <div class="container-fluid titulo">
-        <span id="tipo_de_quadrinho"></span>
-        <h1 class="titulo2"></h1>
-    </div>
-    <div class="container-fluid box">
-        <div class="box1">
-            <img id="imagen_principal" class="img-fluid" src="" alt="">
+    <!--HISTORIA-->
+    <section id="historia">
+        <div id="imagen_fundo">
+            <img id="manga_img_fundo" src="" alt="">
         </div>
-        <div class="box2 container-fluid">
-            <div class="info">
 
-                <div id="container_de_estrelas">
-                    <div id="minhaDivEspecifica">
-                        <!--estrela de avaliação-->
-                        <div class="caixa-estrelas">
-                            <!--estrelas-->
-                            <div id="rateYo1"></div>
-                            <!--avaliação-->
-                            <h1 class="counter">5.5</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <h1 id="total_de_votos">Total de votos: <span id="votos">10</span></h1> -->
-
-                <div class="generos"><span>Genero(s): </span></div>
-
-                <div id="autor"></div>
-
-                <div id="artista"></div>
-
-                <div id="Alternativa"><span>Alternativo: </span></div>
-
-                <div id="estatus"></div>
-
-                <div id="sinopse"></div>
-
-
+        <div id="manga_dados">
+            <div id="titulo">
+                <h1 id="nome_body"></h1>
             </div>
 
+            <div id="info_manga">
+                <img id="imagen_principal" src="" alt="">
+
+                <div id="informacoes">
+                    <div id="container_de_estrelas">
+                        <div id="minhaDivEspecifica">
+                            <!--estrela de avaliação-->
+                            <div class="caixa-estrelas">
+                                <!--estrelas-->
+                                <div id="rateYo1"></div>
+                                <!--avaliação-->
+                                <h1 class="counter">5.5</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info">
+                        <div id="tipo_quadrinho"></div>
+
+                        <div id="generos"></div>
+
+                        <div id="autor"></div>
+
+                        <div id="artista"></div>
+
+                        <div id="alternativo"></div>
+
+                        <div id="estatus"></div>
+
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="caixa_sinopse">
+        <div id="sinopse"></div>
+    </section>
 
 
-    <div class="container-fluid box3 d-flex flex-wrap justify-content-center">
+    <!--CAPITULOS-->
 
-    </div>
 
+    <!--Renderizar os capitulo-->
+    <section id="capitulos">
+        <div class="box3">
+
+        </div>
+    </section>
+
+
+
+    <!--CARROCEL OWL-->
     <div class="ler_mangas">
         <h1>Leia também</h1>
     </div>
@@ -155,12 +183,6 @@
 
 
             <div class="owl-carousel owl-theme owl-loaded">
-
-
-
-
-
-
 
 
 
@@ -244,9 +266,7 @@
 
 </body><br><br><br><br><br>
 
-<script src="../../../js/lista.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/mangas-e-manhaws/js/lista.js"></script>
-
+<script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/mangas-e-manhaws/js/mangas.js"></script>
 
 <!--Owl carrocel-->
 <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/vendors/highlight.js"></script>
@@ -258,13 +278,17 @@
 <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Bootstrap/bootstrap.bundle.min.js"></script>
 
 <!--js para estrelas de avaliação-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/jquery.min.js"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/jquery.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/jquery.rateyo.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/star.js"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/jquery.rateyo.js"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/js/star.js"></script>
 
 
 <!--JS custom-->
-<script src="./script.js"></script>
+<script src="./info_manga.js"></script>
 
+<script src="../../src/script.js"></script>
 </html>

@@ -9,7 +9,7 @@ mangas_e_manhwas.forEach((banner) => {
           <span class="${banner.estado} ${banner.novo_capitulo}">${banner.estado == "completo" || banner.novo_capitulo == "" ? "" : `Novo:${banner.num_capitulos}`}</span>
 
           <div class="imagem">
-        <a href="./pages/${banner.tipo}s/${banner.pasta}/index.html">
+        <a href="./pages/quadrinho/index.html">
           <img class="img"
              src="${banner["caminho-img"]}">
        </a>
@@ -53,5 +53,15 @@ function filterCards() {
 }
 
 
+var manga_selecionado = document.querySelectorAll(".box")
+
+manga_selecionado.forEach((manga) => {
+    manga.onclick = function() {
+        const pegar_manga = manga.querySelector('.nome').innerText;
+        console.log(pegar_manga)
+        
+        localStorage.setItem('NomeDoManga', pegar_manga);
+    }
+})
 
 
