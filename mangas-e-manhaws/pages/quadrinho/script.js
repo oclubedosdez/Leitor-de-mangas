@@ -40,7 +40,7 @@ if (mangaEncontrado) {
     // Obtenha o valor da propriedade "genero"
     var genero = mangaEncontrado.genero;
 
-    // Separe os gêneros usando a espaço como delimitador
+    // Separe os gêneros usando o espaço como delimitador
     var generosArray = genero.split(' ');
 
     // Mapeie os gêneros para os links formatados

@@ -184,6 +184,18 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    if (nome_manga == 'De Tantas Coisas, Me Tornei um Corvo') {
+        if (capitulo < 88) {
+            manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
+        }
+    }
+
+    if (nome_manga == 'Knight of the Frozen Flower') {
+        if (capitulo < 52) {
+            manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
+        }
+    }
+
 
     manga_page.alt = '';
 
