@@ -230,7 +230,7 @@ let mangas_e_manhwas = [
         "nomes_alternativos": "Rabukome Manga ni Haitte Shimatta no de, Oshi no Make Heroine wo Zenryoku de Shiawase ni suru, ラブコメ漫画に入ってしまったので、推しの負けヒロインを全力で幸せにする",
         "estado": "ativo",
         "genero": "Comédia Escolar Ficção Romance Shounen",
-        "pasta": "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/manhaws/M/Maga%20da%20Culin%C3%A1ria/capitulo-",
+        "pasta": "https://raw.githubusercontent.com/JoaoManga27/Quadrinhos/main/mangas/L/Love%20Comedy%20Manga%20ni%20Haitteshimatta%20node%2C%20Oshi%20no%20Make%20Heroine%20wo%20Zenryoku%20de%20Shiawase%20ni%20Suru/capitulo-",
 
         "caminho-img": "https://raw.githubusercontent.com/oclubedosdez/Imagens/main/mangas/img/Love Comedy Manga ni Haitteshimatta node, Oshi no Make Heroine wo Zenryoku de Shiawase ni Suru.jpg",
         "novo_capitulo": "",

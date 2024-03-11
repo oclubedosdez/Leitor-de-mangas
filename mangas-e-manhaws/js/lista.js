@@ -1,4 +1,4 @@
-let Mangas = document.querySelector(".container")
+let Mangas = document.querySelector(".container_mangas")
 
 
 mangas_e_manhwas.forEach((banner) => {

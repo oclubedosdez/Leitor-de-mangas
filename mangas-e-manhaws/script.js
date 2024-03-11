@@ -121,10 +121,26 @@
     };
 })(jQuery);
 
-$(".container").pagify(20, ".box");
+$(".container_mangas").pagify(20, ".box");
 
 var btn_scroll_top = $(".pagination");
 btn_scroll_top.click(function () {
     $('html, body').animate({ scrollTop: 0 });
 
 });
+
+
+var cabecalho = document.getElementById('menu_cabecalho')
+
+
+cabecalho.onmouseenter = function() {
+   cabecalho.style.height = '60%'
+}
+
+cabecalho.onmouseleave = function() {
+    cabecalho.style.height = '100px'
+}
+
+cabecalho.onclick = function() {
+    cabecalho.style.height = '100px'
+}

@@ -58,3 +58,16 @@ else if (nomeDoManga == "Saint Seiya Meiou Iden Dark Wing") {
     
     localStorage.setItem('MangasRelacionados', JSON.stringify(carousel_mangas_items));
 }
+else if (nomeDoManga == "Musume ja Nakute Mama ga Suki nano") {
+    let carousel_mangas_items = [
+        { "nome": "Isekai Cheat Magician" },
+        { "nome": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken" },
+        { "nome": "Isekai De Tochi O Katte Noujou O Tsukurou" },
+        { "nome": "Estou Tentando Me Divorciar do Meu Esposo Vilão, Mas Teremos Um Filho" },
+        { "nome": "Salvos A Monster Evolution LitRPG" },
+        { "nome": "Congelamento Global" },
+        { "nome": "Tanbo de Hirotta Onna Kishi, Inaka de Ore no Yome dato Omowareteiru" },
+    ];
+    
+    localStorage.setItem('MangasRelacionados', JSON.stringify(carousel_mangas_items));
+}

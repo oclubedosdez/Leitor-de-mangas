@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Omegascans</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
   <link rel="stylesheet" href="./style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
@@ -13,13 +15,76 @@
 
 
   <link rel="shortcut icon" href="https://github.com/oclubedosdez.png" type="image/x-icon">
-  <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+
   <link rel="stylesheet" href="./swiper-bundle.min.css" />
   <script src="https://unpkg.com/phosphor-icons"></script>
+
+
+  <!--fontes e kit awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/fontes.css">
+
+    <script src="https://kit.fontawesome.com/14fa5a8f82.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/stars/css/jquery.rateyo.min.css">
+
 </head>
 
 <body>
-  <header>
+ 
+
+  <!--CABEÇALHO-->
+  <header class="cabecalho meuHeader">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="../../../index.html">
+        <img class="img_logo" src="https://github.com/oclubedosdez.png" alt="">
+      </a>
+      <a class="navbar-brand" href="../../../../index.html">
+        <i class="fas fa-home"></i> Inicio
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+          <li class="nav-item active">
+            <a class="nav-link" href="../../index.html"><i class="fas fa-book"></i> Mangás <span
+                class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-list"></i> Gêneros
+            </a>
+            <ul class="dropdown-menu bg-primary">
+              <li><a class="dropdown-item" href="../../generos/acao.html">Ação</a></li>
+              <li><a class="dropdown-item" href="../../generos/romance.html">Romance</a></li>
+              <li><a class="dropdown-item" href="../../generos/drama.html">Drama</a></li>
+              <li><a class="dropdown-item" href="../../generos/fantasia.html">Fantasia</a></li>
+              <li><a class="dropdown-item" href="../../generos/isekai.html">Isekai</a></li>
+              <li><a class="dropdown-item" href="../../generos/slice-of-life.html">Slice of Life</a></li>
+              <li><a class="dropdown-item" href="../../generos/aventura.html">Aventura</a></li>
+              <li><a class="dropdown-item" href="../../generos/comedia.html">Comedia</a></li>
+              <li><a class="dropdown-item ultimo_item" href="../../generos/todos.html">VER TODOS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-fire"></i> Em alta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <header class="buscar_manga">
     <div class="input-wrapper">
       <label for="filter" class="sr-only"></label>
       <input id="filter" type="text" placeholder="Filter">
@@ -30,11 +95,15 @@
 
   <!-- partial:index.partial.html -->
   <div class="cont">
-    <div class="container">
+    <div class="container_mangas">
 
     </div>
   </div>
   <!-- partial -->
+
+  <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Owl/assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/oclubedosdez/Leitor-de-mangas/src/Bootstrap/bootstrap.bundle.min.js"></script>
+
   <script src="./js/mangas.js"></script>
   <script src="./js/lista.js"></script>
   <script src='./js/jquery.min.js'></script>

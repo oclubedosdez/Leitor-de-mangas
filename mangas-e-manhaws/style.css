@@ -1,3 +1,104 @@
+:root {
+  /*navbar*/
+  --navbar-font_size: 18px;
+  --navbar-dropdown-item-font-size: 14px;
+  --icone-logo-width: 3rem;
+}
+
+
+
+/*CABEÇALHO*/
+.img_logo {
+  border-radius: 50px;
+  width: var(--icone-logo-width);
+  margin-right: 1rem;
+  border: 2px solid white;
+}
+
+.img_logo:hover {
+  filter: brightness(120%);
+}
+
+
+
+.cabecalho {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  width: 100vw;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  font-size: var(--navbar-font_size);
+}
+
+.navbar-toggler {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+
+
+.nav-item .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.nav-item .nav-link:hover {
+  color: red !important;
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
+  font-size: var(--navbar-font_size);
+}
+
+
+
+.navbar-brand:hover {
+  color: red !important;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item {
+  color: white !important;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.481);
+  font-size: var(--navbar-dropdown-item-font-size);
+  padding: 0.50rem;
+}
+.dropdown-item.ultimo_item {
+  border-bottom: none;
+  margin-bottom: -7px;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(255, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+/* CSS para mostrar dropdown ao passar o mouse */
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  overflow: hidden;
+}
+
+.meuHeader {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+}
+
+a {
+  text-decoration: none !important;
+}
+/*================================================*/
+
 body {
   font-family: sans-serif;
   font-weight: bold;
@@ -10,21 +111,37 @@ body {
   overflow-x: hidden;
   background-color: white;
 }
+
+iframe {
+  width: 100vw;
+  height: 60%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  /* border: 1px solid red; */
+  z-index: 10000;
+  background-color: transparent;
+}
+
+
+
 *{
   transition: all 0.1s ease-in;
 }
 
+
+
 .cont {
   /* border: 1px solid springgreen; */
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   padding-bottom: 0px;
 }
 
-.container {
+.container_mangas {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   justify-content:center;
 }
@@ -112,7 +229,7 @@ body {
 
 .box .nome {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 0;
   margin-top: 5px;
   padding: 0.40rem;
@@ -180,10 +297,10 @@ body {
   color: white;
   background: rgb(0, 0, 0);
   width: 130px;
-  height: 18px;
+  height: 26px;
   padding: 4px;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: sans-serif;
   border-radius: 0px 10px 10px 5px;
   font-weight: bold;
@@ -192,12 +309,12 @@ body {
 }
 
 .completo::after {
-  transform: translate(-148px, 330px);
+  transform: translate(-148px, 330px) !important;
 }
 
 .completo2::after,
 .completo3::after {
-  transform: translate(-142px, 330px);
+  transform: translate(-142px, 330px) !important;
 }
 
 .novo {
@@ -219,9 +336,7 @@ body {
 }
 
 /* Sistema de busca de mangas */
-body {
-  /* background-color: white; */
-}
+
 
 :root {
   --gray-900: #121214;
@@ -234,7 +349,7 @@ body {
   position: relative;
 }
 
-header input {
+.buscar_manga input {
   margin-top: 2rem;
   padding: 1rem 1.6rem;
   border-radius: .8rem;
@@ -252,12 +367,12 @@ header input {
   bottom: 0.8rem;
 }
 
-header {
+.buscar_manga {
   text-align: center;
   color: white;
   padding: 3.2rem;
   max-width: 46rem;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .sr-only {
