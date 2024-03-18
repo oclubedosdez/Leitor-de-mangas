@@ -1,29 +1,7 @@
-let select_element = [];
 
 
-var nome_manga = localStorage.getItem('NomeDoManga');
-
-const select_custom = document.getElementById('selectOptions');
-
-// Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
-const nomeDoMangaBuscado = nome_manga;
-
-const mangaEncontrado = mangas_e_manhwas.find(manga => manga.nome.toLowerCase() === nomeDoMangaBuscado.toLowerCase());
-
-if (mangaEncontrado) {
-    const numCapitulos = mangaEncontrado.num_capitulos;
-    const textoCap = mangaEncontrado.text_cap;
 
 
-    for (let i = mangaEncontrado.CapituloInicia; i <= numCapitulos; i++) {
-        select_element.push(`<div class='option' data-value='${i}'>capitulo ${i < 10 ? '0' : ''}${i}</div>`);
-    }
-
-} else {
-    console.log(`Manga não encontrado.`);
-}
-
-select_custom.innerHTML = select_element.join('');
 
 
 
@@ -196,6 +174,25 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    if (nome_manga == 'um garoto na escola feminina') {
+        num_imgs = 30;
+    }
+
+    if (nome_manga == 'Ano Oni Kyoushi ga Boku no Ane ni Narundesuka') {
+        if(capitulo == 6 || capitulo == 7) {
+            manga_page.src = `${diretorio}/imgs/${img_manga.id}.png`;
+        }
+    }
+
+    if (nome_manga == 'My Amazing Wechat') {
+        
+        if(capitulo < 100) {
+            manga_page.src = `${diretorio}/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
+        } else {
+            manga_page.src = `${diretorio}/${img_manga.id}.jpg`;
+        }
+    }
+
 
     manga_page.alt = '';
 
@@ -244,58 +241,7 @@ function checkCarregamentoCompleto() {
 
 
 /*============================================= SELELECT CUSTOMIZADO E BOTOES DE IR E VOLTAR =======================================================*/
-const selectOptions = document.getElementById('selectOptions');
 
-function incializarselect() {
-    const selectHeader = document.getElementById('selectHeader');
-    const selectOptions = document.getElementById('selectOptions');
-    const options = document.querySelectorAll('.option');
-
-    // Função para adicionar a classe 'selected' e armazenar no localStorage
-    function selectOption(option) {
-        selectHeader.textContent = option.textContent;
-        selectOptions.style.display = 'none';
-
-        options.forEach(function (otherOption) {
-            otherOption.classList.remove('selected');
-        });
-
-        option.classList.add('selected');
-
-        const valorSelecionado = option.getAttribute('data-value');
-        localStorage.setItem('ValorCapitulo', valorSelecionado);
-    }
-
-
-
-    selectHeader.onclick = function () {
-        selectOptions.style.display = selectOptions.style.display === 'block' ? 'none' : 'block';
-    }
-
-
-    options.forEach(function (option) {
-        option.addEventListener('click', function () {
-            selectOption(option);
-            window.location.reload(false);
-        });
-    });
-
-
-
-    // console.log(`O valor armazenado é ${localStorage.getItem('ValorCapitulo')}`);
-
-    // Ao carregar a página, aplicar a classe 'selected' se existir um valor armazenado
-    const valorArmazenado = localStorage.getItem('ValorCapitulo');
-    if (valorArmazenado) {
-        const selectedOption = document.querySelector(`.option[data-value="${valorArmazenado}"]`);
-        if (selectedOption) {
-            selectOption(selectedOption);
-        }
-    }
-}
-
-
-incializarselect()
 
 
 

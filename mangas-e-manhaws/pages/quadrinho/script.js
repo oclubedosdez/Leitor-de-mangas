@@ -100,18 +100,41 @@ if (mangaEncontrado) {
 
 
 
-    for (let i = capitulo_inicia; i <= numCapitulos; i++) {
-        const intervaloEmSemanas = i * semanasPorCapitulo;
-        const dataAtual = new Date(dataInicial);
-        dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
-        dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * 0.1 * i); // Multiplicamos por 2 para converter semanas em dias
+   
 
-        capitulos.push({
-            "id": `${i < 10 ? `0${i}` : i}`,
-            "data": formatData(dataAtual),
-            "valor": `${i}`,
-        });
+
+    if (nomeDoMangaBuscado == 'um garoto na escola feminina') {
+        for (let i = capitulo_inicia; i <= numCapitulos; i++) {
+            const intervaloEmSemanas = i * semanasPorCapitulo;
+            const dataAtual = new Date(dataInicial);
+            dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
+            dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * 0.1); // Multiplicamos por 2 para converter semanas em dias
+
+            capitulos.push({
+                "id": `${i < 10 ? `0${i}` : i}`,
+                "data": i < 356 ? '12 de março de 2024' : formatData(dataAtual),
+                "valor": `${i}`,
+            });
+
+
+        }
+    } else {
+        for (let i = capitulo_inicia; i <= numCapitulos; i++) {
+            const intervaloEmSemanas = i * semanasPorCapitulo;
+            const dataAtual = new Date(dataInicial);
+            dataAtual.setDate(dataInicial.getDate() + 1); // Ajuste do dia para corrigir o problema de começar em 24 de fevereiro
+            dataAtual.setDate(dataAtual.getDate() + intervaloEmSemanas * 0.1 + i); // Multiplicamos por 2 para converter semanas em dias
+    
+            capitulos.push({
+                "id": `${i < 10 ? `0${i}` : i}`,
+                "data": formatData(dataAtual),
+                "valor": `${i}`,
+            });
+    
+    
+        }
     }
+
 
     const capituloElements = capitulos.map((capitulo) => `
         <a class="capitulo" href="./capitulos/index.html" data-valor="${capitulo.valor}">
@@ -182,7 +205,7 @@ var mangas_relacionados = document.querySelectorAll('.item_manga');
 
 
 mangas_relacionados.forEach((manga_relacionado) => {
-    manga_relacionado.onclick = function() {
+    manga_relacionado.onclick = function () {
         const manga_selecionado = manga_relacionado.getAttribute('data-name')
         localStorage.setItem('NomeDoManga', manga_selecionado)
         window.location.reload(false)
