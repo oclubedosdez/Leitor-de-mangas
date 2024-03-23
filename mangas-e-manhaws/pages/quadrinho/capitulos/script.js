@@ -1,10 +1,67 @@
+/*==================================LER FAVORITOS================================================*/
+var botao_favoritos = document.querySelector('#ler_favoritos')
+var estadoAtual = localStorage.getItem('ModoFavoritos'); // Obtém o estado atual do localStorage
+var modo_favoritos = document.querySelectorAll('.modo_favoritos');
+var capitulos_gostei = JSON.parse(localStorage.getItem('gostei'));
+var divs_option = document.querySelectorAll('.option');
+
+// Define a função a ser executada quando o botão for clicado
+botao_favoritos.onclick = function() {
+    // Verifica o estado atual e altera para o oposto
+    if (estadoAtual === 'ativo') {
+        localStorage.setItem('ModoFavoritos', 'inativo');
+        window.location.reload(true)
+        localStorage.setItem('ValorCapitulo', mangaEncontrado.CapituloInicia);
+        estadoAtual = 'inativo'; // Atualiza o estado atual para 'inativo'
+    } else {
+        localStorage.setItem('ModoFavoritos', 'ativo');
+        estadoAtual = 'ativo'; // Atualiza o estado atual para 'ativo'
+        window.location.reload(true)
+        localStorage.setItem('ValorCapitulo', capitulos_gostei[0]); //inciar com o primeiro capitulo que gostou
+        localStorage.setItem('contador', 0); //inciar o contador com base nos capitulos favoritos
+
+        
+    }
+
+    
+    modo_favoritos.forEach((favoritos) => {
+        if (localStorage.getItem('ModoFavoritos') === 'ativo') {
+            favoritos.classList.add('favorito')
+        } else if (localStorage.getItem('ModoFavoritos') === 'inativo') {
+            favoritos.classList.remove('favorito')
+        }
+    })
+
+    
+};
+
+// Aqui você pode adicionar qualquer outra ação que deseja executar ao clicar no botão
+modo_favoritos.forEach((favoritos) => {
+    if (localStorage.getItem('ModoFavoritos') === 'ativo') {
+        favoritos.classList.add('favorito')
+    } else if (localStorage.getItem('ModoFavoritos') === 'inativo') {
+        favoritos.classList.remove('favorito')
+    }
+})
 
 
 
+if (localStorage.getItem('ModoFavoritos') === 'ativo') {
+    // Seleciona todos os elementos <div> com a classe "option"
+var divsOption = document.querySelectorAll('div.option');
+
+// Percorre os elementos e verifica se cada um tem a classe "favorito"
+divsOption.forEach(function(div) {
+    if (!div.classList.contains('favorito')) {
+        // Se não tiver a classe "favorito", remove o elemento
+        div.remove();
+    }
+});
+}
 
 
 
-
+/*MODO ESCURO*/
 
 var modo_escuro = document.querySelector('.modo-claro');
 var botao = document.querySelector('.modo-claro')
@@ -193,6 +250,14 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    if (nome_manga == 'Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi') {
+        
+        if(capitulo == 1) {
+            num_imgs = 81;
+        }
+    }
+
+
 
     manga_page.alt = '';
 
@@ -216,6 +281,8 @@ for (let i = 0; i <= num_imgs; i++) {
     container.appendChild(manga_page);
 }
 
+
+
 function checkCarregamentoCompleto() {
     // Verifica se todas as imagens foram processadas (carregadas ou com erro)
     if (imagensCarregadas.length + imagensComErro === num_imgs) {
@@ -226,10 +293,6 @@ function checkCarregamentoCompleto() {
         container.classList.remove('visibilidade')
     }
 }
-
-
-
-
 
 
 
@@ -258,40 +321,94 @@ document.addEventListener('click', function (event) {
 
 
 /*Botões*/
-botao_proximo_capitulo.forEach((avancar_capitulo) => {
-    avancar_capitulo.onclick = function () {
-        capitulo++;
-
-        titulo1.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
-        nome.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
-
-        localStorage.setItem('ValorCapitulo', capitulo)
-        window.location.reload(false);
-        window.scrollTo(0, 0);
-    }
-    if(capitulo == select_element.length) {
-        avancar_capitulo.style.display = 'none'
-    }
-
-});
 
 
 
-botao_voltar_capitulo.forEach((capitulo_anterior) => {
-    capitulo_anterior.onclick = function () {
-        capitulo--;
 
-        titulo1.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
-        nome.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
 
-        localStorage.setItem('ValorCapitulo', capitulo)
-        window.location.reload(false);
-        window.scrollTo(0, 0);
-    }
-    if(capitulo_fra === mangaEncontrado.CapituloInicia) {
-        capitulo_anterior.style.display = 'none'
-    }
-});
+
+if(localStorage.getItem('ModoFavoritos') === 'inativo') {
+    botao_proximo_capitulo.forEach((avancar_capitulo) => {
+        avancar_capitulo.onclick = function () {
+            capitulo++;
+            titulo1.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+            nome.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+    
+            localStorage.setItem('ValorCapitulo', capitulo)
+            window.location.reload(false);
+            window.scrollTo(0, 0);
+        }
+        if(capitulo == select_element.length) {
+            avancar_capitulo.style.display = 'none'
+        }
+    
+    });
+    
+    
+    
+    botao_voltar_capitulo.forEach((capitulo_anterior) => {
+        capitulo_anterior.onclick = function () {
+            capitulo--;
+    
+            titulo1.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+            nome.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+    
+            localStorage.setItem('ValorCapitulo', capitulo)
+            window.location.reload(false);
+            window.scrollTo(0, 0);
+        }
+        if(capitulo_fra === mangaEncontrado.CapituloInicia) {
+            capitulo_anterior.style.display = 'none'
+        }
+    });
+}
+
+
+
+
+var contado = Number(localStorage.getItem('contador'))
+
+if(localStorage.getItem('ModoFavoritos') === 'ativo') {
+    
+
+    botao_proximo_capitulo.forEach((avancar_capitulo) => {
+        avancar_capitulo.onclick = function () {
+            contado++;
+            localStorage.setItem('contador', contado);
+
+            titulo1.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+            nome.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+    
+            localStorage.setItem('ValorCapitulo', capitulos_gostei[contado])
+            window.location.reload(true);
+            window.scrollTo(0, 0);
+        }
+        if(capitulo == select_element.length) {
+            avancar_capitulo.style.display = 'none'
+        }
+    
+    });
+    
+    
+    
+    botao_voltar_capitulo.forEach((capitulo_anterior) => {
+        capitulo_anterior.onclick = function () {
+            contado--;
+            localStorage.setItem('contador', contado);
+    
+            titulo1.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+            nome.innerHTML = `${nome_manga} - Cap.${capitulo < 10 ? "0" : ""}${capitulo}`
+    
+            localStorage.setItem('ValorCapitulo', capitulos_gostei[contado])
+            window.location.reload(false);
+            window.scrollTo(0, 0);
+        }
+        if(capitulo_fra === capitulos_gostei[0]) {
+            capitulo_anterior.style.display = 'none'
+        }
+    });
+}
+
 
 
 // function pararCarregamento() {

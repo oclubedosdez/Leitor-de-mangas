@@ -23,7 +23,7 @@ mangas_e_manhwas.forEach((banner) => {
 /*busca mangas por nome*/
 
 const filterElement = document.querySelector('header input')
-const mangas = document.querySelectorAll('.container .box')
+const mangas = document.querySelectorAll('.container_mangas .box')
 
 
 filterElement.addEventListener('input', filterCards)

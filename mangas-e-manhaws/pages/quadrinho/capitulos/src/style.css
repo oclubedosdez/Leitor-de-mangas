@@ -387,7 +387,7 @@ button {
 
 .previous-btn:hover,
 .next-btn:hover {
-  filter: brightness(160%);
+  filter: brightness(130%);
 }
 
 .botões-de-baixo {
@@ -576,16 +576,29 @@ a:hover {
 }
 
 .selected {
-  background-color: #007bff;
+  background-color: #007bff !important;
 }
 
 
-
+#ler_favoritos {
+  transition: all 0.5s;
+  font-family: Oswald;
+  font-weight: bold;
+}
+#ler_favoritos:hover {
+  background-color: red;
+}
+#ler_favoritos.favorito:hover {
+  background-color: rgb(0, 180, 0);
+}
 
 .selecionado {
-  background-color: blue;
+  background-color: blue !important;
 }
 
 .favorito {
   background-color: green;
 }
+
+
+
