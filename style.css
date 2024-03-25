@@ -108,112 +108,92 @@ a {
 
 
  /*SLIDER DO CABEÇALHO ==============================*/
- .container-fluid {
-   padding: 0;
-   margin-bottom: 10px;
- }
+/* Estilos adicionais para o slider */
+.carousel-cabecalho {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
- .carousel-item .carousel-banner {
-   height: 100vh;
-   width: 100%;
-   filter: blur(10px) brightness(50%);
- }
 
- .carousel-item .carousel-img {
-   /* border: 1px solid black; */
-   width: 34rem;
-   position: absolute;
-   z-index: 10;
-   transform: translate(160%, -7%) rotate(10deg);
-   filter: brightness(90%);
- }
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+.carousel-item .img_banner {
+  filter: blur(10px) brightness(40%);
+}
+/* Estilos para os bullets */
+.carousel-indicators {
+  bottom: 10px;
+}
 
- #mainSlider .carousel-inner,
- #mainSlider .carousel-item {
-  /* border: 2px solid red; */
-   height: 70vh;
- }
 
- /*DIV QUE MOSTRA O NOME  OS GENEROS DO MANGA DO CARROSEL ITEM*/
- .carousel-caption {
-   /* border: 1px solid green; */
-   display: flex;
-   flex-wrap: wrap;
-   width: 38rem;
-   margin-left: -12rem;
-   gap: 1rem;
-   transform: translateY(-30%);
-   padding: 0;
- }
 
- .carousel-caption h1 {
-   /* border: 2px solid green; */
-   display: flex;
-   flex-wrap: wrap;
-   text-align: start;
-   padding: 0;
-   font-size: 28px;
-   font-weight: bold;
- }
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+}
+/* Estilos para as informações do mangá */
+.manga-info {
+  /* border: 1px solid green; */
+  position: absolute;
+  bottom: 20px;
+  /* top: 1px; */
+  left: 20px;
+  color: #fff;
+  transform: translateY(-45%);
+}
+.manga-info h3 {
+  /* border: 1px solid red; */
+  max-width: 500px;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: Oswald;
 
- .carousel-caption h2 {
-   /* border: 1px solid lawngreen; */
-   text-align: start;
-   font-size: 18px;
- }
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.manga-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.btn-go-to-manga {
+  background-color: #fff;
+  color: #000;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 18px;
+}
 
- .generos {
-   /* border: 2px solid skyblue; */
-   display: flex;
-   flex-wrap: wrap;
-   gap: 0.50rem;
-   width: 100%;
- }
+.Sinopse_manga {
+  /* border: 1px solid red; */
+  max-width: 700px;
+  max-height: 500px;
+  overflow: hidden !important;
+  cursor: pointer;
+}
 
- .generos a {
-   transition: all 0.5s;
-   color: white;
-   border: 1px solid white;
-   border-radius: 5px;
-   padding: 0.10rem 0.50rem;
- }
 
- .generos a:hover {
-   text-decoration: none;
-   background-color: white;
-   color: black;
- }
+/* Estilos para a imagem sobreposta */
+.overlay-image {
+  position: absolute;
+  bottom: 0px;
+  right: 20px; /* Ajuste a direita para inclinar */
+  max-width: 400px; /* Largura desejada */
+  height: auto; /* Altura automática para manter a proporção */
+  border-radius: 10px; /* Bordas arredondadas */
+  transform: rotate(5deg); /* Inclinação da imagem */
+  z-index: 1; /* Colocar a imagem sobreposta acima do texto */
+}
 
- .botao-manga {
-   /* border: 1px solid blue; */
-   transition: all 0.5s;
-   border-radius: 5px;
-   background-color: rgb(255, 255, 255);
-   width: 11rem;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
-   box-shadow: 5px 5px 5px black;
- }
 
- .botao-manga:hover {
-   text-decoration: none;
-   transform: scale(1.1);
- }
-
- .botao-manga img {
-   width: 3rem;
-   height: 3rem;
- }
-
- .botao-manga span {
-   text-decoration: none;
-   color: black;
-   font-weight: bold;
-   font-size: 20px;
- }
 
  /*botao de ir para o manga========================*/
 

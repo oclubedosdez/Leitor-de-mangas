@@ -41,7 +41,7 @@ if (mangaEncontrado) {
     var genero = mangaEncontrado.genero;
 
     // Separe os gêneros usando o espaço como delimitador
-    var generosArray = genero.split(' ');
+    var generosArray = genero.split(', ');
 
     // Mapeie os gêneros para os links formatados
     var genero_link = generosArray.map(genero => `<a class="genero" href="../../generos/${genero.toLowerCase()}.html">${genero}</a>`).join('\n');

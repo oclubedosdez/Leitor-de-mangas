@@ -235,11 +235,6 @@ for (let i = 0; i <= num_imgs; i++) {
         num_imgs = 30;
     }
 
-    if (nome_manga == 'Ano Oni Kyoushi ga Boku no Ane ni Narundesuka') {
-        if(capitulo == 6 || capitulo == 7) {
-            manga_page.src = `${diretorio}/imgs/${img_manga.id}.png`;
-        }
-    }
 
     if (nome_manga == 'My Amazing Wechat') {
         
@@ -280,6 +275,67 @@ for (let i = 0; i <= num_imgs; i++) {
 
     container.appendChild(manga_page);
 }
+
+for (let i = 0; i <= num_imgs; i++) {
+    let img_manga = { 'id': i };
+
+    let manga_page = document.createElement('img');
+    manga_page.classList.add('page_cap');
+
+    manga_page.src = `${diretorio}/imgs/${img_manga.id}.webp`;
+
+    manga_page.alt = '';
+
+    manga_page.onload = function () {
+        // A função será chamada se a imagem for carregada corretamente
+        imagensCarregadas.push(img_manga);
+        checkCarregamentoCompleto();
+        window.scrollTo(0, 0);
+    };
+
+    manga_page.onerror = function () {
+        // A função será chamada se a imagem não for carregada corretamente
+        // console.log(`A imagem ${img_manga.id} não foi carregada corretamente.`);
+        manga_page.classList.add('img_erro'); // Adiciona a classe 'img_erro'
+        imagensComErro++;
+
+        checkCarregamentoCompleto();
+        window.scrollTo(0, 0);
+    };
+
+    container.appendChild(manga_page);
+}
+
+for (let i = 0; i <= num_imgs; i++) {
+    let img_manga = { 'id': i };
+
+    let manga_page = document.createElement('img');
+    manga_page.classList.add('page_cap');
+
+    manga_page.src = `${diretorio}/imgs/${img_manga.id}.png`;
+
+    manga_page.alt = '';
+
+    manga_page.onload = function () {
+        // A função será chamada se a imagem for carregada corretamente
+        imagensCarregadas.push(img_manga);
+        checkCarregamentoCompleto();
+        window.scrollTo(0, 0);
+    };
+
+    manga_page.onerror = function () {
+        // A função será chamada se a imagem não for carregada corretamente
+        // console.log(`A imagem ${img_manga.id} não foi carregada corretamente.`);
+        manga_page.classList.add('img_erro'); // Adiciona a classe 'img_erro'
+        imagensComErro++;
+
+        checkCarregamentoCompleto();
+        window.scrollTo(0, 0);
+    };
+
+    container.appendChild(manga_page);
+}
+
 
 
 

@@ -92,7 +92,7 @@ incializarselect()
 //CAPITULOS FAVORITOS
 if (nome_manga == 'um garoto na escola feminina') {
     // Array com os números dos capítulos que você deseja adicionar a classe "favorito"
-    var capitulosFavoritos = [2, 6, 13, 14, 20, 21, 32, 44, 50, 61, 70, 71, 86, 91, 92, 93, 94, 98, 99, 109, 110, 111, 112, 118, 121, 124, 125, 126, 127, 128, 170, 171, 172, 173, 174, 175, 188, 193, 194, 195, 196, 197, 205, 211, 235, 245, 273, 285, 320, 335, 336, 338, 341, 344, 351, 356];
+    var capitulosFavoritos = [2, 6, 13, 14, 20, 21, 32, 44, 50, 61, 70, 71, 86, 90, 91, 92, 93, 94, 98, 99, 109, 110, 111, 112, 118, 121, 124, 125, 126, 127, 128, 170, 171, 172, 173, 174, 175, 188, 193, 194, 195, 196, 197, 205, 211, 235, 245, 273, 285, 320, 335, 336, 338, 341, 344, 351, 356];
 
 
     localStorage.setItem('gostei', JSON.stringify(capitulosFavoritos));
@@ -189,6 +189,19 @@ if (nome_manga == 'A-Rank Boukensha no Slow Life') {
     });
 }
 
+if (nome_manga == 'Maou ni Natta node, Dungeon Tsukutte Jingai Musume to Honobono suru') {
+    // Array com os números dos capítulos que você deseja adicionar a classe "favorito"
+    var capitulosFavoritos = [3, 6, 7, 8, 9, 10];
+
+
+    localStorage.setItem('gostei', JSON.stringify(capitulosFavoritos));
+
+    // Loop para adicionar a classe "favorito" aos capítulos desejados
+    capitulosFavoritos.forEach((capitulo) => {
+        document.querySelector(`[data-value='${capitulo}']`).classList.add("favorito");
+
+    });
+}
 
 
 

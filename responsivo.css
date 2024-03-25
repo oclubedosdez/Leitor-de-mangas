@@ -1,19 +1,277 @@
+@media(max-width:1200px) {
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 0px;
+        right: 20px;
+        /* Ajuste a direita para inclinar */
+        max-width: 350px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+    }
+
+    .Sinopse_manga {
+        width: 650px;
+    }
+}
+
+@media(max-width:1118px) {
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 40px;
+        right: 20px;
+        /* Ajuste a direita para inclinar */
+        max-width: 300px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+    }
+
+    .Sinopse_manga {
+        width: 600px;
+    }
+}
+
+@media(max-width:999px) {
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 60px;
+        right: 20px;
+        /* Ajuste a direita para inclinar */
+        max-width: 280px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+    }
+
+    .Sinopse_manga {
+        width: 550px;
+    }
+}
+
+@media(max-width:914px) {
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 60px;
+        right: 20px;
+        /* Ajuste a direita para inclinar */
+        max-width: 250px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+    }
+
+    .Sinopse_manga {
+        width: 450px;
+    }
+}
+
+@media(max-width:768px) {
+    .manga-info {
+        font-size: 15px !important;
+        transform: translateY(-30%);
+    }
+    .carousel-item img {
+        max-height: 450px;
+        object-fit: cover;
+      }
+    .manga-info h3 {
+        /* border: 1px solid red; */
+        max-width: 300px;
+        font-size: 28px;
+      }
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 100px;
+        right: 30px;
+        /* Ajuste a direita para inclinar */
+        max-width: 200px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+        margin-left: 2rem;
+    }
+
+    .Sinopse_manga {
+        width: 400px;
+    }
+
+    /* .btn-go-to-manga {
+        display: none;
+    } */
+    .generos {
+        display: none;
+    }
+}
+
+@media(max-width:712px) {
+    .manga-info {
+        font-size: 15px !important;
+    }
+    .manga-info h3 {
+        font-size: 25px;
+    }
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 100px;
+        right: 30px;
+        /* Ajuste a direita para inclinar */
+        max-width: 150px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+        margin-left: 2rem;
+    }
+
+    .Sinopse_manga {
+        width: 400px;
+        font-size: 16px !important;
+    }
+
+    /* .btn-go-to-manga {
+        display: none;
+    } */
+    .generos {
+        display: none;
+    }
+    .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+}
+
+@media(max-width:658px) {
+    .manga-info {
+        font-size: 15px !important;
+        transform: translateY(-20%);
+    }
+
+    .capitulo_atual {
+        display: none;
+    }
+
+    .manga-info h3 {
+        font-size: 25px;
+        
+    }
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 100px;
+        right: 30px;
+        /* Ajuste a direita para inclinar */
+        max-width: 150px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+        margin-left: 2rem;
+    }
+
+    .Sinopse_manga {
+        width: 300px;
+        font-size: 16px !important;
+    }
+
+    /* .btn-go-to-manga {
+        display: none;
+    } */
+    .generos {
+        display: none;
+    }
+    .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+}
+
+@media(max-width:570px) {
+    .carousel-inner {
+        border: 1px solid red;
+    }
+
+    .manga-info {
+        font-size: 15px !important;
+        transform: translateY(-20%);
+    }
+
+    .capitulo_atual {
+        display: none;
+    }
+
+    .manga-info h3 {
+        font-size: 25px;
+        
+    }
+    /* Estilos para a imagem sobreposta */
+    .overlay-image {
+        bottom: 100px;
+        right: 30px;
+        /* Ajuste a direita para inclinar */
+        max-width: 150px;
+        /* Largura desejada */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        transform: rotate(0deg);
+        margin-left: 2rem;
+    }
+
+    .Sinopse_manga {
+        width: 300px;
+        font-size: 16px !important;
+    }
+
+    /* .btn-go-to-manga {
+        display: none;
+    } */
+    .generos {
+        display: none;
+    }
+    .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+}
+
+
 @media(min-width: 2560px) {
-/*SLIDER 1*/
+
+    /*SLIDER 1*/
     .carousel-item .carousel-banner {
         height: 100vh;
         width: 100%;
         filter: blur(10px) brightness(50%);
-      }
-     
-      .carousel-item .carousel-img {
+    }
+
+    .carousel-item .carousel-img {
         /* border: 1px solid black; */
         width: 50rem;
         position: absolute;
         z-index: 10;
         transform: translate(160%, -7%) rotate(10deg);
         filter: brightness(90%);
-      }
+    }
 
     #mainSlider .carousel-inner,
     #mainSlider .carousel-item {
