@@ -5,6 +5,8 @@ var modo_favoritos = document.querySelectorAll('.modo_favoritos');
 var capitulos_gostei = JSON.parse(localStorage.getItem('gostei'));
 var divs_option = document.querySelectorAll('.option');
 
+
+
 // Define a função a ser executada quando o botão for clicado
 botao_favoritos.onclick = function() {
     // Verifica o estado atual e altera para o oposto
@@ -102,6 +104,7 @@ var nome = document.getElementById('nome_manga');
 
 
 var caminho_pasta = mangaEncontrado.pasta;
+
 
 var num_imgs = 80;
 
@@ -206,6 +209,7 @@ for (let i = 0; i <= num_imgs; i++) {
     manga_page.classList.add('page_cap');
 
     manga_page.src = `${diretorio}/imgs/${img_manga.id}.jpg`;
+   
 
     if(nome_manga == 'Isekai Kenkokuki'){
         if(capitulo == 58 || capitulo == 59) {
@@ -249,6 +253,23 @@ for (let i = 0; i <= num_imgs; i++) {
         
         if(capitulo == 1) {
             num_imgs = 81;
+        }
+    }
+  
+    if (nome_manga == 'A Returner’s Magic Should be Special') {
+        num_imgs = 95;
+        
+        if (capitulo == 1) {
+            num_imgs = 143;
+        }
+        if (capitulo == 2) {
+            num_imgs = 88;
+        }
+        if (capitulo > 3) {
+            num_imgs = 98;
+        }
+        if (capitulo > 10) {
+            num_imgs = 63;
         }
     }
 

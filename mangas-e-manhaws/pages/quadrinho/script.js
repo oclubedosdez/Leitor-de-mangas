@@ -1,3 +1,4 @@
+localStorage.setItem('ModoFavoritos', 'inativo');
 // Usar o método find para buscar o num_capitulo com base no nome do manga (case insensitive)
 const nomeDoMangaBuscado = localStorage.getItem('NomeDoManga');
 

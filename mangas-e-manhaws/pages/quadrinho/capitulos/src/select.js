@@ -191,7 +191,7 @@ if (nome_manga == 'A-Rank Boukensha no Slow Life') {
 
 if (nome_manga == 'Maou ni Natta node, Dungeon Tsukutte Jingai Musume to Honobono suru') {
     // Array com os números dos capítulos que você deseja adicionar a classe "favorito"
-    var capitulosFavoritos = [3, 6, 7, 8, 9, 10];
+    var capitulosFavoritos = [3, 6, 7, 8, 9, 10, 11, 15, 20, 26, 45, 47, 49, 52, 56, 57];
 
 
     localStorage.setItem('gostei', JSON.stringify(capitulosFavoritos));
