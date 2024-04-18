@@ -5,6 +5,38 @@ body {
   box-sizing: border-box;
 }
 
+/*==============================*/
+:root {
+  --cor-principal: rgb(63, 63, 63);
+  /*caixa onde esta a imagem box1 e a caixa onde esta as informações da obra box2*/
+  --background-box1-box2: rgba(0, 0, 0, 0.836);
+  --box1-box2-box-shadow: 5px 5px 5px rgb(255, 255, 255);
+  --box1-box2-border: 1px solid white;
+  --box1-box2-border-radius: 10px;
+  --cor-texto1: rgb(212, 212, 212);
+  --genero-hover: rgb(255, 0, 0);
+  /*informações do manga*/
+  --texto-titulo-info: 22px;
+  --texto-info-titulo: 19px;
+  /*configurações da imagem como banner de fundo*/
+  --banner-img-width: 100%;
+  --banner-img-height: 90%;
+  --banner-img-filte-blur: blur(0px);
+  --banner-img-filte-brightness: brightness(60%);
+  /*navbar*/
+  --navbar-font_size: 18px;
+  --navbar-dropdown-item-font-size: 16px;
+  --icone-logo-width: 3rem;
+  /*ESTILIZAÇÃO DOS BOTÕES*/
+  --arrow-filter-invert: invert();
+  --arrow-width: 1.50rem;
+  --font-size: 20px;
+  --botoes-cor-fundo: #8b0000;
+  /*faixa*/
+  --faixa-color: rgb(0, 0, 0);
+  --faixa-gradient-mangas-color: linear-gradient(to right, #00000069, var(--faixa-color), var(--faixa-color) 50%, var(--faixa-color), #00000069);
+}
+
 html, body {
   scroll-behavior: 0px;
   margin: 0;
@@ -59,37 +91,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/*==============================*/
-:root {
-  --cor-principal: rgb(63, 63, 63);
-  /*caixa onde esta a imagem box1 e a caixa onde esta as informações da obra box2*/
-  --background-box1-box2: rgba(0, 0, 0, 0.836);
-  --box1-box2-box-shadow: 5px 5px 5px rgb(255, 255, 255);
-  --box1-box2-border: 1px solid white;
-  --box1-box2-border-radius: 10px;
-  --cor-texto1: rgb(212, 212, 212);
-  --genero-hover: rgb(255, 0, 0);
-  /*informações do manga*/
-  --texto-titulo-info: 22px;
-  --texto-info-titulo: 19px;
-  /*configurações da imagem como banner de fundo*/
-  --banner-img-width: 100%;
-  --banner-img-height: 90%;
-  --banner-img-filte-blur: blur(0px);
-  --banner-img-filte-brightness: brightness(60%);
-  /*navbar*/
-  --navbar-font_size: 18px;
-  --navbar-dropdown-item-font-size: 16px;
-  --icone-logo-width: 3rem;
-  /*ESTILIZAÇÃO DOS BOTÕES*/
-  --arrow-filter-invert: invert();
-  --arrow-width: 1.50rem;
-  --font-size: 20px;
-  --botoes-cor-fundo: #8b0000;
-  /*faixa*/
-  --faixa-color: rgb(0, 0, 0);
-  --faixa-gradient-mangas-color: linear-gradient(to right, #0000, var(--faixa-color), var(--faixa-color) 50%, var(--faixa-color), #0000);
-}
+
 
 
 

@@ -211,8 +211,8 @@ for (let i = 0; i <= num_imgs; i++) {
     manga_page.src = `${diretorio}/imgs/${img_manga.id}.jpg`;
    
 
-    if(nome_manga == 'Isekai Kenkokuki'){
-        if(capitulo == 58 || capitulo == 59) {
+    if (nome_manga == 'Isekai Kenkokuki') {
+        if (capitulo == 58 || capitulo == 59) {
             manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
         }
     }
@@ -241,8 +241,8 @@ for (let i = 0; i <= num_imgs; i++) {
 
 
     if (nome_manga == 'My Amazing Wechat') {
-        
-        if(capitulo < 100) {
+
+        if (capitulo < 100) {
             manga_page.src = `${diretorio}/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
         } else {
             manga_page.src = `${diretorio}/${img_manga.id}.jpg`;
@@ -250,15 +250,18 @@ for (let i = 0; i <= num_imgs; i++) {
     }
 
     if (nome_manga == 'Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi') {
-        
-        if(capitulo == 1) {
+
+        if (capitulo == 1) {
             num_imgs = 81;
         }
     }
-  
+
+
     if (nome_manga == 'A Returner’s Magic Should be Special') {
+
+        document.querySelector('#manga-container').style.width = '50%'
         num_imgs = 95;
-        
+
         if (capitulo == 1) {
             num_imgs = 143;
         }
@@ -273,7 +276,14 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    if (nome_manga == 'The Duchess with an Empty Soul') {
+        if (capitulo == 3 || capitulo == 2) {
+            num_imgs = 87;
+            document.querySelector('#manga-container').style.width = '48%'
+        }
+    }
 
+  
 
     manga_page.alt = '';
 
