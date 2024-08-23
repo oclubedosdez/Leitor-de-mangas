@@ -203,6 +203,20 @@ if (nome_manga == 'Maou ni Natta node, Dungeon Tsukutte Jingai Musume to Honobon
     });
 }
 
+if (nome_manga == 'Dragon Son-In-Law God Of War') {
+    // Array com os números dos capítulos que você deseja adicionar a classe "favorito"
+    var capitulosFavoritos = [26, 28, 32, 38, 40, 48, 50, 51, 56, 62, 63, 67, 69, 73, 74, 83, 85,];
+
+
+    localStorage.setItem('gostei', JSON.stringify(capitulosFavoritos));
+
+    // Loop para adicionar a classe "favorito" aos capítulos desejados
+    capitulosFavoritos.forEach((capitulo) => {
+        document.querySelector(`[data-value='${capitulo}']`).classList.add("favorito");
+
+    });
+}
+
 
 
 

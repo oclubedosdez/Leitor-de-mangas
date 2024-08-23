@@ -217,6 +217,10 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    if (nome_manga == 'Minha esposa é de mil anos atrás') {
+       manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
+    }
+
     if (nome_manga == 'Eu tive um filho do tirano') {
         if (capitulo == 1) {
             var num_imgs = 141;

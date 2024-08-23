@@ -215,7 +215,7 @@ manga_selecionado.forEach((manga) => {
   botao_manga.onclick = function() {
     localStorage.setItem('NomeDoManga', pegar_manga);
   }
-})
+});
 
 
 
