@@ -295,6 +295,11 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    if (nome_manga == 'Bannou “Murazukuri” Cheat de Otegaru Slow Life ~Mura desu ga Nani ka?~') {
+
+        document.querySelector('#manga-container').style.width = '70%'
+    }
+
   
 
     manga_page.alt = '';
