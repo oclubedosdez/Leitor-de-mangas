@@ -280,10 +280,18 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+    
+
     if (nome_manga == 'The Duchess with an Empty Soul') {
         if (capitulo == 3 || capitulo == 2) {
             num_imgs = 87;
             document.querySelector('#manga-container').style.width = '48%'
+        }
+    }
+
+    if (nome_manga == 'Goshujin-sama To Yuku Isekai Survival') {
+        if (capitulo == 17) {
+            manga_page.src = `${diretorio} /imgs/${img_manga.id}.webp`;
         }
     }
 
