@@ -1462,7 +1462,7 @@ let mangas_e_manhwas = [
         "id": "C",
         "nome": "Contos de Demônios e Deuses",
         "tipo": "manhua",
-        "num_capitulos":50,
+        "num_capitulos":200,
         "lancamento": "2019",
         "Postado": "2021-03-16",
         "autor": "Mad Snail",
