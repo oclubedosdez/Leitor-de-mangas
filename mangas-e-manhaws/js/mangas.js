@@ -1462,7 +1462,7 @@ let mangas_e_manhwas = [
         "id": "C",
         "nome": "Contos de Demônios e Deuses",
         "tipo": "manhua",
-        "num_capitulos":200,
+        "num_capitulos":310,
         "lancamento": "2019",
         "Postado": "2021-03-16",
         "autor": "Mad Snail",
@@ -1816,6 +1816,26 @@ let mangas_e_manhwas = [
         "historia": 'Shibata foi convocado para a "floresta negra" em outro mundo. Ao aplicar o conhecimento de sobrevivência de um jogo, é essencial sobreviver neste local devido à sua complicada condição. Mais tarde, ele percebe que o processo de coleta de materiais e fabricação de ferramentas pode ser feito exatamente da mesma maneira que nos jogos.',
         "CapituloInicia": 0,
     },
+    {
+        "key": "on",
+        "nota": 7.8,
+        "id": "T",
+        "nome": "The Limitless Apostle and the Twelve Battle Maidens",
+        "tipo": "manhua",
+        "num_capitulos": 201,
+        "lancamento": "2020",
+        "Postado": "2021-07-10",
+        "autor": "Abyss Domination",
+        "artista": "Xi Zhi",
+        "nomes_alternativos": "Infinite Apostles And Twelve War Girls, Wuxian Shitu Yu Shier Zhan Ji, 無限使徒和十二個戰爭女孩",
+        "estado": "",
+        "genero": "Ação, Aventura, Fantasia, Harem, Romance, Shounen",
+        "pasta": "https://raw.githubusercontent.com/jettfrost/Mangas/main/manhuas/The%20Limitless%20Apostle%20and%20the%20Twelve%20Battle%20Maidens/capitulo-",
+        "caminho-img": "https://raw.githubusercontent.com/jettfrost/Mangas/main/manhuas/capas/The%20Limitless%20Apostle%20and%20the%20Twelve%20Battle%20Maidens.jpg",
+        "novo_capitulo": "",
+        "historia": "Ele é reconhecido como a existência mais forte, estando no topo do mundo. Fortuna? fama? Poder? Não valia a pena mencionar em seus olhos. Os apóstolos mais fortes fugiram e assustaram o continente humano pelo motivo: “Não me interpretem mal! Lao Zi veio procurar sua futura esposa! “Sim, é uma história sobre o apóstolo solteiro mais forte que já procurou uma esposa.",
+        "CapituloInicia": 0
+    }
 ];
 
 // localStorage.setItem('mangas-e-manhwas', JSON.stringify(mangas_e_manhwas))

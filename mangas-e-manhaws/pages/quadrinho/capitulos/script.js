@@ -217,6 +217,25 @@ for (let i = 0; i <= num_imgs; i++) {
         }
     }
 
+
+    //Contos de Demônios e Deuses
+    if(nome_manga == 'Contos de Demônios e Deuses') {
+        var capitulosmudados = [];
+        for(let i = 270; i <= 500; i++) {
+            capitulosmudados.push(i)
+        }
+        console.log(capitulosmudados)
+
+        // Verificando se o número está no array
+          if (capitulosmudados.includes(capitulo)) {
+              //O número está presente no array
+              manga_page.src = `${diretorio}/${img_manga.id}.jpg`;
+         } else {
+               //O número não está presente no array
+         }
+    }
+    //Contos de Demônios e Deuses
+
     if (nome_manga == 'Minha esposa é de mil anos atrás') {
        manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
     }
@@ -334,6 +353,24 @@ for (let i = 0; i <= num_imgs; i++) {
 
     manga_page.alt = '';
 
+
+     //Contos de Demônios e Deuses
+     if(nome_manga == 'Contos de Demônios e Deuses') {
+        var capitulosmudados = [171];
+
+        // Verificando se o número está no array
+          if (capitulosmudados.includes(capitulo)) {
+              //O número está presente no array
+              manga_page.src = `${diretorio}/imgs/${i < 10 ? 0 : ''}${img_manga.id}.jpg`;
+         } else {
+               //O número não está presente no array
+         }
+         if(capitulo >= 271) {
+            manga_page.src = `${diretorio}/${img_manga.id}.webp`;
+         }
+    }
+    //Contos de Demônios e Deuses
+
     manga_page.onload = function () {
         // A função será chamada se a imagem for carregada corretamente
         imagensCarregadas.push(img_manga);
@@ -383,6 +420,9 @@ for (let i = 0; i <= num_imgs; i++) {
 
     container.appendChild(manga_page);
 }
+
+
+
 
 
 
