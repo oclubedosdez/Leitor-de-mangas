@@ -217,6 +217,247 @@ if (nome_manga == 'Dragon Son-In-Law God Of War') {
     });
 }
 
+if (nome_manga == 'The Last Human') {
+    // Array com os números dos capítulos que você deseja adicionar a classe "favorito"
+    var capitulosFavoritos = [389, 408, 418, 421];
+
+
+    localStorage.setItem('gostei', JSON.stringify(capitulosFavoritos));
+
+    // Loop para adicionar a classe "favorito" aos capítulos desejados
+    capitulosFavoritos.forEach((capitulo) => {
+        document.querySelector(`[data-value='${capitulo}']`).classList.add("favorito");
+
+    });
+}
+
+
+function MudarCaminhoPorNome() {
+
+
+
+
+    for (let i = 0; i <= num_imgs; i++) {
+        let img_manga = { 'id': i };
+        let manga_page = document.createElement('img');
+        manga_page.classList.add('page_cap');
+
+        if (i == 0) {
+            num_imgs = 1
+        } else if (num_imgs == 1) {
+            num_imgs = 2;
+        } else if (num_imgs == 2) {
+            num_imgs = 10
+        } else if (num_imgs == 10) {
+            num_imgs = 80
+        }
+
+
+
+
+
+
+
+        // Variáveis para controlar o prefixo
+        let tentativaComZero = false;
+
+        // Função para atualizar o src da imagem com o formato e o nome adequados
+        function carregarImagem() {
+            let prefixoZero = tentativaComZero && img_manga.id < 10 ? '0' : '';
+            manga_page.src = `${diretorio}/${prefixoZero}${img_manga.id}.jpg`;
+
+            if (nome_manga == 'Quanzhi Fashi') {
+                if (i == 0) {
+                    num_imgs = 1
+                } else if (num_imgs == 1) {
+                    num_imgs = 2;
+                } else {
+                    num_imgs = 16
+                }
+                if (capitulo > 15) {
+                    let prefixoZero = tentativaComZero && img_manga.id < 10 ? '00' : '0';
+                    manga_page.src = `${diretorio}/${prefixoZero}${img_manga.id}.jpg`;
+                }
+            };
+        }
+
+        // Inicia tentando sem o zero
+        carregarImagem();
+
+        manga_page.onload = function () {
+            // A função será chamada se a imagem for carregada corretamente
+            imagensCarregadas.push(img_manga);
+            checkCarregamentoCompleto();
+            window.scrollTo(0, 0);
+        };
+
+        manga_page.onerror = function () {
+            // Verifica se já tentou com o zero
+            if (tentativaComZero) {
+                // Se já tentou com o zero, marca o erro
+                manga_page.classList.add('img_erro');
+                imagensComErro++;
+                checkCarregamentoCompleto();
+                return;
+            }
+
+            // Se ainda não tentou com o zero, agora tenta
+            tentativaComZero = true;
+            carregarImagem(); // Tenta carregar a imagem novamente com o prefixo zero
+        };
+
+        container.appendChild(manga_page);
+    }
+
+    for (let i = 0; i <= num_imgs; i++) {
+        let img_manga = { 'id': i };
+        let manga_page = document.createElement('img');
+        manga_page.classList.add('page_cap');
+
+        if (i == 0) {
+            num_imgs = 1
+        } else if (num_imgs == 1) {
+            num_imgs = 2;
+        } else {
+            num_imgs = 80
+        }
+
+
+        if (nome_manga == 'Quanzhi Fashi') {
+            if (i == 0) {
+                num_imgs = 1
+            } else if (num_imgs == 1) {
+                num_imgs = 2;
+            } else {
+                num_imgs = 16
+            }
+        }
+
+        // Variáveis para controlar o prefixo
+        let tentativaComZero = false;
+
+        // Função para atualizar o src da imagem com o formato e o nome adequados
+        function carregarImagem() {
+            let prefixoZero = tentativaComZero && img_manga.id < 10 ? '0' : '';
+            manga_page.src = `${diretorio}/imgs/${prefixoZero}${img_manga.id}.jpg`;
+        }
+
+        // Inicia tentando sem o zero
+        carregarImagem();
+
+        manga_page.onload = function () {
+            // A função será chamada se a imagem for carregada corretamente
+            imagensCarregadas.push(img_manga);
+            checkCarregamentoCompleto();
+            window.scrollTo(0, 0);
+        };
+
+        manga_page.onerror = function () {
+            // Verifica se já tentou com o zero
+            if (tentativaComZero) {
+                // Se já tentou com o zero, marca o erro
+                manga_page.classList.add('img_erro');
+                imagensComErro++;
+                checkCarregamentoCompleto();
+                return;
+            }
+
+            // Se ainda não tentou com o zero, agora tenta
+            tentativaComZero = true;
+            carregarImagem(); // Tenta carregar a imagem novamente com o prefixo zero
+        };
+
+        container.appendChild(manga_page);
+    }
+
+    for (let i = 0; i <= num_imgs; i++) {
+        let img_manga = { 'id': i };
+        let manga_page = document.createElement('img');
+        manga_page.classList.add('page_cap');
+
+        // Variáveis para controlar o prefixo
+        let tentativaComZero = false;
+
+        // Função para atualizar o src da imagem com o formato e o nome adequados
+        function carregarImagem() {
+            let prefixoZero = tentativaComZero && img_manga.id < 10 ? '0' : '';
+            manga_page.src = `${diretorio}/${prefixoZero}${img_manga.id}.png`;
+        }
+
+        // Inicia tentando sem o zero
+        carregarImagem();
+
+        manga_page.onload = function () {
+            // A função será chamada se a imagem for carregada corretamente
+            imagensCarregadas.push(img_manga);
+            checkCarregamentoCompleto();
+            window.scrollTo(0, 0);
+        };
+
+        manga_page.onerror = function () {
+            // Verifica se já tentou com o zero
+            if (tentativaComZero) {
+                // Se já tentou com o zero, marca o erro
+                manga_page.classList.add('img_erro');
+                imagensComErro++;
+                checkCarregamentoCompleto();
+                return;
+            }
+
+            // Se ainda não tentou com o zero, agora tenta
+            tentativaComZero = true;
+            carregarImagem(); // Tenta carregar a imagem novamente com o prefixo zero
+        };
+
+        container.appendChild(manga_page);
+    }
+
+    for (let i = 0; i <= num_imgs; i++) {
+        let img_manga = { 'id': i };
+        let manga_page = document.createElement('img');
+        manga_page.classList.add('page_cap');
+
+        // Variáveis para controlar o prefixo
+        let tentativaComZero = false;
+
+        // Função para atualizar o src da imagem com o formato e o nome adequados
+        function carregarImagem() {
+            let prefixoZero = tentativaComZero && img_manga.id < 10 ? '0' : '';
+            manga_page.src = `${diretorio}/${prefixoZero}${img_manga.id}.webp`;
+        }
+
+        // Inicia tentando sem o zero
+        carregarImagem();
+
+        manga_page.onload = function () {
+            // A função será chamada se a imagem for carregada corretamente
+            imagensCarregadas.push(img_manga);
+            checkCarregamentoCompleto();
+            window.scrollTo(0, 0);
+        };
+
+        manga_page.onerror = function () {
+            // Verifica se já tentou com o zero
+            if (tentativaComZero) {
+                // Se já tentou com o zero, marca o erro
+                manga_page.classList.add('img_erro');
+                imagensComErro++;
+                checkCarregamentoCompleto();
+                return;
+            }
+
+            // Se ainda não tentou com o zero, agora tenta
+            tentativaComZero = true;
+            carregarImagem(); // Tenta carregar a imagem novamente com o prefixo zero
+        };
+
+        container.appendChild(manga_page);
+    }
+
+
+
+
+}
 
 
 
