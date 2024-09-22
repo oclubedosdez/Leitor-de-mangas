@@ -1882,7 +1882,7 @@ let mangas_e_manhwas = [
         "id": "T",
         "nome": "Quanzhi Fashi",
         "tipo": "manhua",
-        "num_capitulos": 60,
+        "num_capitulos": 300,
         "lancamento": "2018",
         "Postado": "2024-07-01",
         "autor": "chaos",
@@ -1914,6 +1914,26 @@ let mangas_e_manhwas = [
         "caminho-img": "https://raw.githubusercontent.com/JoaoManga27/Quadrinhos/refs/heads/main/manhwas/capas/The%20Return%20Of%20Apocalypse%20Tyrant.webp", 
         "novo_capitulo": "",
         "historia": "Há 25 anos, os portões do inferno se abriram, devastando a humanidade, exceto por uma pessoa: Nam Gung. Após completar uma missão, ele volta no tempo, prometendo proteger sua filha recém-reunida. Ao devorar prêmios das Oito Estrelas Marciais, seres divinos, Nam Gung conquista seu lugar entre eles. Usando suas memórias, ele altera eventos futuros, reunindo aliados para enfrentar desafios inesperados. No entanto, eventos que ele nunca imaginou começam a se desenrolar.",
+        "CapituloInicia": 1
+      },
+      {
+        "key": "on",
+        "nota": 5.0,
+        "id": "S",
+        "nome": "Solo Leveling: Ragnarok",
+        "tipo": "manhwa",
+        "num_capitulos": 20,
+        "lancamento": "2024",
+        "Postado": "2024-09-21",
+        "autor": "Daul",
+        "artista": "Redice",
+        "nomes_alternativos": "Upando Sozinho: Ragnarok",
+        "estado": "Em andamento", 
+        "genero": "Ação, Aventura, Fantasia, Shounen",
+        "pasta": "https://raw.githubusercontent.com/JoaoManga27/Quadrinhos/refs/heads/main/manhwas/S/Solo%20Leveling%20Ragnarok/capitulo-",
+        "caminho-img": "https://raw.githubusercontent.com/JoaoManga27/Quadrinhos/refs/heads/main/manhwas/S/Solo%20Leveling%20Ragnarok/Solo%20Leveling%20Ragnarok.jpg", 
+        "novo_capitulo": "",
+        "historia": "O Planeta Terra enfrenta uma nova ameaça iminente com a busca de Itarim, o Deus de outros universos, para preencher o vazio deixado pelo Ser Absoluto. Sung Jinwoo não tem alternativa senão enviar Beru, o Rei Formiga das Sombras, para despertar os poderes de seu filho e prepará-lo para a jornada que ele já havia traçado no passado. Suho é encarregado de conquistar a Masmorra de Sombras e reivindicar seu lugar no Mundo dos Caçadores, enquanto enfrenta um novo mal que ameaça engolir o mundo inteiro.",
         "CapituloInicia": 1
       }
 ];

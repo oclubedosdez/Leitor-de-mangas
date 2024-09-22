@@ -253,7 +253,17 @@ function MudarCaminhoPorNome() {
         }
 
 
-
+        if (nome_manga == 'Quanzhi Fashi') {
+            if (i == 0) {
+                num_imgs = 1
+            } else if (num_imgs == 1) {
+                num_imgs = 2;
+            } else if(num_imgs == 2) {
+                num_imgs = 16
+            } else {
+                num_imgs = 20
+            }
+        };
 
 
 
@@ -266,19 +276,7 @@ function MudarCaminhoPorNome() {
             let prefixoZero = tentativaComZero && img_manga.id < 10 ? '0' : '';
             manga_page.src = `${diretorio}/${prefixoZero}${img_manga.id}.jpg`;
 
-            if (nome_manga == 'Quanzhi Fashi') {
-                if (i == 0) {
-                    num_imgs = 1
-                } else if (num_imgs == 1) {
-                    num_imgs = 2;
-                } else {
-                    num_imgs = 16
-                }
-                if (capitulo > 15) {
-                    let prefixoZero = tentativaComZero && img_manga.id < 10 ? '00' : '0';
-                    manga_page.src = `${diretorio}/${prefixoZero}${img_manga.id}.jpg`;
-                }
-            };
+            
         }
 
         // Inicia tentando sem o zero
