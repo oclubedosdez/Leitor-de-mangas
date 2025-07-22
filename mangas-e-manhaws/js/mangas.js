@@ -1882,7 +1882,7 @@ let mangas_e_manhwas = [
         "id": "T",
         "nome": "Quanzhi Fashi",
         "tipo": "manhua",
-        "num_capitulos": 300,
+        "num_capitulos": 1000,
         "lancamento": "2018",
         "Postado": "2024-07-01",
         "autor": "chaos",
